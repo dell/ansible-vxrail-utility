@@ -40,48 +40,6 @@ Then import the package:
 import vxrail_ansible_utility
 ```
 
-## Getting Started
-
-Please follow the [installation procedure](#installation--usage) and then run the following:
-
-```python
-from __future__ import print_function
-import time
-import vxrail_ansible_utility
-from vxrail_ansible_utility.rest import ApiException
-from pprint import pprint
-# Configure HTTP basic authorization: basicAuth
-configuration = vxrail_ansible_utility.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
-
-# create an instance of the API class
-api_instance = vxrail_ansible_utility.ClusterExpansionApi(vxrail_ansible_utility.ApiClient(configuration))
-body = vxrail_ansible_utility.ExpansionRequest() # ExpansionRequest | Parameters to perform the cluster expansion.
-
-try:
-    # Performs a cluster expansion.
-    api_response = api_instance.v1_cluster_expansion_post(body)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ClusterExpansionApi->v1_cluster_expansion_post: %s\n" % e)
-# Configure HTTP basic authorization: basicAuth
-configuration = vxrail_ansible_utility.Configuration()
-configuration.username = 'YOUR_USERNAME'
-configuration.password = 'YOUR_PASSWORD'
-
-# create an instance of the API class
-api_instance = vxrail_ansible_utility.ClusterExpansionApi(vxrail_ansible_utility.ApiClient(configuration))
-body = vxrail_ansible_utility.ExpansionRequest() # ExpansionRequest | Parameters to validate the cluster expansion.
-
-try:
-    # Validates a cluster expansion.
-    api_response = api_instance.v1_cluster_expansion_validate_post(body)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling ClusterExpansionApi->v1_cluster_expansion_validate_post: %s\n" % e)
-```
-
 ## Documentation for API Endpoints
 
 All URIs are relative to *https://vxm-ip/rest/vxm*
