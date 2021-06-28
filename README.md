@@ -14,18 +14,17 @@ Python 2.7 and 3.4+
 ## Installation & Usage
 ### pip install
 
-If the python package is hosted on Github, you can install directly from Github
+VxRail Ansible Utility can be installed from source, via pip. To clone VxRail Ansible Utility from source use git:
 
 ```sh
-pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+git clone https://eos2git.cec.lab.emc.com/vxrail/ansible-vxrail-utility.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
+To install from source navigate into the new ansible-vxrail-utility directory and use pip:
 
-Then import the package:
 ```python
-import vxrail_ansible_utility 
+cd ansible-vxrail-utility/
+pip install .
 ```
-
 ### Setuptools
 
 Install via [Setuptools](http://pypi.python.org/pypi/setuptools).
@@ -34,125 +33,6 @@ Install via [Setuptools](http://pypi.python.org/pypi/setuptools).
 python setup.py install --user
 ```
 (or `sudo python setup.py install` to install the package for all users)
-
-Then import the package:
-```python
-import vxrail_ansible_utility
-```
-
-## Documentation for API Endpoints
-
-All URIs are relative to *https://vxm-ip/rest/vxm*
-
-Class | Method | HTTP request | Description
------------- | ------------- | ------------- | -------------
-*ClusterExpansionApi* | [**v1_cluster_expansion_post**](docs/ClusterExpansionApi.md#v1_cluster_expansion_post) | **POST** /v1/cluster/expansion | Performs a cluster expansion.
-*ClusterExpansionApi* | [**v1_cluster_expansion_validate_post**](docs/ClusterExpansionApi.md#v1_cluster_expansion_validate_post) | **POST** /v1/cluster/expansion/validate | Validates a cluster expansion.
-*ClusterShutdownApi* | [**v1_cluster_shutdown_post**](docs/ClusterShutdownApi.md#v1_cluster_shutdown_post) | **POST** /v1/cluster/shutdown | Shuts down a cluster or performs a shutdown dry run.
-*ClusterShutdownApi* | [**v1_requests_id_get**](docs/ClusterShutdownApi.md#v1_requests_id_get) | **GET** /v1/requests/{id} | Gets the status and progress of cluster shutdown.
-*SystemInformationApi* | [**query_vx_rail_manager_system_information_v2**](docs/SystemInformationApi.md#query_vx_rail_manager_system_information_v2) | **GET** /v2/system | Retrieves VxRail system information (v2).
-*SystemInformationApi* | [**query_vx_rail_manager_system_information_v3**](docs/SystemInformationApi.md#query_vx_rail_manager_system_information_v3) | **GET** /v3/system | Retrieves VxRail system information (v3).
-
-## Documentation For Models
-
- - [Account](docs/Account.md)
- - [Body](docs/Body.md)
- - [Body1](docs/Body1.md)
- - [Body2](docs/Body2.md)
- - [Body3](docs/Body3.md)
- - [Body4](docs/Body4.md)
- - [CSHostDGInfoSpec](docs/CSHostDGInfoSpec.md)
- - [ChassisBasicInfo](docs/ChassisBasicInfo.md)
- - [ClusterInfo](docs/ClusterInfo.md)
- - [ClusterMigrationHostsSpec](docs/ClusterMigrationHostsSpec.md)
- - [ClusterMigrationNameSpec](docs/ClusterMigrationNameSpec.md)
- - [ClusterMigrationRequest](docs/ClusterMigrationRequest.md)
- - [ClusterMigrationSourceVcSpec](docs/ClusterMigrationSourceVcSpec.md)
- - [ClusterMigrationTargetVcSpec](docs/ClusterMigrationTargetVcSpec.md)
- - [ClusterMigrationWitnessSpec](docs/ClusterMigrationWitnessSpec.md)
- - [ClusterNetworkTypeSpec](docs/ClusterNetworkTypeSpec.md)
- - [CurrentDGInfoSepc](docs/CurrentDGInfoSepc.md)
- - [CustomerSuppliedSpec](docs/CustomerSuppliedSpec.md)
- - [DeploymentTypeInfo](docs/DeploymentTypeInfo.md)
- - [ErrorResponse](docs/ErrorResponse.md)
- - [ExpansionAddRequest](docs/ExpansionAddRequest.md)
- - [ExpansionNodeInfo](docs/ExpansionNodeInfo.md)
- - [ExpansionNodeSpec](docs/ExpansionNodeSpec.md)
- - [ExpansionPreviewHostInfo](docs/ExpansionPreviewHostInfo.md)
- - [ExpansionRequest](docs/ExpansionRequest.md)
- - [ExpansionValidateNodeSpec](docs/ExpansionValidateNodeSpec.md)
- - [ExpansionValidateNodeSpecV2](docs/ExpansionValidateNodeSpecV2.md)
- - [ExpansionValidateSpec](docs/ExpansionValidateSpec.md)
- - [ExpansionValidateTwoVDSSpec](docs/ExpansionValidateTwoVDSSpec.md)
- - [GeoLocation](docs/GeoLocation.md)
- - [HostDGInfoSpec](docs/HostDGInfoSpec.md)
- - [HostDiskGroupInfo](docs/HostDiskGroupInfo.md)
- - [HostDiskGroupInfoSpec](docs/HostDiskGroupInfoSpec.md)
- - [HostIp](docs/HostIp.md)
- - [HostNetworkConfiguration](docs/HostNetworkConfiguration.md)
- - [HostNetworkInfo](docs/HostNetworkInfo.md)
- - [HostNetworkSetting](docs/HostNetworkSetting.md)
- - [HostVmnic](docs/HostVmnic.md)
- - [HostsDiskGroupInfo](docs/HostsDiskGroupInfo.md)
- - [IncompatibleComponentsInfo](docs/IncompatibleComponentsInfo.md)
- - [InstalledComponent](docs/InstalledComponent.md)
- - [Layer2ExpansionNodeInfo](docs/Layer2ExpansionNodeInfo.md)
- - [Layer2ExpansionPreviewInfo](docs/Layer2ExpansionPreviewInfo.md)
- - [Layer3ExpansionHostSpec](docs/Layer3ExpansionHostSpec.md)
- - [Layer3ExpansionPreviewInfo](docs/Layer3ExpansionPreviewInfo.md)
- - [Layer3ExpansionStartSpec](docs/Layer3ExpansionStartSpec.md)
- - [Layer3ExpansionStartTwoVDSSpec](docs/Layer3ExpansionStartTwoVDSSpec.md)
- - [Layer3ExpansionValidationRequest](docs/Layer3ExpansionValidationRequest.md)
- - [Layer3ExpansionValidationTwoVDSRequest](docs/Layer3ExpansionValidationTwoVDSRequest.md)
- - [Layer3HostNetworkConfiguration](docs/Layer3HostNetworkConfiguration.md)
- - [Layer3ManagementNetworkConfigSpec](docs/Layer3ManagementNetworkConfigSpec.md)
- - [Layer3ManagementNetworkHostSpec](docs/Layer3ManagementNetworkHostSpec.md)
- - [Layer3ManagementNetworkPreviewSpec](docs/Layer3ManagementNetworkPreviewSpec.md)
- - [Layer3NetworkInformationMap](docs/Layer3NetworkInformationMap.md)
- - [Layer3NetworkSetting](docs/Layer3NetworkSetting.md)
- - [Layer3NetworkSpec](docs/Layer3NetworkSpec.md)
- - [Layer3SegmentFieldError](docs/Layer3SegmentFieldError.md)
- - [Layer3SegmentInputErrorResponse](docs/Layer3SegmentInputErrorResponse.md)
- - [Layer3SegmentOneInfoSpec](docs/Layer3SegmentOneInfoSpec.md)
- - [Layer3SegmentOneSpec](docs/Layer3SegmentOneSpec.md)
- - [Layer3SegmentSpec](docs/Layer3SegmentSpec.md)
- - [Layer3SegmentStartSpec](docs/Layer3SegmentStartSpec.md)
- - [Layer3TrafficNetworkTypes](docs/Layer3TrafficNetworkTypes.md)
- - [Layer3VsanVmotionNetworkPreviewSpec](docs/Layer3VsanVmotionNetworkPreviewSpec.md)
- - [Layer3VxRailHostSpec](docs/Layer3VxRailHostSpec.md)
- - [ManagementHostNetworkSetting](docs/ManagementHostNetworkSetting.md)
- - [NetworkSettingTwoVDS](docs/NetworkSettingTwoVDS.md)
- - [NicMapping](docs/NicMapping.md)
- - [NicUplink](docs/NicUplink.md)
- - [NicUplinkV2](docs/NicUplinkV2.md)
- - [NodeAccount](docs/NodeAccount.md)
- - [NodePreCheckRequest](docs/NodePreCheckRequest.md)
- - [NodeResultInfo](docs/NodeResultInfo.md)
- - [NodeStatusInfo](docs/NodeStatusInfo.md)
- - [NodeStatusInfoL3](docs/NodeStatusInfoL3.md)
- - [NodeVersionInfo](docs/NodeVersionInfo.md)
- - [NsxtInfo](docs/NsxtInfo.md)
- - [OptionsDGInfLayoutSepc](docs/OptionsDGInfLayoutSepc.md)
- - [OptionsDGInfoSepc](docs/OptionsDGInfoSepc.md)
- - [PrivateExpansionNodeSpec](docs/PrivateExpansionNodeSpec.md)
- - [ProxyNodeNetworkInfo](docs/ProxyNodeNetworkInfo.md)
- - [RemoveHostSpec](docs/RemoveHostSpec.md)
- - [RequestInfo](docs/RequestInfo.md)
- - [RequestStatusInfo](docs/RequestStatusInfo.md)
- - [SegmentErrorSpec](docs/SegmentErrorSpec.md)
- - [SegmentHostStatisticsInfo](docs/SegmentHostStatisticsInfo.md)
- - [SegmentStatusInfo](docs/SegmentStatusInfo.md)
- - [SharedStorage](docs/SharedStorage.md)
- - [StorageInfo](docs/StorageInfo.md)
- - [StorageInfoSlotClaims](docs/StorageInfoSlotClaims.md)
- - [StorageInfoValues](docs/StorageInfoValues.md)
- - [StroageInfoPrivate](docs/StroageInfoPrivate.md)
- - [SystemVMInfo](docs/SystemVMInfo.md)
- - [UserSpec](docs/UserSpec.md)
- - [VdsConfig](docs/VdsConfig.md)
- - [VdsConfigTwoVDS](docs/VdsConfigTwoVDS.md)
- - [VxmSystemInfoV2](docs/VxmSystemInfoV2.md)
- - [VxmSystemInfoV3](docs/VxmSystemInfoV3.md)
 
 ## Documentation For Authorization
 
