@@ -112,3 +112,5 @@ from vxrail_ansible_utility.models.vds_config import VdsConfig
 from vxrail_ansible_utility.models.vds_config_two_vds import VdsConfigTwoVDS
 from vxrail_ansible_utility.models.vxm_system_info_v2 import VxmSystemInfoV2
 from vxrail_ansible_utility.models.vxm_system_info_v3 import VxmSystemInfoV3
+from vxrail_ansible_utility.models.private_cluster_host_info import PrivateClusterHostInfo
+from vxrail_ansible_utility.models.cluster_nodes_pnics import ClusterNodesPnics

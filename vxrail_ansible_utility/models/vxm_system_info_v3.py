@@ -316,7 +316,7 @@ class VxmSystemInfoV3(object):
         """
         if deployment_type is None:
             raise ValueError("Invalid value for `deployment_type`, must not be `None`")  # noqa: E501
-        allowed_values = ["STANDARD", "VSAN_2_NODE", "COMPUTE", "STRETCHED_CLUSTER", "DIMENSION", "VCF", "VVD","UNAVAILABLE", "VCF-VxRail","VVD-VxRail"]  # noqa: E501
+        allowed_values = ["STANDARD", "VSAN_2_NODE", "VSAN_2_NODE_STRETCHED_CLUSTER", "COMPUTE", "STRETCHED_CLUSTER", "DIMENSION", "VCF", "VVD","UNAVAILABLE", "VCF_VxRail","VVD_VxRail"]  # noqa: E501
         if not set(deployment_type).issubset(set(allowed_values)):
             raise ValueError(
                 "Invalid values for `deployment_type` [{0}], must be a subset of [{1}]"  # noqa: E501
