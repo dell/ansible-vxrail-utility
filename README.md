@@ -17,7 +17,7 @@ Python 2.7 and 3.4+
 VxRail Ansible Utility can be installed from source, via pip. To clone VxRail Ansible Utility from source use git:
 
 ```sh
-git clone https://eos2git.cec.lab.emc.com/vxrail/ansible-vxrail-utility.git
+git clone https://github.com/dell/ansible-vxrail-utility.git
 ```
 To install from source navigate into the new ansible-vxrail-utility directory and use pip:
 

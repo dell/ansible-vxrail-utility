@@ -52,7 +52,8 @@ class SharedStorage(object):
         self._is_primary = None
         self.discriminator = None
         self.name = name
-        self.datastore_id = datastore_id
+        if datastore_id is not None:
+            self.datastore_id = datastore_id
         self.type = type
         if protocol is not None:
             self.protocol = protocol
@@ -103,8 +104,8 @@ class SharedStorage(object):
         :param datastore_id: The datastore_id of this SharedStorage.  # noqa: E501
         :type: str
         """
-        if datastore_id is None:
-            raise ValueError("Invalid value for `datastore_id`, must not be `None`")  # noqa: E501
+        # if datastore_id is None:
+        #     raise ValueError("Invalid value for `datastore_id`, must not be `None`")  # noqa: E501
 
         self._datastore_id = datastore_id
 
