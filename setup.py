@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    VxRail Cluster and System Management
+    VxRail Cluster,System Management and Day1 bring up
 
-    APIs for cluster management and system management  # noqa: E501
+    APIs for cluster management, system management and Day1 bring up # noqa: E501
 
     OpenAPI spec version: 7.0.240
     
@@ -13,7 +13,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "vxrail_ansible_utility"
-VERSION = "1.1.0"
+VERSION = "1.0.0"
 # To install the library, run the following
 #
 # python setup.py install
