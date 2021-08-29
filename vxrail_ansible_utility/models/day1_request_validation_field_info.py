@@ -30,21 +30,21 @@ class Day1RequestValidationFieldInfo(object):
     """
     swagger_types = {
         'path': 'str',
-        'message': 'str'
+        'messages': 'str'
     }
 
     attribute_map = {
         'path': 'path',
-        'message': 'message'
+        'messages': 'messages'
     }
 
-    def __init__(self, path=None, message=None):  # noqa: E501
+    def __init__(self, path=None, messages=None):  # noqa: E501
         """Day1RequestValidationFieldInfo - a model defined in Swagger"""  # noqa: E501
         self._path = None
-        self._message = None
+        self._messages = None
         self.discriminator = None
         self.path = path
-        self.message = message
+        self.messages = messages
 
     @property
     def path(self):
@@ -72,7 +72,7 @@ class Day1RequestValidationFieldInfo(object):
         self._path = path
 
     @property
-    def message(self):
+    def messages(self):
         """Gets the message of this Day1RequestValidationFieldInfo.  # noqa: E501
 
         The error or warning message  # noqa: E501
@@ -80,21 +80,21 @@ class Day1RequestValidationFieldInfo(object):
         :return: The message of this Day1RequestValidationFieldInfo.  # noqa: E501
         :rtype: str
         """
-        return self._message
+        return self._messages
 
-    @message.setter
-    def message(self, message):
+    @messages.setter
+    def messages(self, messages):
         """Sets the message of this Day1RequestValidationFieldInfo.
 
         The error or warning message  # noqa: E501
 
-        :param message: The message of this Day1RequestValidationFieldInfo.  # noqa: E501
+        :param messages: The message of this Day1RequestValidationFieldInfo.  # noqa: E501
         :type: str
         """
-        if message is None:
-            raise ValueError("Invalid value for `message`, must not be `None`")  # noqa: E501
+        # if message is None:
+        #     raise ValueError("Invalid value for `message`, must not be `None`")  # noqa: E501
 
-        self._message = message
+        self._messages = messages
 
     def to_dict(self):
         """Returns the model properties as a dict"""
