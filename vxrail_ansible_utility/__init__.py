@@ -19,6 +19,7 @@ from vxrail_ansible_utility.api.cluster_expansion_api import ClusterExpansionApi
 from vxrail_ansible_utility.api.cluster_shutdown_api import ClusterShutdownApi
 from vxrail_ansible_utility.api.system_information_api import SystemInformationApi
 from vxrail_ansible_utility.api.vx_rail_installation_api import VxRailInstallationApi
+from vxrail_ansible_utility.api.host_information_api import HostInformationApi
 # import ApiClient
 from vxrail_ansible_utility.api_client import ApiClient
 from vxrail_ansible_utility.configuration import Configuration
@@ -225,4 +226,10 @@ from vxrail_ansible_utility.models.system_init_spec_vcenter_sso_domain import Sy
 from vxrail_ansible_utility.models.system_init_spec_vxrail_manager import SystemInitSpecVxrailManager
 from vxrail_ansible_utility.models.system_init_spec_vxrail_manager_accounts import SystemInitSpecVxrailManagerAccounts
 from vxrail_ansible_utility.models.system_init_spec_witness_node import SystemInitSpecWitnessNode
-
+from vxrail_ansible_utility.models.boot_device_v2 import BootDeviceV2
+from vxrail_ansible_utility.models.disk_info_v2 import DiskInfoV2
+from vxrail_ansible_utility.models.firmware_info_v2 import FirmwareInfoV2
+from vxrail_ansible_utility.models.geo_location import GeoLocation
+from vxrail_ansible_utility.models.host_v4 import HostV4
+from vxrail_ansible_utility.models.nic import Nic
+from vxrail_ansible_utility.models.drive_configuration_info import DriveConfigurationInfo
