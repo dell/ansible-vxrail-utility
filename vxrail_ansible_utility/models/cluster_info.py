@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    VxRail Cluster and System Management
+    VxRail REST API
 
-    APIs for cluster management and system management  # noqa: E501
+    The VxRail REST API provides a programmatic interface for performing VxRail administrative tasks. Data is available in JSON format.  # noqa: E501
 
     OpenAPI spec version: 7.0.240
     
@@ -34,9 +34,9 @@ class ClusterInfo(object):
         'vc_connected': 'bool',
         'health': 'str',
         'operational_status': 'str',
-        'chassis': 'list[ChassisBasicInfo]',
+        'chassises': 'list[ChassisBasicInfo]',
         'suppressed': 'bool',
-        'last_time': 'int'
+        'last_time': 'str'
     }
 
     attribute_map = {
@@ -46,12 +46,12 @@ class ClusterInfo(object):
         'vc_connected': 'vc_connected',
         'health': 'health',
         'operational_status': 'operational_status',
-        'chassis': 'chassis',
+        'chassises': 'chassises',
         'suppressed': 'suppressed',
         'last_time': 'last_time'
     }
 
-    def __init__(self, cluster_id=None, product_type=None, device_type=None, vc_connected=None, health=None, operational_status=None, chassis=None, suppressed=None, last_time=None):  # noqa: E501
+    def __init__(self, cluster_id=None, product_type=None, device_type=None, vc_connected=None, health=None, operational_status=None, chassises=None, suppressed=None, last_time=None):  # noqa: E501
         """ClusterInfo - a model defined in Swagger"""  # noqa: E501
         self._cluster_id = None
         self._product_type = None
@@ -59,7 +59,7 @@ class ClusterInfo(object):
         self._vc_connected = None
         self._health = None
         self._operational_status = None
-        self._chassis = None
+        self._chassises = None
         self._suppressed = None
         self._last_time = None
         self.discriminator = None
@@ -75,8 +75,8 @@ class ClusterInfo(object):
             self.health = health
         if operational_status is not None:
             self.operational_status = operational_status
-        if chassis is not None:
-            self.chassis = chassis
+        if chassises is not None:
+            self.chassises = chassises
         if suppressed is not None:
             self.suppressed = suppressed
         if last_time is not None:
@@ -221,25 +221,25 @@ class ClusterInfo(object):
         self._operational_status = operational_status
 
     @property
-    def chassis(self):
-        """Gets the chassis of this ClusterInfo.  # noqa: E501
+    def chassises(self):
+        """Gets the chassises of this ClusterInfo.  # noqa: E501
 
 
-        :return: The chassis of this ClusterInfo.  # noqa: E501
+        :return: The chassises of this ClusterInfo.  # noqa: E501
         :rtype: list[ChassisBasicInfo]
         """
-        return self._chassis
+        return self._chassises
 
-    @chassis.setter
-    def chassis(self, chassis):
-        """Sets the chassis of this ClusterInfo.
+    @chassises.setter
+    def chassises(self, chassises):
+        """Sets the chassises of this ClusterInfo.
 
 
-        :param chassis: The chassis of this ClusterInfo.  # noqa: E501
+        :param chassises: The chassises of this ClusterInfo.  # noqa: E501
         :type: list[ChassisBasicInfo]
         """
 
-        self._chassis = chassis
+        self._chassises = chassises
 
     @property
     def suppressed(self):
