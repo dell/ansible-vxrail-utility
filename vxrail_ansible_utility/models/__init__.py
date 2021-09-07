@@ -15,7 +15,7 @@ from __future__ import absolute_import
 
 # import models into model package
 from vxrail_ansible_utility.models.witness_spec import WitnessSpec
-rom vxrail_ansible_utility.models.vx_m_certificate_response import VxMCertificateResponse
+from vxrail_ansible_utility.models.vx_m_certificate_response import VxMCertificateResponse
 from vxrail_ansible_utility.models.vx_rail_manager_spec import VxRailManagerSpec
 from vxrail_ansible_utility.models.vxm_system_info import VxmSystemInfo
 from vxrail_ansible_utility.models.vc_conversion_spec import VcConversionSpec
@@ -104,7 +104,7 @@ from vxrail_ansible_utility.models.host_v3 import HostV3
 from vxrail_ansible_utility.models.host_update_spec import HostUpdateSpec
 from vxrail_ansible_utility.models.host_shutdown_spec import HostShutdownSpec
 from vxrail_ansible_utility.models.host_disk_slot_mapping_request import HostDiskSlotMappingRequest
-vxrail_ansible_utility.models.host_check_item import HostCheckItem
+from vxrail_ansible_utility.models.host_check_item import HostCheckItem
 from vxrail_ansible_utility.models.host_basic_info import HostBasicInfo
 from vxrail_ansible_utility.models.host_basic_info_v2 import HostBasicInfoV2
 from vxrail_ansible_utility.models.host_basic_info_v3 import HostBasicInfoV3
