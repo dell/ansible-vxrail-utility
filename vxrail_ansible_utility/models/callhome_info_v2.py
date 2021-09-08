@@ -147,8 +147,8 @@ class CallhomeInfoV2(object):
         :param site_id: The site_id of this CallhomeInfoV2.  # noqa: E501
         :type: str
         """
-        if site_id is None:
-            raise ValueError("Invalid value for `site_id`, must not be `None`")  # noqa: E501
+        # if site_id is None:
+        #     raise ValueError("Invalid value for `site_id`, must not be `None`")  # noqa: E501
 
         self._site_id = site_id
 
