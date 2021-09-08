@@ -1,9 +1,9 @@
 # coding: utf-8
 
 """
-    VxRail Cluster and System Management
+    VxRail Cluster,System Management and Day1 bring up
 
-    APIs for cluster management and system management  # noqa: E501
+    APIs for cluster management, system management and Day1 bring up # noqa: E501
 
     OpenAPI spec version: 7.0.240
     
@@ -26,14 +26,14 @@ REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
 setup(
     name=NAME,
     version=VERSION,
-    description="VxRail Cluster and System Management",
+    description="VxRail Cluster,System Management and Day1 bring up",
     author_email="",
     url="",
-    keywords=["Swagger", "VxRail Cluster and System Management"],
+    keywords=["Swagger", "VxRail Cluster,System Management and Day1 bring up"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,
     long_description="""\
-    APIs for cluster management and system management  # noqa: E501
+    APIs for cluster management,system management and Day1 bring up # noqa: E501
     """
 )
