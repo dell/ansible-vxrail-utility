@@ -59,7 +59,7 @@ class HostBasicInfoV3(object):
         'tpm_present': 'tpm_present',
         'operational_status': 'operational_status',
         'power_status': 'power_status',
-        'firmware_information': 'firmware_information',
+        'firmware_information': 'firmwareInfo',
         'geo_location': 'geo_location'
     }
 
