@@ -13,7 +13,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "vxrail_ansible_utility"
-VERSION = "1.0.0"
+VERSION = "7.0.240.0"
 # To install the library, run the following
 #
 # python setup.py install
