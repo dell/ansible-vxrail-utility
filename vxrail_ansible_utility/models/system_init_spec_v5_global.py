@@ -296,7 +296,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vsan_prefix_length_ipv6(self):
         """Gets the cluster_vsan_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The cluster_vsan_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: int
@@ -307,7 +307,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vsan_prefix_length_ipv6(self, cluster_vsan_prefix_length_ipv6):
         """Sets the cluster_vsan_prefix_length_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param cluster_vsan_prefix_length_ipv6: The cluster_vsan_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: int
@@ -319,7 +319,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vmotion_prefix_length_ipv6(self):
         """Gets the cluster_vmotion_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The cluster_vmotion_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: int
@@ -330,7 +330,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vmotion_prefix_length_ipv6(self, cluster_vmotion_prefix_length_ipv6):
         """Sets the cluster_vmotion_prefix_length_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param cluster_vmotion_prefix_length_ipv6: The cluster_vmotion_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: int
@@ -342,7 +342,7 @@ class SystemInitSpecV5Global(object):
     def cluster_management_prefix_length_ipv6(self):
         """Gets the cluster_management_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The cluster_management_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: int
@@ -353,7 +353,7 @@ class SystemInitSpecV5Global(object):
     def cluster_management_prefix_length_ipv6(self, cluster_management_prefix_length_ipv6):
         """Sets the cluster_management_prefix_length_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param cluster_management_prefix_length_ipv6: The cluster_management_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: int
@@ -365,7 +365,7 @@ class SystemInitSpecV5Global(object):
     def cluster_management_gateway_ipv6(self):
         """Gets the cluster_management_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The cluster_management_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: str
@@ -376,7 +376,7 @@ class SystemInitSpecV5Global(object):
     def cluster_management_gateway_ipv6(self, cluster_management_gateway_ipv6):
         """Sets the cluster_management_gateway_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param cluster_management_gateway_ipv6: The cluster_management_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: str
@@ -434,7 +434,7 @@ class SystemInitSpecV5Global(object):
     def cluster_systemvm_prefix_length_ipv6(self):
         """Gets the cluster_systemvm_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The cluster_systemvm_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: int
@@ -445,7 +445,7 @@ class SystemInitSpecV5Global(object):
     def cluster_systemvm_prefix_length_ipv6(self, cluster_systemvm_prefix_length_ipv6):
         """Sets the cluster_systemvm_prefix_length_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param cluster_systemvm_prefix_length_ipv6: The cluster_systemvm_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: int
@@ -457,7 +457,7 @@ class SystemInitSpecV5Global(object):
     def cluster_systemvm_gateway_ipv6(self):
         """Gets the cluster_systemvm_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The cluster_systemvm_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: str
@@ -468,7 +468,7 @@ class SystemInitSpecV5Global(object):
     def cluster_systemvm_gateway_ipv6(self, cluster_systemvm_gateway_ipv6):
         """Sets the cluster_systemvm_gateway_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param cluster_systemvm_gateway_ipv6: The cluster_systemvm_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: str

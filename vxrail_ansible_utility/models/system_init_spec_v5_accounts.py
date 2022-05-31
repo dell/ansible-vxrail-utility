@@ -29,7 +29,7 @@ class SystemInitSpecV5Accounts(object):
     """
     swagger_types = {
         'root': 'SystemInitSpecV5AccountsRoot',
-        'management': 'SystemInitSpecV5AccountsRoot'
+        'management': 'SystemInitSpecV5AccountsManagement'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class SystemInitSpecV5Accounts(object):
 
 
         :return: The management of this SystemInitSpecV5Accounts.  # noqa: E501
-        :rtype: SystemInitSpecV5AccountsRoot
+        :rtype: SystemInitSpecV5AccountsManagement
         """
         return self._management
 
@@ -84,7 +84,7 @@ class SystemInitSpecV5Accounts(object):
 
 
         :param management: The management of this SystemInitSpecV5Accounts.  # noqa: E501
-        :type: SystemInitSpecV5AccountsRoot
+        :type: SystemInitSpecV5AccountsManagement
         """
 
         self._management = management

@@ -165,7 +165,7 @@ class Layer3SegmentSpecV2(object):
     def segment_info_version(self):
         """Gets the segment_info_version of this Layer3SegmentSpecV2.  # noqa: E501
 
-        segment info format version. for SPECV2, it is for Get API.  # noqa: E501
+        Segment information format version for SPECV2. It is for Get API.  # noqa: E501
 
         :return: The segment_info_version of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -176,7 +176,7 @@ class Layer3SegmentSpecV2(object):
     def segment_info_version(self, segment_info_version):
         """Sets the segment_info_version of this Layer3SegmentSpecV2.
 
-        segment info format version. for SPECV2, it is for Get API.  # noqa: E501
+        Segment information format version for SPECV2. It is for Get API.  # noqa: E501
 
         :param segment_info_version: The segment_info_version of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -282,7 +282,7 @@ class Layer3SegmentSpecV2(object):
     def management_gateway_ipv6(self):
         """Gets the management_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The management_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -293,7 +293,7 @@ class Layer3SegmentSpecV2(object):
     def management_gateway_ipv6(self, management_gateway_ipv6):
         """Sets the management_gateway_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param management_gateway_ipv6: The management_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -305,7 +305,7 @@ class Layer3SegmentSpecV2(object):
     def management_prefix_length_ipv6(self):
         """Gets the management_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The management_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: int
@@ -316,7 +316,7 @@ class Layer3SegmentSpecV2(object):
     def management_prefix_length_ipv6(self, management_prefix_length_ipv6):
         """Sets the management_prefix_length_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param management_prefix_length_ipv6: The management_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: int
@@ -374,7 +374,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_gateway_ipv6(self):
         """Gets the vsan_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The vsan_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -385,7 +385,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_gateway_ipv6(self, vsan_gateway_ipv6):
         """Sets the vsan_gateway_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param vsan_gateway_ipv6: The vsan_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -449,7 +449,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_prefix_legnth_ipv6(self):
         """Gets the vsan_prefix_legnth_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The vsan_prefix_legnth_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: int
@@ -460,7 +460,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_prefix_legnth_ipv6(self, vsan_prefix_legnth_ipv6):
         """Sets the vsan_prefix_legnth_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param vsan_prefix_legnth_ipv6: The vsan_prefix_legnth_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: int
@@ -593,7 +593,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_gateway_ipv6(self):
         """Gets the vmotion_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The vmotion_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -604,7 +604,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_gateway_ipv6(self, vmotion_gateway_ipv6):
         """Sets the vmotion_gateway_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param vmotion_gateway_ipv6: The vmotion_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -639,7 +639,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_prefix_length_ipv6(self):
         """Gets the vmotion_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The vmotion_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: int
@@ -650,7 +650,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_prefix_length_ipv6(self, vmotion_prefix_length_ipv6):
         """Sets the vmotion_prefix_length_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param vmotion_prefix_length_ipv6: The vmotion_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: int
@@ -708,7 +708,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_init_gateway_ipv6(self):
         """Gets the vmotion_init_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The vmotion_init_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -719,7 +719,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_init_gateway_ipv6(self, vmotion_init_gateway_ipv6):
         """Sets the vmotion_init_gateway_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param vmotion_init_gateway_ipv6: The vmotion_init_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str

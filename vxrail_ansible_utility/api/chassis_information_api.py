@@ -581,7 +581,7 @@ class ChassisInformationApi(object):
     def v4_chassis_get(self, **kwargs):  # noqa: E501
         """Get a list of VxRail chassis (v4)  # noqa: E501
 
-        Retrieve a list of VxRail chassis and information about the nodes in each chassis. The V4 version adds support for satellite nodes.  # noqa: E501
+        Retrieve a list of VxRail chassis and information about the nodes in each chassis. The v4 version adds support for satellite nodes.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v4_chassis_get(async_req=True)
@@ -602,7 +602,7 @@ class ChassisInformationApi(object):
     def v4_chassis_get_with_http_info(self, **kwargs):  # noqa: E501
         """Get a list of VxRail chassis (v4)  # noqa: E501
 
-        Retrieve a list of VxRail chassis and information about the nodes in each chassis. The V4 version adds support for satellite nodes.  # noqa: E501
+        Retrieve a list of VxRail chassis and information about the nodes in each chassis. The v4 version adds support for satellite nodes.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v4_chassis_get_with_http_info(async_req=True)

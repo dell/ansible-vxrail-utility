@@ -46,6 +46,7 @@ class HostStorageInfo(object):
     def slot_claims(self):
         """Gets the slot_claims of this HostStorageInfo.  # noqa: E501
 
+        Claim slot  # noqa: E501
 
         :return: The slot_claims of this HostStorageInfo.  # noqa: E501
         :rtype: list[HostStorageInfoSlotClaims]
@@ -56,6 +57,7 @@ class HostStorageInfo(object):
     def slot_claims(self, slot_claims):
         """Sets the slot_claims of this HostStorageInfo.
 
+        Claim slot  # noqa: E501
 
         :param slot_claims: The slot_claims of this HostStorageInfo.  # noqa: E501
         :type: list[HostStorageInfoSlotClaims]

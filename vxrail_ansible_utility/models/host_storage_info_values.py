@@ -46,6 +46,7 @@ class HostStorageInfoValues(object):
     def slots(self):
         """Gets the slots of this HostStorageInfoValues.  # noqa: E501
 
+        Number of slots  # noqa: E501
 
         :return: The slots of this HostStorageInfoValues.  # noqa: E501
         :rtype: str
@@ -56,6 +57,7 @@ class HostStorageInfoValues(object):
     def slots(self, slots):
         """Sets the slots of this HostStorageInfoValues.
 
+        Number of slots  # noqa: E501
 
         :param slots: The slots of this HostStorageInfoValues.  # noqa: E501
         :type: str

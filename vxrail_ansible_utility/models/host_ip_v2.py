@@ -103,7 +103,7 @@ class HostIpV2(object):
     def ipv6(self):
         """Gets the ipv6 of this HostIpV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The ipv6 of this HostIpV2.  # noqa: E501
         :rtype: str
@@ -114,7 +114,7 @@ class HostIpV2(object):
     def ipv6(self, ipv6):
         """Sets the ipv6 of this HostIpV2.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param ipv6: The ipv6 of this HostIpV2.  # noqa: E501
         :type: str

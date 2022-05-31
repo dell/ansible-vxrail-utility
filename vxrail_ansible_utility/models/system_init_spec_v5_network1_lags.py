@@ -51,6 +51,7 @@ class SystemInitSpecV5Network1Lags(object):
     def name(self):
         """Gets the name of this SystemInitSpecV5Network1Lags.  # noqa: E501
 
+        Name of the lag  # noqa: E501
 
         :return: The name of this SystemInitSpecV5Network1Lags.  # noqa: E501
         :rtype: str
@@ -61,6 +62,7 @@ class SystemInitSpecV5Network1Lags(object):
     def name(self, name):
         """Sets the name of this SystemInitSpecV5Network1Lags.
 
+        Name of the lag  # noqa: E501
 
         :param name: The name of this SystemInitSpecV5Network1Lags.  # noqa: E501
         :type: str
@@ -72,6 +74,7 @@ class SystemInitSpecV5Network1Lags(object):
     def physical_nics(self):
         """Gets the physical_nics of this SystemInitSpecV5Network1Lags.  # noqa: E501
 
+        List of physical NICs  # noqa: E501
 
         :return: The physical_nics of this SystemInitSpecV5Network1Lags.  # noqa: E501
         :rtype: list[str]
@@ -82,6 +85,7 @@ class SystemInitSpecV5Network1Lags(object):
     def physical_nics(self, physical_nics):
         """Sets the physical_nics of this SystemInitSpecV5Network1Lags.
 
+        List of physical NICs  # noqa: E501
 
         :param physical_nics: The physical_nics of this SystemInitSpecV5Network1Lags.  # noqa: E501
         :type: list[str]

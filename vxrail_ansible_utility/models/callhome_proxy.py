@@ -63,6 +63,7 @@ class CallhomeProxy(object):
     def protocol(self):
         """Gets the protocol of this CallhomeProxy.  # noqa: E501
 
+        Type of protocol  # noqa: E501
 
         :return: The protocol of this CallhomeProxy.  # noqa: E501
         :rtype: str
@@ -73,6 +74,7 @@ class CallhomeProxy(object):
     def protocol(self, protocol):
         """Sets the protocol of this CallhomeProxy.
 
+        Type of protocol  # noqa: E501
 
         :param protocol: The protocol of this CallhomeProxy.  # noqa: E501
         :type: str
@@ -92,6 +94,7 @@ class CallhomeProxy(object):
     def address(self):
         """Gets the address of this CallhomeProxy.  # noqa: E501
 
+        Address of the proxy  # noqa: E501
 
         :return: The address of this CallhomeProxy.  # noqa: E501
         :rtype: str
@@ -102,6 +105,7 @@ class CallhomeProxy(object):
     def address(self, address):
         """Sets the address of this CallhomeProxy.
 
+        Address of the proxy  # noqa: E501
 
         :param address: The address of this CallhomeProxy.  # noqa: E501
         :type: str
@@ -115,6 +119,7 @@ class CallhomeProxy(object):
     def port(self):
         """Gets the port of this CallhomeProxy.  # noqa: E501
 
+        Port type  # noqa: E501
 
         :return: The port of this CallhomeProxy.  # noqa: E501
         :rtype: int
@@ -125,6 +130,7 @@ class CallhomeProxy(object):
     def port(self, port):
         """Sets the port of this CallhomeProxy.
 
+        Port type  # noqa: E501
 
         :param port: The port of this CallhomeProxy.  # noqa: E501
         :type: int
@@ -138,6 +144,7 @@ class CallhomeProxy(object):
     def user(self):
         """Gets the user of this CallhomeProxy.  # noqa: E501
 
+        Username of the proxy account  # noqa: E501
 
         :return: The user of this CallhomeProxy.  # noqa: E501
         :rtype: str
@@ -148,6 +155,7 @@ class CallhomeProxy(object):
     def user(self, user):
         """Sets the user of this CallhomeProxy.
 
+        Username of the proxy account  # noqa: E501
 
         :param user: The user of this CallhomeProxy.  # noqa: E501
         :type: str
@@ -159,6 +167,7 @@ class CallhomeProxy(object):
     def password(self):
         """Gets the password of this CallhomeProxy.  # noqa: E501
 
+        Passwo of the proxy account  # noqa: E501
 
         :return: The password of this CallhomeProxy.  # noqa: E501
         :rtype: str
@@ -169,6 +178,7 @@ class CallhomeProxy(object):
     def password(self, password):
         """Sets the password of this CallhomeProxy.
 
+        Passwo of the proxy account  # noqa: E501
 
         :param password: The password of this CallhomeProxy.  # noqa: E501
         :type: str

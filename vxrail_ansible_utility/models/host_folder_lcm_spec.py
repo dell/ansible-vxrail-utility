@@ -58,7 +58,7 @@ class HostFolderLCMSpec(object):
     def action(self):
         """Gets the action of this HostFolderLCMSpec.  # noqa: E501
 
-        STAGE will transfer the upgrade bundle to the nodes but will not initiate the upgrade procedure. UPGRADE will initiate the upgrade procedure.  # noqa: E501
+        STAGE transfers the upgrade bundle to the nodes but will not initiate the upgrade procedure. UPGRADE initiates the upgrade procedure.  # noqa: E501
 
         :return: The action of this HostFolderLCMSpec.  # noqa: E501
         :rtype: str
@@ -69,7 +69,7 @@ class HostFolderLCMSpec(object):
     def action(self, action):
         """Sets the action of this HostFolderLCMSpec.
 
-        STAGE will transfer the upgrade bundle to the nodes but will not initiate the upgrade procedure. UPGRADE will initiate the upgrade procedure.  # noqa: E501
+        STAGE transfers the upgrade bundle to the nodes but will not initiate the upgrade procedure. UPGRADE initiates the upgrade procedure.  # noqa: E501
 
         :param action: The action of this HostFolderLCMSpec.  # noqa: E501
         :type: str
@@ -89,7 +89,7 @@ class HostFolderLCMSpec(object):
     def host_folder_id(self):
         """Gets the host_folder_id of this HostFolderLCMSpec.  # noqa: E501
 
-        host folder id  # noqa: E501
+        Host folder id  # noqa: E501
 
         :return: The host_folder_id of this HostFolderLCMSpec.  # noqa: E501
         :rtype: str
@@ -100,7 +100,7 @@ class HostFolderLCMSpec(object):
     def host_folder_id(self, host_folder_id):
         """Sets the host_folder_id of this HostFolderLCMSpec.
 
-        host folder id  # noqa: E501
+        Host folder id  # noqa: E501
 
         :param host_folder_id: The host_folder_id of this HostFolderLCMSpec.  # noqa: E501
         :type: str

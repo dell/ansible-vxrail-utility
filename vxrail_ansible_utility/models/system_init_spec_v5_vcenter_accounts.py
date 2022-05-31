@@ -29,8 +29,8 @@ class SystemInitSpecV5VcenterAccounts(object):
     """
     swagger_types = {
         'root': 'SystemInitSpecV5AccountsRoot',
-        'administrator': 'SystemInitSpecV5AccountsRoot',
-        'management': 'SystemInitSpecV5AccountsRoot'
+        'administrator': 'SystemInitSpecV5VcenterAccountsAdministrator',
+        'management': 'SystemInitSpecV5AccountsManagement'
     }
 
     attribute_map = {
@@ -79,7 +79,7 @@ class SystemInitSpecV5VcenterAccounts(object):
 
 
         :return: The administrator of this SystemInitSpecV5VcenterAccounts.  # noqa: E501
-        :rtype: SystemInitSpecV5AccountsRoot
+        :rtype: SystemInitSpecV5VcenterAccountsAdministrator
         """
         return self._administrator
 
@@ -89,7 +89,7 @@ class SystemInitSpecV5VcenterAccounts(object):
 
 
         :param administrator: The administrator of this SystemInitSpecV5VcenterAccounts.  # noqa: E501
-        :type: SystemInitSpecV5AccountsRoot
+        :type: SystemInitSpecV5VcenterAccountsAdministrator
         """
 
         self._administrator = administrator
@@ -100,7 +100,7 @@ class SystemInitSpecV5VcenterAccounts(object):
 
 
         :return: The management of this SystemInitSpecV5VcenterAccounts.  # noqa: E501
-        :rtype: SystemInitSpecV5AccountsRoot
+        :rtype: SystemInitSpecV5AccountsManagement
         """
         return self._management
 
@@ -110,7 +110,7 @@ class SystemInitSpecV5VcenterAccounts(object):
 
 
         :param management: The management of this SystemInitSpecV5VcenterAccounts.  # noqa: E501
-        :type: SystemInitSpecV5AccountsRoot
+        :type: SystemInitSpecV5AccountsManagement
         """
 
         self._management = management

@@ -224,6 +224,7 @@ class ClusterInfoV2(object):
     def chassis(self):
         """Gets the chassis of this ClusterInfoV2.  # noqa: E501
 
+        Information about a chassis installed in the system  # noqa: E501
 
         :return: The chassis of this ClusterInfoV2.  # noqa: E501
         :rtype: list[ChassisBasicInfo]
@@ -234,6 +235,7 @@ class ClusterInfoV2(object):
     def chassis(self, chassis):
         """Sets the chassis of this ClusterInfoV2.
 
+        Information about a chassis installed in the system  # noqa: E501
 
         :param chassis: The chassis of this ClusterInfoV2.  # noqa: E501
         :type: list[ChassisBasicInfo]
