@@ -29,7 +29,7 @@ class SystemInitSpecV5VxrailManagerAccounts(object):
     """
     swagger_types = {
         'root': 'SystemInitSpecV5AccountsRoot',
-        'service': 'SystemInitSpecV5AccountsRoot'
+        'service': 'SystemInitSpecV5VxrailManagerAccountsService'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class SystemInitSpecV5VxrailManagerAccounts(object):
 
 
         :return: The service of this SystemInitSpecV5VxrailManagerAccounts.  # noqa: E501
-        :rtype: SystemInitSpecV5AccountsRoot
+        :rtype: SystemInitSpecV5VxrailManagerAccountsService
         """
         return self._service
 
@@ -84,7 +84,7 @@ class SystemInitSpecV5VxrailManagerAccounts(object):
 
 
         :param service: The service of this SystemInitSpecV5VxrailManagerAccounts.  # noqa: E501
-        :type: SystemInitSpecV5AccountsRoot
+        :type: SystemInitSpecV5VxrailManagerAccountsService
         """
 
         self._service = service

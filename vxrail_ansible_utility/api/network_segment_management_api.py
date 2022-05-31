@@ -138,7 +138,7 @@ class NetworkSegmentManagementApi(object):
 
         :param async_req bool
         :param str segment_label: The label of the current segment to be acted upon. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -160,7 +160,7 @@ class NetworkSegmentManagementApi(object):
 
         :param async_req bool
         :param str segment_label: The label of the current segment to be acted upon. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -214,7 +214,7 @@ class NetworkSegmentManagementApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[Componentsresponses200]',  # noqa: E501
+            response_type='InlineResponse200',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -329,7 +329,7 @@ class NetworkSegmentManagementApi(object):
         :param async_req bool
         :param SegmentSegmentlabelBody body: The new label that you want the segment to be changed to. (required)
         :param str segment_label: The label of the current segment to be acted upon. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -352,7 +352,7 @@ class NetworkSegmentManagementApi(object):
         :param async_req bool
         :param SegmentSegmentlabelBody body: The new label that you want the segment to be changed to. (required)
         :param str segment_label: The label of the current segment to be acted upon. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -416,7 +416,7 @@ class NetworkSegmentManagementApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[Componentsresponses200]',  # noqa: E501
+            response_type='InlineResponse200',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -436,7 +436,7 @@ class NetworkSegmentManagementApi(object):
         :param async_req bool
         :param Layer3SegmentStartSpec body: Information about the segment configuration, including the proxy IP, gateway, netmask, VLAN, and topology. (required)
         :param str segment_label: The label of the current segment to be acted upon. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -459,7 +459,7 @@ class NetworkSegmentManagementApi(object):
         :param async_req bool
         :param Layer3SegmentStartSpec body: Information about the segment configuration, including the proxy IP, gateway, netmask, VLAN, and topology. (required)
         :param str segment_label: The label of the current segment to be acted upon. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -523,7 +523,7 @@ class NetworkSegmentManagementApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[Componentsresponses200]',  # noqa: E501
+            response_type='InlineResponse200',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -542,7 +542,7 @@ class NetworkSegmentManagementApi(object):
 
         :param async_req bool
         :param Layer3SegmentStartSpec body: Information about the segment configuration, including the proxy IP, gateway, netmask, VLAN, and topology. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -564,7 +564,7 @@ class NetworkSegmentManagementApi(object):
 
         :param async_req bool
         :param Layer3SegmentStartSpec body: Information about the segment configuration, including the proxy IP, gateway, netmask, VLAN, and topology. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -622,7 +622,7 @@ class NetworkSegmentManagementApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[Componentsresponses200]',  # noqa: E501
+            response_type='InlineResponse200',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -728,7 +728,7 @@ class NetworkSegmentManagementApi(object):
 
         :param async_req bool
         :param str segment_label: The label of the current segment. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -750,7 +750,7 @@ class NetworkSegmentManagementApi(object):
 
         :param async_req bool
         :param str segment_label: The label of the current segment. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -804,7 +804,7 @@ class NetworkSegmentManagementApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[Componentsresponses200]',  # noqa: E501
+            response_type='InlineResponse200',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -919,7 +919,7 @@ class NetworkSegmentManagementApi(object):
         :param async_req bool
         :param SegmentSegmentlabelBody1 body: The new label that you want the segment to be changed to. (required)
         :param str segment_label: The label of the current segment. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -942,7 +942,7 @@ class NetworkSegmentManagementApi(object):
         :param async_req bool
         :param SegmentSegmentlabelBody1 body: The new label that you want the segment to be changed to. (required)
         :param str segment_label: The label of the current segment. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1006,7 +1006,7 @@ class NetworkSegmentManagementApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[Componentsresponses200]',  # noqa: E501
+            response_type='InlineResponse200',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1024,9 +1024,9 @@ class NetworkSegmentManagementApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param Layer3SegmentStartSpecV2 body: Information about the segment configuration, including the proxy IP, gateway, netmask, VLAN, and topology. (required)
+        :param Layer3SegmentStartSpecV2 body: Information about the segment configuration, including the proxy IP address, gateway, netmask, VLAN, and topology. (required)
         :param str segment_label: The label of the current segment. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1047,9 +1047,9 @@ class NetworkSegmentManagementApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param Layer3SegmentStartSpecV2 body: Information about the segment configuration, including the proxy IP, gateway, netmask, VLAN, and topology. (required)
+        :param Layer3SegmentStartSpecV2 body: Information about the segment configuration, including the proxy IP address, gateway, netmask, VLAN, and topology. (required)
         :param str segment_label: The label of the current segment. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1113,7 +1113,7 @@ class NetworkSegmentManagementApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[Componentsresponses200]',  # noqa: E501
+            response_type='InlineResponse200',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1132,7 +1132,7 @@ class NetworkSegmentManagementApi(object):
 
         :param async_req bool
         :param Layer3SegmentStartSpecV2 body: Information about the segment configuration, including the proxy, management vsan vmotion IP VLAN, and topology. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1154,7 +1154,7 @@ class NetworkSegmentManagementApi(object):
 
         :param async_req bool
         :param Layer3SegmentStartSpecV2 body: Information about the segment configuration, including the proxy, management vsan vmotion IP VLAN, and topology. (required)
-        :return: list[Componentsresponses200]
+        :return: InlineResponse200
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1212,7 +1212,7 @@ class NetworkSegmentManagementApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[Componentsresponses200]',  # noqa: E501
+            response_type='InlineResponse200',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

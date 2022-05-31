@@ -391,7 +391,7 @@ class SystemInformationApi(object):
 
         :param async_req bool
         :param str filter: The user can filter a list of hosts by the fields (id, appliance_id, slot, model, is_primary_node, bios_uuid, cluster_affinity) using the supported operators (eq and ne).
-        :return: list[Host]
+        :return: list[DiscoveredNodeInfo]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -413,7 +413,7 @@ class SystemInformationApi(object):
 
         :param async_req bool
         :param str filter: The user can filter a list of hosts by the fields (id, appliance_id, slot, model, is_primary_node, bios_uuid, cluster_affinity) using the supported operators (eq and ne).
-        :return: list[Host]
+        :return: list[DiscoveredNodeInfo]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -463,7 +463,7 @@ class SystemInformationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[Host]',  # noqa: E501
+            response_type='list[DiscoveredNodeInfo]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1123,7 +1123,7 @@ class SystemInformationApi(object):
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
-
+    
     def query_cluster_configured_host_info(self, **kwargs):  # noqa: E501
         """Get cluster configured hosts information  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -1204,4 +1204,4 @@ class SystemInformationApi(object):
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
-
+    

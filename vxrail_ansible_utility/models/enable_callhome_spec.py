@@ -79,7 +79,7 @@ class EnableCallhomeSpec(object):
     def serial_number(self):
         """Gets the serial_number of this EnableCallhomeSpec.  # noqa: E501
 
-        node serial number for ESE enalement  # noqa: E501
+        Node serial number for SRS enablement  # noqa: E501
 
         :return: The serial_number of this EnableCallhomeSpec.  # noqa: E501
         :rtype: str
@@ -90,7 +90,7 @@ class EnableCallhomeSpec(object):
     def serial_number(self, serial_number):
         """Sets the serial_number of this EnableCallhomeSpec.
 
-        node serial number for ESE enalement  # noqa: E501
+        Node serial number for SRS enablement  # noqa: E501
 
         :param serial_number: The serial_number of this EnableCallhomeSpec.  # noqa: E501
         :type: str
@@ -104,7 +104,7 @@ class EnableCallhomeSpec(object):
     def pin(self):
         """Gets the pin of this EnableCallhomeSpec.  # noqa: E501
 
-        the PIN code  # noqa: E501
+        The PIN code  # noqa: E501
 
         :return: The pin of this EnableCallhomeSpec.  # noqa: E501
         :rtype: str
@@ -115,7 +115,7 @@ class EnableCallhomeSpec(object):
     def pin(self, pin):
         """Sets the pin of this EnableCallhomeSpec.
 
-        the PIN code  # noqa: E501
+        The PIN code  # noqa: E501
 
         :param pin: The pin of this EnableCallhomeSpec.  # noqa: E501
         :type: str
@@ -127,7 +127,7 @@ class EnableCallhomeSpec(object):
     def access_key(self):
         """Gets the access_key of this EnableCallhomeSpec.  # noqa: E501
 
-        access key  # noqa: E501
+        The access key  # noqa: E501
 
         :return: The access_key of this EnableCallhomeSpec.  # noqa: E501
         :rtype: str
@@ -138,7 +138,7 @@ class EnableCallhomeSpec(object):
     def access_key(self, access_key):
         """Sets the access_key of this EnableCallhomeSpec.
 
-        access key  # noqa: E501
+        The access key  # noqa: E501
 
         :param access_key: The access_key of this EnableCallhomeSpec.  # noqa: E501
         :type: str
@@ -150,6 +150,7 @@ class EnableCallhomeSpec(object):
     def proxy_type(self):
         """Gets the proxy_type of this EnableCallhomeSpec.  # noqa: E501
 
+        Type of the proxy  # noqa: E501
 
         :return: The proxy_type of this EnableCallhomeSpec.  # noqa: E501
         :rtype: str
@@ -160,6 +161,7 @@ class EnableCallhomeSpec(object):
     def proxy_type(self, proxy_type):
         """Sets the proxy_type of this EnableCallhomeSpec.
 
+        Type of the proxy  # noqa: E501
 
         :param proxy_type: The proxy_type of this EnableCallhomeSpec.  # noqa: E501
         :type: str
@@ -240,6 +242,7 @@ class EnableCallhomeSpec(object):
     def connection_type(self):
         """Gets the connection_type of this EnableCallhomeSpec.  # noqa: E501
 
+        Type of connection  # noqa: E501
 
         :return: The connection_type of this EnableCallhomeSpec.  # noqa: E501
         :rtype: str
@@ -250,6 +253,7 @@ class EnableCallhomeSpec(object):
     def connection_type(self, connection_type):
         """Sets the connection_type of this EnableCallhomeSpec.
 
+        Type of connection  # noqa: E501
 
         :param connection_type: The connection_type of this EnableCallhomeSpec.  # noqa: E501
         :type: str

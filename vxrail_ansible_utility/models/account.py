@@ -49,6 +49,7 @@ class Account(object):
     def username(self):
         """Gets the username of this Account.  # noqa: E501
 
+        Username of the account  # noqa: E501
 
         :return: The username of this Account.  # noqa: E501
         :rtype: str
@@ -59,6 +60,7 @@ class Account(object):
     def username(self, username):
         """Sets the username of this Account.
 
+        Username of the account  # noqa: E501
 
         :param username: The username of this Account.  # noqa: E501
         :type: str
@@ -72,6 +74,7 @@ class Account(object):
     def password(self):
         """Gets the password of this Account.  # noqa: E501
 
+        Password of the account  # noqa: E501
 
         :return: The password of this Account.  # noqa: E501
         :rtype: str
@@ -82,6 +85,7 @@ class Account(object):
     def password(self, password):
         """Sets the password of this Account.
 
+        Password of the account  # noqa: E501
 
         :param password: The password of this Account.  # noqa: E501
         :type: str

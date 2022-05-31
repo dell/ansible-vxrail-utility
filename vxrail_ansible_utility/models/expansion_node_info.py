@@ -51,6 +51,7 @@ class ExpansionNodeInfo(object):
     def request_id(self):
         """Gets the request_id of this ExpansionNodeInfo.  # noqa: E501
 
+        ID of the request  # noqa: E501
 
         :return: The request_id of this ExpansionNodeInfo.  # noqa: E501
         :rtype: str
@@ -61,6 +62,7 @@ class ExpansionNodeInfo(object):
     def request_id(self, request_id):
         """Sets the request_id of this ExpansionNodeInfo.
 
+        ID of the request  # noqa: E501
 
         :param request_id: The request_id of this ExpansionNodeInfo.  # noqa: E501
         :type: str

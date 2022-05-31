@@ -53,7 +53,7 @@ class Layer3SegmentStartSpecV2(object):
     def version(self):
         """Gets the version of this Layer3SegmentStartSpecV2.  # noqa: E501
 
-        current vxrail release version  # noqa: E501
+        Current Vxrail release version  # noqa: E501
 
         :return: The version of this Layer3SegmentStartSpecV2.  # noqa: E501
         :rtype: str
@@ -64,7 +64,7 @@ class Layer3SegmentStartSpecV2(object):
     def version(self, version):
         """Sets the version of this Layer3SegmentStartSpecV2.
 
-        current vxrail release version  # noqa: E501
+        Current Vxrail release version  # noqa: E501
 
         :param version: The version of this Layer3SegmentStartSpecV2.  # noqa: E501
         :type: str
