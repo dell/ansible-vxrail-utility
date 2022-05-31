@@ -134,7 +134,7 @@ class CertificatesApi(object):
     def v2_certificates_import_vxm_post(self, body, **kwargs):  # noqa: E501
         """Update the VxRail Manager certificate  # noqa: E501
 
-        Async api to update the VxRail Manager certificate.  # noqa: E501
+        Asynchronous API to update the VxRail Manager certificate.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_certificates_import_vxm_post(body, async_req=True)
@@ -156,7 +156,7 @@ class CertificatesApi(object):
     def v2_certificates_import_vxm_post_with_http_info(self, body, **kwargs):  # noqa: E501
         """Update the VxRail Manager certificate  # noqa: E501
 
-        Async api to update the VxRail Manager certificate.  # noqa: E501
+        Asynchronous API to update the VxRail Manager certificate.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_certificates_import_vxm_post_with_http_info(body, async_req=True)

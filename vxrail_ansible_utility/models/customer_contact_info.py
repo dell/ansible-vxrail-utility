@@ -70,6 +70,7 @@ class CustomerContactInfo(object):
     def contact_order(self):
         """Gets the contact_order of this CustomerContactInfo.  # noqa: E501
 
+        Order number of the contact  # noqa: E501
 
         :return: The contact_order of this CustomerContactInfo.  # noqa: E501
         :rtype: int
@@ -80,6 +81,7 @@ class CustomerContactInfo(object):
     def contact_order(self, contact_order):
         """Sets the contact_order of this CustomerContactInfo.
 
+        Order number of the contact  # noqa: E501
 
         :param contact_order: The contact_order of this CustomerContactInfo.  # noqa: E501
         :type: int
@@ -93,6 +95,7 @@ class CustomerContactInfo(object):
     def first_name(self):
         """Gets the first_name of this CustomerContactInfo.  # noqa: E501
 
+        First name of the customer  # noqa: E501
 
         :return: The first_name of this CustomerContactInfo.  # noqa: E501
         :rtype: str
@@ -103,6 +106,7 @@ class CustomerContactInfo(object):
     def first_name(self, first_name):
         """Sets the first_name of this CustomerContactInfo.
 
+        First name of the customer  # noqa: E501
 
         :param first_name: The first_name of this CustomerContactInfo.  # noqa: E501
         :type: str
@@ -114,6 +118,7 @@ class CustomerContactInfo(object):
     def last_name(self):
         """Gets the last_name of this CustomerContactInfo.  # noqa: E501
 
+        Last name of the customer  # noqa: E501
 
         :return: The last_name of this CustomerContactInfo.  # noqa: E501
         :rtype: str
@@ -124,6 +129,7 @@ class CustomerContactInfo(object):
     def last_name(self, last_name):
         """Sets the last_name of this CustomerContactInfo.
 
+        Last name of the customer  # noqa: E501
 
         :param last_name: The last_name of this CustomerContactInfo.  # noqa: E501
         :type: str
@@ -135,6 +141,7 @@ class CustomerContactInfo(object):
     def phone_number(self):
         """Gets the phone_number of this CustomerContactInfo.  # noqa: E501
 
+        Contact number of the customer  # noqa: E501
 
         :return: The phone_number of this CustomerContactInfo.  # noqa: E501
         :rtype: str
@@ -145,6 +152,7 @@ class CustomerContactInfo(object):
     def phone_number(self, phone_number):
         """Sets the phone_number of this CustomerContactInfo.
 
+        Contact number of the customer  # noqa: E501
 
         :param phone_number: The phone_number of this CustomerContactInfo.  # noqa: E501
         :type: str
@@ -156,6 +164,7 @@ class CustomerContactInfo(object):
     def email_address(self):
         """Gets the email_address of this CustomerContactInfo.  # noqa: E501
 
+        Email address of the customer  # noqa: E501
 
         :return: The email_address of this CustomerContactInfo.  # noqa: E501
         :rtype: str
@@ -166,6 +175,7 @@ class CustomerContactInfo(object):
     def email_address(self, email_address):
         """Sets the email_address of this CustomerContactInfo.
 
+        Email address of the customer  # noqa: E501
 
         :param email_address: The email_address of this CustomerContactInfo.  # noqa: E501
         :type: str
@@ -177,6 +187,7 @@ class CustomerContactInfo(object):
     def pref_language(self):
         """Gets the pref_language of this CustomerContactInfo.  # noqa: E501
 
+        Customer's preferred language  # noqa: E501
 
         :return: The pref_language of this CustomerContactInfo.  # noqa: E501
         :rtype: str
@@ -187,6 +198,7 @@ class CustomerContactInfo(object):
     def pref_language(self, pref_language):
         """Sets the pref_language of this CustomerContactInfo.
 
+        Customer's preferred language  # noqa: E501
 
         :param pref_language: The pref_language of this CustomerContactInfo.  # noqa: E501
         :type: str

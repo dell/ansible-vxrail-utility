@@ -35,7 +35,7 @@ class CallHomeOperationsApi(object):
     def callhome_info_get_v1(self, **kwargs):  # noqa: E501
         """Get call home server information (v1)  # noqa: E501
 
-        Retrieve information about the call home servers. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Retrieves information about the call home servers. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.callhome_info_get_v1(async_req=True)
@@ -56,7 +56,7 @@ class CallHomeOperationsApi(object):
     def callhome_info_get_v1_with_http_info(self, **kwargs):  # noqa: E501
         """Get call home server information (v1)  # noqa: E501
 
-        Retrieve information about the call home servers. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Retrieves information about the call home servers. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.callhome_info_get_v1_with_http_info(async_req=True)
@@ -122,7 +122,7 @@ class CallHomeOperationsApi(object):
     def v1_callhome_access_code_post(self, **kwargs):  # noqa: E501
         """Generate access code to activate internal call home server  # noqa: E501
 
-        Generate an access code to activate the internal call home server. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Generate an access code to activate the internal call home server. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_callhome_access_code_post(async_req=True)
@@ -143,7 +143,7 @@ class CallHomeOperationsApi(object):
     def v1_callhome_access_code_post_with_http_info(self, **kwargs):  # noqa: E501
         """Generate access code to activate internal call home server  # noqa: E501
 
-        Generate an access code to activate the internal call home server. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Generate an access code to activate the internal call home server. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_callhome_access_code_post_with_http_info(async_req=True)
@@ -209,7 +209,7 @@ class CallHomeOperationsApi(object):
     def v1_callhome_deployment_post(self, body, **kwargs):  # noqa: E501
         """Deploy internal call home server (v1)  # noqa: E501
 
-        Deploy an internal call home server. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Deploy an internal call home server. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_callhome_deployment_post(body, async_req=True)
@@ -231,7 +231,7 @@ class CallHomeOperationsApi(object):
     def v1_callhome_deployment_post_with_http_info(self, body, **kwargs):  # noqa: E501
         """Deploy internal call home server (v1)  # noqa: E501
 
-        Deploy an internal call home server. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Deploy an internal call home server. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_callhome_deployment_post_with_http_info(body, async_req=True)
@@ -395,7 +395,7 @@ class CallHomeOperationsApi(object):
     def v1_callhome_enable_post(self, body, **kwargs):  # noqa: E501
         """Enable call home functionality  # noqa: E501
 
-        Enable call home functionality by enabing remote connectivity service.<br/> if remote connector type is ESE <br/>     1) update ESE state to configuring <br/>     2) Initialize ESE lockbox<br/>     3) Update ESE configuation (product/gateway/proxy )<br/>     4) Generate universal key by PIN/access key or upload pre-installed universal key to ESE <br/>     5) Enable ESE connection<br/>     6) update ESE state to configured<br/>  # noqa: E501
+        Enables the call home functionality and the remote connectivity service. If remote connector type is SRS, then:     1) Update the SRS state to 'Configuring'     2) Initialize the SRS lockbox     3) Update the SRS configuation (product/gateway/proxy)     4) Generate the universal key by PIN or access key or upload the pre-installed universal key to 'SRS'     5) Enable the SRS connection     6) Update the SRS state to 'Configured'  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_callhome_enable_post(body, async_req=True)
@@ -417,7 +417,7 @@ class CallHomeOperationsApi(object):
     def v1_callhome_enable_post_with_http_info(self, body, **kwargs):  # noqa: E501
         """Enable call home functionality  # noqa: E501
 
-        Enable call home functionality by enabing remote connectivity service.<br/> if remote connector type is ESE <br/>     1) update ESE state to configuring <br/>     2) Initialize ESE lockbox<br/>     3) Update ESE configuation (product/gateway/proxy )<br/>     4) Generate universal key by PIN/access key or upload pre-installed universal key to ESE <br/>     5) Enable ESE connection<br/>     6) update ESE state to configured<br/>  # noqa: E501
+        Enables the call home functionality and the remote connectivity service. If remote connector type is SRS, then:     1) Update the SRS state to 'Configuring'     2) Initialize the SRS lockbox     3) Update the SRS configuation (product/gateway/proxy)     4) Generate the universal key by PIN or access key or upload the pre-installed universal key to 'SRS'     5) Enable the SRS connection     6) Update the SRS state to 'Configured'  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_callhome_enable_post_with_http_info(body, async_req=True)
@@ -494,7 +494,7 @@ class CallHomeOperationsApi(object):
     def v1_callhome_external_register_post(self, body, **kwargs):  # noqa: E501
         """Register external call home servers (v1)  # noqa: E501
 
-        Register external call home servers. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Register external call home servers. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_callhome_external_register_post(body, async_req=True)
@@ -516,7 +516,7 @@ class CallHomeOperationsApi(object):
     def v1_callhome_external_register_post_with_http_info(self, body, **kwargs):  # noqa: E501
         """Register external call home servers (v1)  # noqa: E501
 
-        Register external call home servers. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Register external call home servers. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_callhome_external_register_post_with_http_info(body, async_req=True)
@@ -593,7 +593,7 @@ class CallHomeOperationsApi(object):
     def v1_callhome_internal_register_post(self, body, **kwargs):  # noqa: E501
         """Activate and register internal call home server  # noqa: E501
 
-        Activate and register an internal call home server. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Activate and register an internal call home server. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_callhome_internal_register_post(body, async_req=True)
@@ -615,7 +615,7 @@ class CallHomeOperationsApi(object):
     def v1_callhome_internal_register_post_with_http_info(self, body, **kwargs):  # noqa: E501
         """Activate and register internal call home server  # noqa: E501
 
-        Activate and register an internal call home server. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Activate and register an internal call home server. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_callhome_internal_register_post_with_http_info(body, async_req=True)
@@ -692,7 +692,7 @@ class CallHomeOperationsApi(object):
     def v1_callhome_internal_upgrade_post(self, body, **kwargs):  # noqa: E501
         """Upgrade internal SRS software  # noqa: E501
 
-        Upgrade the internal SRS software. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Upgrade the internal SRS software. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_callhome_internal_upgrade_post(body, async_req=True)
@@ -714,7 +714,7 @@ class CallHomeOperationsApi(object):
     def v1_callhome_internal_upgrade_post_with_http_info(self, body, **kwargs):  # noqa: E501
         """Upgrade internal SRS software  # noqa: E501
 
-        Upgrade the internal SRS software. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Upgrade the internal SRS software. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_callhome_internal_upgrade_post_with_http_info(body, async_req=True)
@@ -791,7 +791,7 @@ class CallHomeOperationsApi(object):
     def v2_callhome_deployment_post(self, body, **kwargs):  # noqa: E501
         """Deploy internal call home server (v2)  # noqa: E501
 
-        Deploy an internal call home server. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Deploy an internal call home server. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_callhome_deployment_post(body, async_req=True)
@@ -813,7 +813,7 @@ class CallHomeOperationsApi(object):
     def v2_callhome_deployment_post_with_http_info(self, body, **kwargs):  # noqa: E501
         """Deploy internal call home server (v2)  # noqa: E501
 
-        Deploy an internal call home server. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Deploy an internal call home server. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_callhome_deployment_post_with_http_info(body, async_req=True)
@@ -890,7 +890,7 @@ class CallHomeOperationsApi(object):
     def v2_callhome_external_register_post(self, body, **kwargs):  # noqa: E501
         """Register external call home servers (v2)  # noqa: E501
 
-        Register external call home servers. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Register external call home servers. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_callhome_external_register_post(body, async_req=True)
@@ -912,7 +912,7 @@ class CallHomeOperationsApi(object):
     def v2_callhome_external_register_post_with_http_info(self, body, **kwargs):  # noqa: E501
         """Register external call home servers (v2)  # noqa: E501
 
-        Register external call home servers. This API has been deprecated and only response with status code 410 will be returned.  # noqa: E501
+        Register external call home servers. This API is deprecated and only a response with the status code 410 will be returned.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_callhome_external_register_post_with_http_info(body, async_req=True)
@@ -989,7 +989,7 @@ class CallHomeOperationsApi(object):
     def v2_callhome_info(self, **kwargs):  # noqa: E501
         """Get call home server information (v2)  # noqa: E501
 
-        Retrieve information about the call home servers.  # noqa: E501
+        Retrieves information about the call home servers.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_callhome_info(async_req=True)
@@ -1010,7 +1010,7 @@ class CallHomeOperationsApi(object):
     def v2_callhome_info_with_http_info(self, **kwargs):  # noqa: E501
         """Get call home server information (v2)  # noqa: E501
 
-        Retrieve information about the call home servers.  # noqa: E501
+        Retrieves information about the call home servers.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_callhome_info_with_http_info(async_req=True)

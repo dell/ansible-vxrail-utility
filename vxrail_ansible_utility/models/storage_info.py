@@ -51,6 +51,7 @@ class StorageInfo(object):
     def disk_group_type(self):
         """Gets the disk_group_type of this StorageInfo.  # noqa: E501
 
+        Type of the disk group  # noqa: E501
 
         :return: The disk_group_type of this StorageInfo.  # noqa: E501
         :rtype: str
@@ -61,6 +62,7 @@ class StorageInfo(object):
     def disk_group_type(self, disk_group_type):
         """Sets the disk_group_type of this StorageInfo.
 
+        Type of the disk group  # noqa: E501
 
         :param disk_group_type: The disk_group_type of this StorageInfo.  # noqa: E501
         :type: str

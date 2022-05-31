@@ -49,6 +49,7 @@ class CallhomeGateway(object):
     def host(self):
         """Gets the host of this CallhomeGateway.  # noqa: E501
 
+        Host of the gateway  # noqa: E501
 
         :return: The host of this CallhomeGateway.  # noqa: E501
         :rtype: str
@@ -59,6 +60,7 @@ class CallhomeGateway(object):
     def host(self, host):
         """Sets the host of this CallhomeGateway.
 
+        Host of the gateway  # noqa: E501
 
         :param host: The host of this CallhomeGateway.  # noqa: E501
         :type: str
@@ -72,6 +74,7 @@ class CallhomeGateway(object):
     def port(self):
         """Gets the port of this CallhomeGateway.  # noqa: E501
 
+        Port of the gateway  # noqa: E501
 
         :return: The port of this CallhomeGateway.  # noqa: E501
         :rtype: int
@@ -82,6 +85,7 @@ class CallhomeGateway(object):
     def port(self, port):
         """Sets the port of this CallhomeGateway.
 
+        Port of the gateway  # noqa: E501
 
         :param port: The port of this CallhomeGateway.  # noqa: E501
         :type: int

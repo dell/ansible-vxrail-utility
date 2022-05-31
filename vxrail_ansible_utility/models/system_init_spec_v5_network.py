@@ -102,7 +102,7 @@ class SystemInitSpecV5Network(object):
     def ipv6(self):
         """Gets the ipv6 of this SystemInitSpecV5Network.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :return: The ipv6 of this SystemInitSpecV5Network.  # noqa: E501
         :rtype: str
@@ -113,7 +113,7 @@ class SystemInitSpecV5Network(object):
     def ipv6(self, ipv6):
         """Sets the ipv6 of this SystemInitSpecV5Network.
 
-        Internal use only  # noqa: E501
+        For internal use only  # noqa: E501
 
         :param ipv6: The ipv6 of this SystemInitSpecV5Network.  # noqa: E501
         :type: str
