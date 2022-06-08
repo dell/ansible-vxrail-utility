@@ -13,7 +13,7 @@ Python 2.7 and 3.4+
 
 ## Installation
 
-**Please ensure you follow the instructions carefully and only install the utility hosted on https://github.com/dell/ansible-vxrail-utility. Installating from other sources is done at the users own risk.
+**Please ensure you follow the instructions carefully and only install the utility hosted on https://github.com/dell/ansible-vxrail-utility. Installating from other sources is done at the users own risk.**
 
 ### pip install
 
