@@ -3,6 +3,7 @@ from __future__ import absolute_import
 # flake8: noqa
 
 # import apis into api package
+from vxrail_ansible_utility.api.bandwidth_throttling_information_api import BandwidthThrottlingInformationApi
 from vxrail_ansible_utility.api.cvs_public_api import CVSPublicApi
 from vxrail_ansible_utility.api.call_home_mode_api import CallHomeModeApi
 from vxrail_ansible_utility.api.call_home_operations_api import CallHomeOperationsApi
@@ -13,7 +14,7 @@ from vxrail_ansible_utility.api.cluster_information_api import ClusterInformatio
 from vxrail_ansible_utility.api.cluster_shutdown_api import ClusterShutdownApi
 from vxrail_ansible_utility.api.disk_information_api import DiskInformationApi
 from vxrail_ansible_utility.api.disk_slot_mapping_api import DiskSlotMappingApi
-from vxrail_ansible_utility.api.es_xi_hostname_or_management_ip_change_api import ESXiHostnameOrManagementIPChangeApi
+from vxrail_ansible_utility.api.es_xi_hostname_or_management_ip_address_change_api import ESXiHostnameOrManagementIPAddressChangeApi
 from vxrail_ansible_utility.api.host_folder_lcm_api import HostFolderLCMApi
 from vxrail_ansible_utility.api.host_i_drac_configuration_api import HostIDRACConfigurationApi
 from vxrail_ansible_utility.api.host_information_api import HostInformationApi
