@@ -76,7 +76,7 @@ class SystemInitSpecV5Hosts(object):
     def host_psnt(self):
         """Gets the host_psnt of this SystemInitSpecV5Hosts.  # noqa: E501
 
-        PSNT of the host.  # noqa: E501
+        PSNT of the host  # noqa: E501
 
         :return: The host_psnt of this SystemInitSpecV5Hosts.  # noqa: E501
         :rtype: str
@@ -87,7 +87,7 @@ class SystemInitSpecV5Hosts(object):
     def host_psnt(self, host_psnt):
         """Sets the host_psnt of this SystemInitSpecV5Hosts.
 
-        PSNT of the host.  # noqa: E501
+        PSNT of the host  # noqa: E501
 
         :param host_psnt: The host_psnt of this SystemInitSpecV5Hosts.  # noqa: E501
         :type: str
@@ -99,7 +99,7 @@ class SystemInitSpecV5Hosts(object):
     def hostname(self):
         """Gets the hostname of this SystemInitSpecV5Hosts.  # noqa: E501
 
-        Indicates the hostname.  # noqa: E501
+        Indicates the hostname  # noqa: E501
 
         :return: The hostname of this SystemInitSpecV5Hosts.  # noqa: E501
         :rtype: str
@@ -110,7 +110,7 @@ class SystemInitSpecV5Hosts(object):
     def hostname(self, hostname):
         """Sets the hostname of this SystemInitSpecV5Hosts.
 
-        Indicates the hostname.  # noqa: E501
+        Indicates the hostname  # noqa: E501
 
         :param hostname: The hostname of this SystemInitSpecV5Hosts.  # noqa: E501
         :type: str

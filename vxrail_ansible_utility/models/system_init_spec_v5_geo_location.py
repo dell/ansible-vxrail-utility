@@ -51,7 +51,7 @@ class SystemInitSpecV5GeoLocation(object):
     def rack_name(self):
         """Gets the rack_name of this SystemInitSpecV5GeoLocation.  # noqa: E501
 
-        The name of the rack that contains the host.  # noqa: E501
+        The name of the rack that houses the host  # noqa: E501
 
         :return: The rack_name of this SystemInitSpecV5GeoLocation.  # noqa: E501
         :rtype: str
@@ -62,7 +62,7 @@ class SystemInitSpecV5GeoLocation(object):
     def rack_name(self, rack_name):
         """Sets the rack_name of this SystemInitSpecV5GeoLocation.
 
-        The name of the rack that contains the host.  # noqa: E501
+        The name of the rack that houses the host  # noqa: E501
 
         :param rack_name: The rack_name of this SystemInitSpecV5GeoLocation.  # noqa: E501
         :type: str
@@ -74,7 +74,7 @@ class SystemInitSpecV5GeoLocation(object):
     def position(self):
         """Gets the position of this SystemInitSpecV5GeoLocation.  # noqa: E501
 
-        The position of the node in the rack.  # noqa: E501
+        The position of the node in the rack  # noqa: E501
 
         :return: The position of this SystemInitSpecV5GeoLocation.  # noqa: E501
         :rtype: int
@@ -85,7 +85,7 @@ class SystemInitSpecV5GeoLocation(object):
     def position(self, position):
         """Sets the position of this SystemInitSpecV5GeoLocation.
 
-        The position of the node in the rack.  # noqa: E501
+        The position of the node in the rack  # noqa: E501
 
         :param position: The position of this SystemInitSpecV5GeoLocation.  # noqa: E501
         :type: int

@@ -66,7 +66,7 @@ class SystemInitSpecV5VcenterSsoDomain(object):
     def server(self):
         """Gets the server of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
 
-        The IP address of the SSO domain.  # noqa: E501
+        The IP address of the SSO domain  # noqa: E501
 
         :return: The server of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
         :rtype: str
@@ -77,7 +77,7 @@ class SystemInitSpecV5VcenterSsoDomain(object):
     def server(self, server):
         """Sets the server of this SystemInitSpecV5VcenterSsoDomain.
 
-        The IP address of the SSO domain.  # noqa: E501
+        The IP address of the SSO domain  # noqa: E501
 
         :param server: The server of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
         :type: str
@@ -89,7 +89,7 @@ class SystemInitSpecV5VcenterSsoDomain(object):
     def port(self):
         """Gets the port of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
 
-        The port of the SSO domain.  # noqa: E501
+        The port of the SSO domain  # noqa: E501
 
         :return: The port of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
         :rtype: int
@@ -100,7 +100,7 @@ class SystemInitSpecV5VcenterSsoDomain(object):
     def port(self, port):
         """Sets the port of this SystemInitSpecV5VcenterSsoDomain.
 
-        The port of the SSO domain.  # noqa: E501
+        The port of the SSO domain  # noqa: E501
 
         :param port: The port of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
         :type: int
@@ -112,7 +112,7 @@ class SystemInitSpecV5VcenterSsoDomain(object):
     def username(self):
         """Gets the username of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
 
-        Username of the SSO domain.  # noqa: E501
+        Username of the SSO domain  # noqa: E501
 
         :return: The username of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
         :rtype: str
@@ -123,7 +123,7 @@ class SystemInitSpecV5VcenterSsoDomain(object):
     def username(self, username):
         """Sets the username of this SystemInitSpecV5VcenterSsoDomain.
 
-        Username of the SSO domain.  # noqa: E501
+        Username of the SSO domain  # noqa: E501
 
         :param username: The username of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
         :type: str
@@ -158,7 +158,7 @@ class SystemInitSpecV5VcenterSsoDomain(object):
     def auto_accept_sso_vc_cert(self):
         """Gets the auto_accept_sso_vc_cert of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
 
-        Whether to automatically download the SSO vCenter root certificate. If the value is true, VxRail Manager downloads the target SSO vCenter root certificate automatically. If the value is false, provide the target SSO vCenter root certificate manually.  # noqa: E501
+        Whether to automatically download the SSO vCenter root certificate. True means VxRail Manager will download the target SSO vCenter root certificate automatically. False means users should provide the target SSO vCenter root certificate manually.  # noqa: E501
 
         :return: The auto_accept_sso_vc_cert of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
         :rtype: bool
@@ -169,7 +169,7 @@ class SystemInitSpecV5VcenterSsoDomain(object):
     def auto_accept_sso_vc_cert(self, auto_accept_sso_vc_cert):
         """Sets the auto_accept_sso_vc_cert of this SystemInitSpecV5VcenterSsoDomain.
 
-        Whether to automatically download the SSO vCenter root certificate. If the value is true, VxRail Manager downloads the target SSO vCenter root certificate automatically. If the value is false, provide the target SSO vCenter root certificate manually.  # noqa: E501
+        Whether to automatically download the SSO vCenter root certificate. True means VxRail Manager will download the target SSO vCenter root certificate automatically. False means users should provide the target SSO vCenter root certificate manually.  # noqa: E501
 
         :param auto_accept_sso_vc_cert: The auto_accept_sso_vc_cert of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
         :type: bool

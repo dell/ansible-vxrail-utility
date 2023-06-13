@@ -33,6 +33,7 @@ from vxrail_ansible_utility.api.host_information_api import HostInformationApi
 from vxrail_ansible_utility.api.host_removal_api import HostRemovalApi
 from vxrail_ansible_utility.api.lcm_pre_check_api import LCMPreCheckApi
 from vxrail_ansible_utility.api.lcm_upgrade_api import LCMUpgradeApi
+from vxrail_ansible_utility.api.management_account_api import ManagementAccountApi
 from vxrail_ansible_utility.api.network_segment_management_api import NetworkSegmentManagementApi
 from vxrail_ansible_utility.api.pre_installation_static_ip_api import PreInstallationStaticIPApi
 from vxrail_ansible_utility.api.request_status_api import RequestStatusApi
@@ -142,6 +143,7 @@ from vxrail_ansible_utility.models.disk_info import DiskInfo
 from vxrail_ansible_utility.models.disk_info_v2 import DiskInfoV2
 from vxrail_ansible_utility.models.disk_info_v3 import DiskInfoV3
 from vxrail_ansible_utility.models.disk_info_v4 import DiskInfoV4
+from vxrail_ansible_utility.models.dpu_info_v1 import DpuInfoV1
 from vxrail_ansible_utility.models.drive_configuration_info import DriveConfigurationInfo
 from vxrail_ansible_utility.models.ecosystem_components_spec import EcosystemComponentsSpec
 from vxrail_ansible_utility.models.enable_callhome_spec import EnableCallhomeSpec
@@ -187,6 +189,7 @@ from vxrail_ansible_utility.models.host_storage_info_values import HostStorageIn
 from vxrail_ansible_utility.models.host_update_spec import HostUpdateSpec
 from vxrail_ansible_utility.models.host_v10 import HostV10
 from vxrail_ansible_utility.models.host_v12 import HostV12
+from vxrail_ansible_utility.models.host_v14 import HostV14
 from vxrail_ansible_utility.models.host_v2 import HostV2
 from vxrail_ansible_utility.models.host_v3 import HostV3
 from vxrail_ansible_utility.models.host_v4 import HostV4
@@ -194,6 +197,7 @@ from vxrail_ansible_utility.models.host_v5 import HostV5
 from vxrail_ansible_utility.models.host_v6 import HostV6
 from vxrail_ansible_utility.models.host_v7 import HostV7
 from vxrail_ansible_utility.models.host_v8 import HostV8
+from vxrail_ansible_utility.models.host_v9 import HostV9
 from vxrail_ansible_utility.models.hosts_diskslotmappings_body import HostsDiskslotmappingsBody
 from vxrail_ansible_utility.models.hypervisor_host_info import HypervisorHostInfo
 from vxrail_ansible_utility.models.idrac_network_i_pv6_spec import IdracNetworkIPv6Spec
@@ -234,6 +238,7 @@ from vxrail_ansible_utility.models.lcm_ecosystem_check_spec import LcmEcosystemC
 from vxrail_ansible_utility.models.lcm_error_response import LcmErrorResponse
 from vxrail_ansible_utility.models.log_info import LogInfo
 from vxrail_ansible_utility.models.log_spec import LogSpec
+from vxrail_ansible_utility.models.management_account_v1 import ManagementAccountV1
 from vxrail_ansible_utility.models.message_data import MessageData
 from vxrail_ansible_utility.models.message_info import MessageInfo
 from vxrail_ansible_utility.models.migration_spec import MigrationSpec
@@ -335,8 +340,10 @@ from vxrail_ansible_utility.models.upgrade_spec_v2 import UpgradeSpecV2
 from vxrail_ansible_utility.models.upgrade_spec_v3 import UpgradeSpecV3
 from vxrail_ansible_utility.models.upgrade_spec_v4 import UpgradeSpecV4
 from vxrail_ansible_utility.models.upgrade_spec_v5 import UpgradeSpecV5
-from vxrail_ansible_utility.models.upgrade_spec_v5_update_rules import UpgradeSpecV5UpdateRules
+from vxrail_ansible_utility.models.upgrade_spec_v6 import UpgradeSpecV6
+from vxrail_ansible_utility.models.upgrade_spec_v6_update_rules import UpgradeSpecV6UpdateRules
 from vxrail_ansible_utility.models.upgrade_spec_v7 import UpgradeSpecV7
+from vxrail_ansible_utility.models.upgrade_spec_v7_update_rules import UpgradeSpecV7UpdateRules
 from vxrail_ansible_utility.models.upgrade_uploadbundle_body import UpgradeUploadbundleBody
 from vxrail_ansible_utility.models.upload_customized_componentv1 import UploadCustomizedComponentv1
 from vxrail_ansible_utility.models.user import User
@@ -347,9 +354,14 @@ from vxrail_ansible_utility.models.vcenter_embedded_psc_migration_spec import Vc
 from vxrail_ansible_utility.models.vcenter_embedded_psc_migration_spec_v4 import VcenterEmbeddedPSCMigrationSpecV4
 from vxrail_ansible_utility.models.vcenter_embedded_psc_spec import VcenterEmbeddedPSCSpec
 from vxrail_ansible_utility.models.vcenter_embedded_psc_spec_v4 import VcenterEmbeddedPSCSpecV4
+from vxrail_ansible_utility.models.vcenter_embedded_psc_spec_v5 import VcenterEmbeddedPSCSpecV5
 from vxrail_ansible_utility.models.vcenter_migration_spec import VcenterMigrationSpec
 from vxrail_ansible_utility.models.vcenter_spec import VcenterSpec
 from vxrail_ansible_utility.models.virtualization_system_info import VirtualizationSystemInfo
+from vxrail_ansible_utility.models.vlcm_image_depot_info import VlcmImageDepotInfo
+from vxrail_ansible_utility.models.vlcm_image_depot_info_base_image import VlcmImageDepotInfoBaseImage
+from vxrail_ansible_utility.models.vlcm_image_depot_info_hardware_support import VlcmImageDepotInfoHardwareSupport
+from vxrail_ansible_utility.models.vlcm_upgrade_image_depot_spec import VlcmUpgradeImageDepotSpec
 from vxrail_ansible_utility.models.vx_m_certificate_response import VxMCertificateResponse
 from vxrail_ansible_utility.models.vx_m_certificate_spec import VxMCertificateSpec
 from vxrail_ansible_utility.models.vx_m_certificate_v2_info import VxMCertificateV2Info

@@ -119,7 +119,7 @@ class NicV3(object):
     def type(self):
         """Gets the type of this NicV3.  # noqa: E501
 
-        NIC type.  # noqa: E501
+        Type of the NIC.  # noqa: E501
 
         :return: The type of this NicV3.  # noqa: E501
         :rtype: str
@@ -130,7 +130,7 @@ class NicV3(object):
     def type(self, type):
         """Sets the type of this NicV3.
 
-        NIC type.  # noqa: E501
+        Type of the NIC.  # noqa: E501
 
         :param type: The type of this NicV3.  # noqa: E501
         :type: str
@@ -280,7 +280,7 @@ class NicV3(object):
     def wwnn(self):
         """Gets the wwnn of this NicV3.  # noqa: E501
 
-        World Wide Node Name (WWNN) of the Fibre Channel card.  # noqa: E501
+        World Wide Node Name (WWNN) of a Fibre Channel card.  # noqa: E501
 
         :return: The wwnn of this NicV3.  # noqa: E501
         :rtype: str
@@ -291,7 +291,7 @@ class NicV3(object):
     def wwnn(self, wwnn):
         """Sets the wwnn of this NicV3.
 
-        World Wide Node Name (WWNN) of the Fibre Channel card.  # noqa: E501
+        World Wide Node Name (WWNN) of a Fibre Channel card.  # noqa: E501
 
         :param wwnn: The wwnn of this NicV3.  # noqa: E501
         :type: str
@@ -303,7 +303,7 @@ class NicV3(object):
     def wwpn(self):
         """Gets the wwpn of this NicV3.  # noqa: E501
 
-        World Wide Port Name (WWPN) of the Fibre Channel card.  # noqa: E501
+        World Wide Port Name (WWPN) of a Fibre Channel card.  # noqa: E501
 
         :return: The wwpn of this NicV3.  # noqa: E501
         :rtype: str
@@ -314,7 +314,7 @@ class NicV3(object):
     def wwpn(self, wwpn):
         """Sets the wwpn of this NicV3.
 
-        World Wide Port Name (WWPN) of the Fibre Channel card.  # noqa: E501
+        World Wide Port Name (WWPN) of a Fibre Channel card.  # noqa: E501
 
         :param wwpn: The wwpn of this NicV3.  # noqa: E501
         :type: str

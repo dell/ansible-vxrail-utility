@@ -327,7 +327,7 @@ class VxRailInstallationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param SystemInitSpecV5 body: JSON configuration parameters to initialize VxRail. (required)
+        :param SystemInitSpecV5 body: JSON configuration parameters to initialize the VxRail system (required)
         :param bool dryrun: Performs a validation of the initial input configuration. Set true to cause a dry run and false to configure and deploy a new cluster. The default value is false.
         :return: InlineResponse202
                  If the method is called asynchronously,
@@ -350,7 +350,7 @@ class VxRailInstallationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param SystemInitSpecV5 body: JSON configuration parameters to initialize VxRail. (required)
+        :param SystemInitSpecV5 body: JSON configuration parameters to initialize the VxRail system (required)
         :param bool dryrun: Performs a validation of the initial input configuration. Set true to cause a dry run and false to configure and deploy a new cluster. The default value is false.
         :return: InlineResponse202
                  If the method is called asynchronously,
@@ -518,7 +518,7 @@ class VxRailInstallationApi(object):
 
         :param async_req bool
         :param list[CustomerSuppliedHostInfo] body: Management IP and password for all customer supplied hosts (required)
-        :return: DiscoveredNodesInfoV3
+        :return: DiscoveredNodesInfoV4
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -540,7 +540,7 @@ class VxRailInstallationApi(object):
 
         :param async_req bool
         :param list[CustomerSuppliedHostInfo] body: Management IP and password for all customer supplied hosts (required)
-        :return: DiscoveredNodesInfoV3
+        :return: DiscoveredNodesInfoV4
                  If the method is called asynchronously,
                  returns the request thread.
         """

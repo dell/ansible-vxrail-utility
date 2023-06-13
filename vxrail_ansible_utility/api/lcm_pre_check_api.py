@@ -134,7 +134,7 @@ class LCMPreCheckApi(object):
     def v1_upload_bundle_customized_component(self, customized_component, checksum, type, **kwargs):  # noqa: E501
         """Upload the content of the file to destination  # noqa: E501
 
-        Upload the content of the file to any designated location. Limitations: - Only one file can be uploaded at a time.  - The file size should not exceed 10 GB.  # noqa: E501
+        Upload the content of the file to any designated location. Limitation: - Only one file can be uploaded at a time. - The file size should not exceed 10 GB.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_upload_bundle_customized_component(customized_component, checksum, type, async_req=True)
@@ -159,7 +159,7 @@ class LCMPreCheckApi(object):
     def v1_upload_bundle_customized_component_with_http_info(self, customized_component, checksum, type, **kwargs):  # noqa: E501
         """Upload the content of the file to destination  # noqa: E501
 
-        Upload the content of the file to any designated location. Limitations: - Only one file can be uploaded at a time.  - The file size should not exceed 10 GB.  # noqa: E501
+        Upload the content of the file to any designated location. Limitation: - Only one file can be uploaded at a time. - The file size should not exceed 10 GB.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_upload_bundle_customized_component_with_http_info(customized_component, checksum, type, async_req=True)

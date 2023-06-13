@@ -428,7 +428,7 @@ class DiskInfoV4(object):
     def missing(self):
         """Gets the missing of this DiskInfoV4.  # noqa: E501
 
-        Whether the disk health status is critical. Supported values are false (not critical) and true (critical)  # noqa: E501
+        Indicates whether the disk health status is critical. Supported values are false (not critical) and true (critical)  # noqa: E501
 
         :return: The missing of this DiskInfoV4.  # noqa: E501
         :rtype: bool
@@ -439,7 +439,7 @@ class DiskInfoV4(object):
     def missing(self, missing):
         """Sets the missing of this DiskInfoV4.
 
-        Whether the disk health status is critical. Supported values are false (not critical) and true (critical)  # noqa: E501
+        Indicates whether the disk health status is critical. Supported values are false (not critical) and true (critical)  # noqa: E501
 
         :param missing: The missing of this DiskInfoV4.  # noqa: E501
         :type: bool
