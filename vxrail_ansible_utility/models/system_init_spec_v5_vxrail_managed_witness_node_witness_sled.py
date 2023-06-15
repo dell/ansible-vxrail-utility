@@ -89,7 +89,7 @@ class SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled(object):
     def hostname(self):
         """Gets the hostname of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled.  # noqa: E501
 
-        Indicates the hostname.  # noqa: E501
+        Name of the host  # noqa: E501
 
         :return: The hostname of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled.  # noqa: E501
         :rtype: str
@@ -100,7 +100,7 @@ class SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled(object):
     def hostname(self, hostname):
         """Sets the hostname of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled.
 
-        Indicates the hostname.  # noqa: E501
+        Name of the host  # noqa: E501
 
         :param hostname: The hostname of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled.  # noqa: E501
         :type: str

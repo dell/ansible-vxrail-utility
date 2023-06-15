@@ -680,7 +680,6 @@ class HostV12(object):
     def deployment_type(self):
         """Gets the deployment_type of this HostV12.  # noqa: E501
 
-        Deployment type of the host.  # noqa: E501
 
         :return: The deployment_type of this HostV12.  # noqa: E501
         :rtype: list[str]
@@ -691,7 +690,6 @@ class HostV12(object):
     def deployment_type(self, deployment_type):
         """Sets the deployment_type of this HostV12.
 
-        Deployment type of the host.  # noqa: E501
 
         :param deployment_type: The deployment_type of this HostV12.  # noqa: E501
         :type: list[str]

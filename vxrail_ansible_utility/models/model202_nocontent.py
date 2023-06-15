@@ -28,55 +28,29 @@ class Model202Nocontent(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'request_id': 'str',
         'message_code': 'str',
         'error_code': 'int',
         'message': 'str'
     }
 
     attribute_map = {
-        'request_id': 'request_id',
         'message_code': 'message_code',
         'error_code': 'error_code',
         'message': 'message'
     }
 
-    def __init__(self, request_id=None, message_code=None, error_code=None, message=None):  # noqa: E501
+    def __init__(self, message_code=None, error_code=None, message=None):  # noqa: E501
         """Model202Nocontent - a model defined in Swagger"""  # noqa: E501
-        self._request_id = None
         self._message_code = None
         self._error_code = None
         self._message = None
         self.discriminator = None
-        if request_id is not None:
-            self.request_id = request_id
         if message_code is not None:
             self.message_code = message_code
         if error_code is not None:
             self.error_code = error_code
         if message is not None:
             self.message = message
-
-    @property
-    def request_id(self):
-        """Gets the request_id of this Model202Nocontent.  # noqa: E501
-
-
-        :return: The request_id of this Model202Nocontent.  # noqa: E501
-        :rtype: str
-        """
-        return self._request_id
-
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this Model202Nocontent.
-
-
-        :param request_id: The request_id of this Model202Nocontent.  # noqa: E501
-        :type: str
-        """
-
-        self._request_id = request_id
 
     @property
     def message_code(self):

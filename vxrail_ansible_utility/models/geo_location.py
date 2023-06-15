@@ -51,7 +51,7 @@ class GeoLocation(object):
     def rack_name(self):
         """Gets the rack_name of this GeoLocation.  # noqa: E501
 
-        Name of the rack where the host is located.  # noqa: E501
+        Rack name where the host is located.  # noqa: E501
 
         :return: The rack_name of this GeoLocation.  # noqa: E501
         :rtype: str
@@ -62,7 +62,7 @@ class GeoLocation(object):
     def rack_name(self, rack_name):
         """Sets the rack_name of this GeoLocation.
 
-        Name of the rack where the host is located.  # noqa: E501
+        Rack name where the host is located.  # noqa: E501
 
         :param rack_name: The rack_name of this GeoLocation.  # noqa: E501
         :type: str

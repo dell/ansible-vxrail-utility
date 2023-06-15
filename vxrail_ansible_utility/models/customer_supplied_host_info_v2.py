@@ -51,7 +51,7 @@ class CustomerSuppliedHostInfoV2(object):
     def management_ip(self):
         """Gets the management_ip of this CustomerSuppliedHostInfoV2.  # noqa: E501
 
-        User-specified host management IP address.  # noqa: E501
+        User-specified host management IP address  # noqa: E501
 
         :return: The management_ip of this CustomerSuppliedHostInfoV2.  # noqa: E501
         :rtype: str
@@ -62,7 +62,7 @@ class CustomerSuppliedHostInfoV2(object):
     def management_ip(self, management_ip):
         """Sets the management_ip of this CustomerSuppliedHostInfoV2.
 
-        User-specified host management IP address.  # noqa: E501
+        User-specified host management IP address  # noqa: E501
 
         :param management_ip: The management_ip of this CustomerSuppliedHostInfoV2.  # noqa: E501
         :type: str
@@ -74,7 +74,7 @@ class CustomerSuppliedHostInfoV2(object):
     def current_root_password(self):
         """Gets the current_root_password of this CustomerSuppliedHostInfoV2.  # noqa: E501
 
-        User-specified host root account password. The default ESXi host root password is set if user-specified parameter is not provided.  # noqa: E501
+        User-specified host root account password. The default ESXi host root password is set if this parameter is not provided  # noqa: E501
 
         :return: The current_root_password of this CustomerSuppliedHostInfoV2.  # noqa: E501
         :rtype: str
@@ -85,7 +85,7 @@ class CustomerSuppliedHostInfoV2(object):
     def current_root_password(self, current_root_password):
         """Sets the current_root_password of this CustomerSuppliedHostInfoV2.
 
-        User-specified host root account password. The default ESXi host root password is set if user-specified parameter is not provided.  # noqa: E501
+        User-specified host root account password. The default ESXi host root password is set if this parameter is not provided  # noqa: E501
 
         :param current_root_password: The current_root_password of this CustomerSuppliedHostInfoV2.  # noqa: E501
         :type: str

@@ -614,6 +614,105 @@ class LCMUpgradeApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def upgrade_v6(self, body, **kwargs):  # noqa: E501
+        """Perform an upgrade for the VxRail software and hardware and allow customer updates management account during LCM(v6).  # noqa: E501
+
+        Perform an upgrade for the VxRail software and hardware. Version 6 of this API includes the following option -- \"vc_mgmt_user\", the new management account. The system will create the account @vsphere.local domain and assign management roles or privileges to it during LCM(v6).  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.upgrade_v6(body, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param UpgradeSpecV6 body: Input parameters needed for the upgrade (required)
+        :return: AsyncLcmRequestSuccessResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.upgrade_v6_with_http_info(body, **kwargs)  # noqa: E501
+        else:
+            (data) = self.upgrade_v6_with_http_info(body, **kwargs)  # noqa: E501
+            return data
+
+    def upgrade_v6_with_http_info(self, body, **kwargs):  # noqa: E501
+        """Perform an upgrade for the VxRail software and hardware and allow customer updates management account during LCM(v6).  # noqa: E501
+
+        Perform an upgrade for the VxRail software and hardware. Version 6 of this API includes the following option -- \"vc_mgmt_user\", the new management account. The system will create the account @vsphere.local domain and assign management roles or privileges to it during LCM(v6).  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.upgrade_v6_with_http_info(body, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param UpgradeSpecV6 body: Input parameters needed for the upgrade (required)
+        :return: AsyncLcmRequestSuccessResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['body']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method upgrade_v6" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'body' is set
+        if ('body' not in params or
+                params['body'] is None):
+            raise ValueError("Missing the required parameter `body` when calling `upgrade_v6`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'body' in params:
+            body_params = params['body']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v6/lcm/upgrade', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='AsyncLcmRequestSuccessResponse',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def upgrade_v7(self, body, **kwargs):  # noqa: E501
         """Perform a partial upgrade of the VxRail system (v7)  # noqa: E501
 
@@ -706,6 +805,105 @@ class LCMUpgradeApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type='AsyncLcmRequestSuccessResponse',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v1_vlcm_image_query(self, body, **kwargs):  # noqa: E501
+        """Retrieve vLCM image information from the LCM bundle (v1)  # noqa: E501
+
+        Request to retrieve vLCM image information from the provided LCM bundle.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_vlcm_image_query(body, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param VlcmUpgradeImageDepotSpec body: Input parameters that are required to query the vLCM image content. (required)
+        :return: VlcmImageDepotInfo
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v1_vlcm_image_query_with_http_info(body, **kwargs)  # noqa: E501
+        else:
+            (data) = self.v1_vlcm_image_query_with_http_info(body, **kwargs)  # noqa: E501
+            return data
+
+    def v1_vlcm_image_query_with_http_info(self, body, **kwargs):  # noqa: E501
+        """Retrieve vLCM image information from the LCM bundle (v1)  # noqa: E501
+
+        Request to retrieve vLCM image information from the provided LCM bundle.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_vlcm_image_query_with_http_info(body, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param VlcmUpgradeImageDepotSpec body: Input parameters that are required to query the vLCM image content. (required)
+        :return: VlcmImageDepotInfo
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['body']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v1_vlcm_image_query" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'body' is set
+        if ('body' not in params or
+                params['body'] is None):
+            raise ValueError("Missing the required parameter `body` when calling `v1_vlcm_image_query`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'body' in params:
+            body_params = params['body']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v1/lcm/upgrade/vlcm/image', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='VlcmImageDepotInfo',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

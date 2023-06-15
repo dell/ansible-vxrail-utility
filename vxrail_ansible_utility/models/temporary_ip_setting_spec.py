@@ -53,7 +53,7 @@ class TemporaryIpSettingSpec(object):
     def temporary_ip(self):
         """Gets the temporary_ip of this TemporaryIpSettingSpec.  # noqa: E501
 
-        Temporary IP address to be used during the VMware vCenter Server upgrade.  # noqa: E501
+        Temporary IP to be used during the vCenter upgrade  # noqa: E501
 
         :return: The temporary_ip of this TemporaryIpSettingSpec.  # noqa: E501
         :rtype: str
@@ -64,7 +64,7 @@ class TemporaryIpSettingSpec(object):
     def temporary_ip(self, temporary_ip):
         """Sets the temporary_ip of this TemporaryIpSettingSpec.
 
-        Temporary IP address to be used during the VMware vCenter Server upgrade.  # noqa: E501
+        Temporary IP to be used during the vCenter upgrade  # noqa: E501
 
         :param temporary_ip: The temporary_ip of this TemporaryIpSettingSpec.  # noqa: E501
         :type: str
@@ -78,7 +78,7 @@ class TemporaryIpSettingSpec(object):
     def gateway(self):
         """Gets the gateway of this TemporaryIpSettingSpec.  # noqa: E501
 
-        Gateway to be used during the VMware vCenter Server upgrade.  # noqa: E501
+        Gateway to be used during the vCenter upgrade  # noqa: E501
 
         :return: The gateway of this TemporaryIpSettingSpec.  # noqa: E501
         :rtype: str
@@ -89,7 +89,7 @@ class TemporaryIpSettingSpec(object):
     def gateway(self, gateway):
         """Sets the gateway of this TemporaryIpSettingSpec.
 
-        Gateway to be used during the VMware vCenter Server upgrade.  # noqa: E501
+        Gateway to be used during the vCenter upgrade  # noqa: E501
 
         :param gateway: The gateway of this TemporaryIpSettingSpec.  # noqa: E501
         :type: str
@@ -103,7 +103,7 @@ class TemporaryIpSettingSpec(object):
     def netmask(self):
         """Gets the netmask of this TemporaryIpSettingSpec.  # noqa: E501
 
-        Netmask to be used during the VMware vCenter Server upgrade.  # noqa: E501
+        Netmask to be used during the vCenter upgrade  # noqa: E501
 
         :return: The netmask of this TemporaryIpSettingSpec.  # noqa: E501
         :rtype: str
@@ -114,7 +114,7 @@ class TemporaryIpSettingSpec(object):
     def netmask(self, netmask):
         """Sets the netmask of this TemporaryIpSettingSpec.
 
-        Netmask to be used during the VMware vCenter Server upgrade.  # noqa: E501
+        Netmask to be used during the vCenter upgrade  # noqa: E501
 
         :param netmask: The netmask of this TemporaryIpSettingSpec.  # noqa: E501
         :type: str

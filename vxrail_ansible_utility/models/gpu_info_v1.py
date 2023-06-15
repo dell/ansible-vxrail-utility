@@ -84,7 +84,7 @@ class GpuInfoV1(object):
     def slot(self):
         """Gets the slot of this GpuInfoV1.  # noqa: E501
 
-        GPU slot.  # noqa: E501
+        The GPU slot.  # noqa: E501
 
         :return: The slot of this GpuInfoV1.  # noqa: E501
         :rtype: int
@@ -95,7 +95,7 @@ class GpuInfoV1(object):
     def slot(self, slot):
         """Sets the slot of this GpuInfoV1.
 
-        GPU slot.  # noqa: E501
+        The GPU slot.  # noqa: E501
 
         :param slot: The slot of this GpuInfoV1.  # noqa: E501
         :type: int
@@ -130,7 +130,7 @@ class GpuInfoV1(object):
     def supplier(self):
         """Gets the supplier of this GpuInfoV1.  # noqa: E501
 
-        The brand of GPU.  # noqa: E501
+        The GPU brand.  # noqa: E501
 
         :return: The supplier of this GpuInfoV1.  # noqa: E501
         :rtype: str
@@ -141,7 +141,7 @@ class GpuInfoV1(object):
     def supplier(self, supplier):
         """Sets the supplier of this GpuInfoV1.
 
-        The brand of GPU.  # noqa: E501
+        The GPU brand.  # noqa: E501
 
         :param supplier: The supplier of this GpuInfoV1.  # noqa: E501
         :type: str

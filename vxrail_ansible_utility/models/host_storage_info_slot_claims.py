@@ -51,7 +51,7 @@ class HostStorageInfoSlotClaims(object):
     def usage(self):
         """Gets the usage of this HostStorageInfoSlotClaims.  # noqa: E501
 
-        The type of usage the slot values are claimed. Supported values are vSAN and non-vSAN.  # noqa: E501
+        The type of usage the slot values are claimed as. Supported values are vSAN and non-vSAN  # noqa: E501
 
         :return: The usage of this HostStorageInfoSlotClaims.  # noqa: E501
         :rtype: str
@@ -62,7 +62,7 @@ class HostStorageInfoSlotClaims(object):
     def usage(self, usage):
         """Sets the usage of this HostStorageInfoSlotClaims.
 
-        The type of usage the slot values are claimed. Supported values are vSAN and non-vSAN.  # noqa: E501
+        The type of usage the slot values are claimed as. Supported values are vSAN and non-vSAN  # noqa: E501
 
         :param usage: The usage of this HostStorageInfoSlotClaims.  # noqa: E501
         :type: str

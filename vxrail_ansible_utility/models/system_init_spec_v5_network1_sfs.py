@@ -74,7 +74,7 @@ class SystemInitSpecV5Network1Sfs(object):
     def sfs_disabled(self):
         """Gets the sfs_disabled of this SystemInitSpecV5Network1Sfs.  # noqa: E501
 
-        Whether the SmartFabric services are disabled. Set sfs_disabled to true to indicate SmartFabric services are disabled. Set sfs_disabled to false to indicate SmartFabric services are enabled. The default value is true (disabled).  # noqa: E501
+        SmartFabric disable flag. Set sfs_disabled to true to indicate SmartFabric is not used. Set sfs_disabled to false to indicate SmartFabric Services are enabled. The default value is false (enabled).  # noqa: E501
 
         :return: The sfs_disabled of this SystemInitSpecV5Network1Sfs.  # noqa: E501
         :rtype: bool
@@ -85,7 +85,7 @@ class SystemInitSpecV5Network1Sfs(object):
     def sfs_disabled(self, sfs_disabled):
         """Sets the sfs_disabled of this SystemInitSpecV5Network1Sfs.
 
-        Whether the SmartFabric services are disabled. Set sfs_disabled to true to indicate SmartFabric services are disabled. Set sfs_disabled to false to indicate SmartFabric services are enabled. The default value is true (disabled).  # noqa: E501
+        SmartFabric disable flag. Set sfs_disabled to true to indicate SmartFabric is not used. Set sfs_disabled to false to indicate SmartFabric Services are enabled. The default value is false (enabled).  # noqa: E501
 
         :param sfs_disabled: The sfs_disabled of this SystemInitSpecV5Network1Sfs.  # noqa: E501
         :type: bool

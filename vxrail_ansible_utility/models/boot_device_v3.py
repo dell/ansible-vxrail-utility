@@ -197,7 +197,7 @@ class BootDeviceV3(object):
     def device_model(self):
         """Gets the device_model of this BootDeviceV3.  # noqa: E501
 
-        Model number of the boot device.  # noqa: E501
+        Model number of the boot device  # noqa: E501
 
         :return: The device_model of this BootDeviceV3.  # noqa: E501
         :rtype: str
@@ -208,7 +208,7 @@ class BootDeviceV3(object):
     def device_model(self, device_model):
         """Sets the device_model of this BootDeviceV3.
 
-        Model number of the boot device.  # noqa: E501
+        Model number of the boot device  # noqa: E501
 
         :param device_model: The device_model of this BootDeviceV3.  # noqa: E501
         :type: str
@@ -289,7 +289,7 @@ class BootDeviceV3(object):
     def power_on_hours(self):
         """Gets the power_on_hours of this BootDeviceV3.  # noqa: E501
 
-        Number of hours the device is powered on.  # noqa: E501
+        Number of hours the device is powered on  # noqa: E501
 
         :return: The power_on_hours of this BootDeviceV3.  # noqa: E501
         :rtype: int
@@ -300,7 +300,7 @@ class BootDeviceV3(object):
     def power_on_hours(self, power_on_hours):
         """Sets the power_on_hours of this BootDeviceV3.
 
-        Number of hours the device is powered on.  # noqa: E501
+        Number of hours the device is powered on  # noqa: E501
 
         :param power_on_hours: The power_on_hours of this BootDeviceV3.  # noqa: E501
         :type: int
@@ -335,7 +335,7 @@ class BootDeviceV3(object):
     def max_erase_count(self):
         """Gets the max_erase_count of this BootDeviceV3.  # noqa: E501
 
-        Maximum erase count of the device  # noqa: E501
+        Maximum erase count for the device  # noqa: E501
 
         :return: The max_erase_count of this BootDeviceV3.  # noqa: E501
         :rtype: int
@@ -346,7 +346,7 @@ class BootDeviceV3(object):
     def max_erase_count(self, max_erase_count):
         """Sets the max_erase_count of this BootDeviceV3.
 
-        Maximum erase count of the device  # noqa: E501
+        Maximum erase count for the device  # noqa: E501
 
         :param max_erase_count: The max_erase_count of this BootDeviceV3.  # noqa: E501
         :type: int
@@ -358,7 +358,7 @@ class BootDeviceV3(object):
     def avr_erase_count(self):
         """Gets the avr_erase_count of this BootDeviceV3.  # noqa: E501
 
-        Average erase count of the device  # noqa: E501
+        Average erase count for the device  # noqa: E501
 
         :return: The avr_erase_count of this BootDeviceV3.  # noqa: E501
         :rtype: int
@@ -369,7 +369,7 @@ class BootDeviceV3(object):
     def avr_erase_count(self, avr_erase_count):
         """Sets the avr_erase_count of this BootDeviceV3.
 
-        Average erase count of the device  # noqa: E501
+        Average erase count for the device  # noqa: E501
 
         :param avr_erase_count: The avr_erase_count of this BootDeviceV3.  # noqa: E501
         :type: int
@@ -404,7 +404,7 @@ class BootDeviceV3(object):
     def health(self):
         """Gets the health of this BootDeviceV3.  # noqa: E501
 
-        Health status of the boot device in percentage.  # noqa: E501
+        Health status of the boot device (percentage)  # noqa: E501
 
         :return: The health of this BootDeviceV3.  # noqa: E501
         :rtype: str
@@ -415,7 +415,7 @@ class BootDeviceV3(object):
     def health(self, health):
         """Sets the health of this BootDeviceV3.
 
-        Health status of the boot device in percentage.  # noqa: E501
+        Health status of the boot device (percentage)  # noqa: E501
 
         :param health: The health of this BootDeviceV3.  # noqa: E501
         :type: str

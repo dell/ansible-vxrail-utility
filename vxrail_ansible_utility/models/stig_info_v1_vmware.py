@@ -61,7 +61,7 @@ class StigInfoV1Vmware(object):
     def server_management_host(self):
         """Gets the server_management_host of this StigInfoV1Vmware.  # noqa: E501
 
-        IP address or hostname of a VMware vCenter server appliance.  # noqa: E501
+        IP address or hostname of a VMware vCenter Server appliance.  # noqa: E501
 
         :return: The server_management_host of this StigInfoV1Vmware.  # noqa: E501
         :rtype: str
@@ -72,7 +72,7 @@ class StigInfoV1Vmware(object):
     def server_management_host(self, server_management_host):
         """Sets the server_management_host of this StigInfoV1Vmware.
 
-        IP address or hostname of a VMware vCenter server appliance.  # noqa: E501
+        IP address or hostname of a VMware vCenter Server appliance.  # noqa: E501
 
         :param server_management_host: The server_management_host of this StigInfoV1Vmware.  # noqa: E501
         :type: str

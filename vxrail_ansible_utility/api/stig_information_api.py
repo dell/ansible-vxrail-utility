@@ -33,7 +33,7 @@ class STIGInformationApi(object):
         self.api_client = api_client
 
     def get_v1_stig_info(self, **kwargs):  # noqa: E501
-        """Retrieve information related to STIG regulations  # noqa: E501
+        """Retrieve information related to STIG regulations.  # noqa: E501
 
         Retrieve information related to STIG regulations.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -54,7 +54,7 @@ class STIGInformationApi(object):
             return data
 
     def get_v1_stig_info_with_http_info(self, **kwargs):  # noqa: E501
-        """Retrieve information related to STIG regulations  # noqa: E501
+        """Retrieve information related to STIG regulations.  # noqa: E501
 
         Retrieve information related to STIG regulations.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an

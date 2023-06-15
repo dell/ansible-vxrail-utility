@@ -61,7 +61,7 @@ class SystemInitSpecV5VxrailManager(object):
     def name(self):
         """Gets the name of this SystemInitSpecV5VxrailManager.  # noqa: E501
 
-        Hostname of VxRail Manager  # noqa: E501
+        Hostname for VxRail Manager  # noqa: E501
 
         :return: The name of this SystemInitSpecV5VxrailManager.  # noqa: E501
         :rtype: str
@@ -72,7 +72,7 @@ class SystemInitSpecV5VxrailManager(object):
     def name(self, name):
         """Sets the name of this SystemInitSpecV5VxrailManager.
 
-        Hostname of VxRail Manager  # noqa: E501
+        Hostname for VxRail Manager  # noqa: E501
 
         :param name: The name of this SystemInitSpecV5VxrailManager.  # noqa: E501
         :type: str
@@ -84,7 +84,7 @@ class SystemInitSpecV5VxrailManager(object):
     def ip(self):
         """Gets the ip of this SystemInitSpecV5VxrailManager.  # noqa: E501
 
-        IP address of VxRail Manager  # noqa: E501
+        IP address for VxRail Manager  # noqa: E501
 
         :return: The ip of this SystemInitSpecV5VxrailManager.  # noqa: E501
         :rtype: str
@@ -95,7 +95,7 @@ class SystemInitSpecV5VxrailManager(object):
     def ip(self, ip):
         """Sets the ip of this SystemInitSpecV5VxrailManager.
 
-        IP address of VxRail Manager  # noqa: E501
+        IP address for VxRail Manager  # noqa: E501
 
         :param ip: The ip of this SystemInitSpecV5VxrailManager.  # noqa: E501
         :type: str

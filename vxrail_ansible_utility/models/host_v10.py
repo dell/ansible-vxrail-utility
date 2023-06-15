@@ -254,7 +254,7 @@ class HostV10(object):
     def hostname(self):
         """Gets the hostname of this HostV10.  # noqa: E501
 
-        Name of the host.  # noqa: E501
+        Indicates the hostname.  # noqa: E501
 
         :return: The hostname of this HostV10.  # noqa: E501
         :rtype: str
@@ -265,7 +265,7 @@ class HostV10(object):
     def hostname(self, hostname):
         """Sets the hostname of this HostV10.
 
-        Name of the host.  # noqa: E501
+        Indicates the hostname.  # noqa: E501
 
         :param hostname: The hostname of this HostV10.  # noqa: E501
         :type: str
