@@ -214,38 +214,38 @@ class HostInformationApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def v12_hosts_get(self, **kwargs):  # noqa: E501
-        """Retrieves a list of VxRail hosts (v12).  # noqa: E501
+    def v13_hosts_get(self, **kwargs):  # noqa: E501
+        """Retrieves a list of VxRail hosts (v13).  # noqa: E501
 
-        New fields are added to the v12 hosts, including the marketing name, GPU health, firmware version, and deployment_type.  # noqa: E501
+        Added a new field 'node_disk_type' to v13.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v12_hosts_get(async_req=True)
+        >>> thread = api.v13_hosts_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :return: list[HostV12]
+        :return: list[HostV13]
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.v12_hosts_get_with_http_info(**kwargs)  # noqa: E501
+            return self.v13_hosts_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.v12_hosts_get_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.v13_hosts_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def v12_hosts_get_with_http_info(self, **kwargs):  # noqa: E501
-        """Retrieves a list of VxRail hosts (v12).  # noqa: E501
+    def v13_hosts_get_with_http_info(self, **kwargs):  # noqa: E501
+        """Retrieves a list of VxRail hosts (v13).  # noqa: E501
 
-        New fields are added to the v12 hosts, including the marketing name, GPU health, firmware version, and deployment_type.  # noqa: E501
+        Added a new field 'node_disk_type' to v13.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v12_hosts_get_with_http_info(async_req=True)
+        >>> thread = api.v13_hosts_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :return: list[HostV12]
+        :return: list[HostV13]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -261,7 +261,7 @@ class HostInformationApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method v12_hosts_get" % key
+                    " to method v13_hosts_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -286,14 +286,14 @@ class HostInformationApi(object):
         auth_settings = ['basicAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/v12/hosts', 'GET',
+            '/v13/hosts', 'GET',
             path_params,
             query_params,
             header_params,
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[HostV12]',  # noqa: E501
+            response_type='list[HostV13]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -301,40 +301,40 @@ class HostInformationApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def v12_hosts_sn_get(self, sn, **kwargs):  # noqa: E501
-        """Retrieves information about a host (v12).  # noqa: E501
+    def v13_hosts_sn_get(self, sn, **kwargs):  # noqa: E501
+        """Retrieves information about a host (v13).  # noqa: E501
 
-        New fields are added to the v12 hosts, including the marketing name, GPU health, firmware version, and deployment_type.  # noqa: E501
+        Added a new field 'node_disk_type' to v13.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v12_hosts_sn_get(sn, async_req=True)
+        >>> thread = api.v13_hosts_sn_get(sn, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str sn: Indicates the serial number of the node for which you want to retrieve information. (required)
-        :return: HostV12
+        :return: HostV13
                  If the method is called asynchronously,
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.v12_hosts_sn_get_with_http_info(sn, **kwargs)  # noqa: E501
+            return self.v13_hosts_sn_get_with_http_info(sn, **kwargs)  # noqa: E501
         else:
-            (data) = self.v12_hosts_sn_get_with_http_info(sn, **kwargs)  # noqa: E501
+            (data) = self.v13_hosts_sn_get_with_http_info(sn, **kwargs)  # noqa: E501
             return data
 
-    def v12_hosts_sn_get_with_http_info(self, sn, **kwargs):  # noqa: E501
-        """Retrieves information about a host (v12).  # noqa: E501
+    def v13_hosts_sn_get_with_http_info(self, sn, **kwargs):  # noqa: E501
+        """Retrieves information about a host (v13).  # noqa: E501
 
-        New fields are added to the v12 hosts, including the marketing name, GPU health, firmware version, and deployment_type.  # noqa: E501
+        Added a new field 'node_disk_type' to v13.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v12_hosts_sn_get_with_http_info(sn, async_req=True)
+        >>> thread = api.v13_hosts_sn_get_with_http_info(sn, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
         :param str sn: Indicates the serial number of the node for which you want to retrieve information. (required)
-        :return: HostV12
+        :return: HostV13
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -350,14 +350,14 @@ class HostInformationApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method v12_hosts_sn_get" % key
+                    " to method v13_hosts_sn_get" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'sn' is set
         if ('sn' not in params or
                 params['sn'] is None):
-            raise ValueError("Missing the required parameter `sn` when calling `v12_hosts_sn_get`")  # noqa: E501
+            raise ValueError("Missing the required parameter `sn` when calling `v13_hosts_sn_get`")  # noqa: E501
 
         collection_formats = {}
 
@@ -381,196 +381,14 @@ class HostInformationApi(object):
         auth_settings = ['basicAuth']  # noqa: E501
 
         return self.api_client.call_api(
-            '/v12/hosts/{sn}', 'GET',
+            '/v13/hosts/{sn}', 'GET',
             path_params,
             query_params,
             header_params,
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='HostV12',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def v14_hosts_get(self, **kwargs):  # noqa: E501
-        """Retrieves a list of VxRail hosts (v14).  # noqa: E501
-
-        New fields are added to v14 hosts, including tpm_version and tpm_status.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v14_hosts_get(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: list[HostV14]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.v14_hosts_get_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.v14_hosts_get_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def v14_hosts_get_with_http_info(self, **kwargs):  # noqa: E501
-        """Retrieves a list of VxRail hosts (v14).  # noqa: E501
-
-        New fields are added to v14 hosts, including tpm_version and tpm_status.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v14_hosts_get_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: list[HostV14]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = []  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method v14_hosts_get" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['basicAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/v14/hosts', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='list[HostV14]',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def v14_hosts_sn_get(self, sn, **kwargs):  # noqa: E501
-        """Retrieves information about a host (v14).  # noqa: E501
-
-        New fields are added to v14 hosts, including tpm_version and tpm_status.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v14_hosts_sn_get(sn, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param str sn: Indicates the serial number of the node for which you want to retrieve information. (required)
-        :return: HostV14
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.v14_hosts_sn_get_with_http_info(sn, **kwargs)  # noqa: E501
-        else:
-            (data) = self.v14_hosts_sn_get_with_http_info(sn, **kwargs)  # noqa: E501
-            return data
-
-    def v14_hosts_sn_get_with_http_info(self, sn, **kwargs):  # noqa: E501
-        """Retrieves information about a host (v14).  # noqa: E501
-
-        New fields are added to v14 hosts, including tpm_version and tpm_status.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v14_hosts_sn_get_with_http_info(sn, async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param str sn: Indicates the serial number of the node for which you want to retrieve information. (required)
-        :return: HostV14
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['sn']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method v14_hosts_sn_get" % key
-                )
-            params[key] = val
-        del params['kwargs']
-        # verify the required parameter 'sn' is set
-        if ('sn' not in params or
-                params['sn'] is None):
-            raise ValueError("Missing the required parameter `sn` when calling `v14_hosts_sn_get`")  # noqa: E501
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'sn' in params:
-            path_params['sn'] = params['sn']  # noqa: E501
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['basicAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/v14/hosts/{sn}', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='HostV14',  # noqa: E501
+            response_type='HostV13',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2241,93 +2059,6 @@ class HostInformationApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type='HostV8',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def v9_hosts_get(self, **kwargs):  # noqa: E501
-        """Get a list of VxRail hosts (v9)  # noqa: E501
-
-        New fields are added to v9 to support the DPU hardware.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v9_hosts_get(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: list[HostV9]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.v9_hosts_get_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.v9_hosts_get_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def v9_hosts_get_with_http_info(self, **kwargs):  # noqa: E501
-        """Get a list of VxRail hosts (v9)  # noqa: E501
-
-        New fields are added to v9 to support the DPU hardware.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v9_hosts_get_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: list[HostV9]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = []  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method v9_hosts_get" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['basicAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/v9/hosts', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='list[HostV9]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

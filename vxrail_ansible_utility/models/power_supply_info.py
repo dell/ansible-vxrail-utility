@@ -219,7 +219,7 @@ class PowerSupplyInfo(object):
     def health(self):
         """Gets the health of this PowerSupplyInfo.  # noqa: E501
 
-        Health status of the power supply. Supported values are Critical, Error, Warning, and Healthy.  # noqa: E501
+        Indicates the health status of the power supply. Supported values are Critical, Error, Warning, and Healthy.  # noqa: E501
 
         :return: The health of this PowerSupplyInfo.  # noqa: E501
         :rtype: str
@@ -230,7 +230,7 @@ class PowerSupplyInfo(object):
     def health(self, health):
         """Sets the health of this PowerSupplyInfo.
 
-        Health status of the power supply. Supported values are Critical, Error, Warning, and Healthy.  # noqa: E501
+        Indicates the health status of the power supply. Supported values are Critical, Error, Warning, and Healthy.  # noqa: E501
 
         :param health: The health of this PowerSupplyInfo.  # noqa: E501
         :type: str
@@ -242,7 +242,7 @@ class PowerSupplyInfo(object):
     def missing(self):
         """Gets the missing of this PowerSupplyInfo.  # noqa: E501
 
-        Whether the power supply health status is critical. Supported values are false (not critical) and true (critical)  # noqa: E501
+        Indicates whether the health status of the power supply is critical. Supported values are false (not critical) and true (critical).  # noqa: E501
 
         :return: The missing of this PowerSupplyInfo.  # noqa: E501
         :rtype: bool
@@ -253,7 +253,7 @@ class PowerSupplyInfo(object):
     def missing(self, missing):
         """Sets the missing of this PowerSupplyInfo.
 
-        Whether the power supply health status is critical. Supported values are false (not critical) and true (critical)  # noqa: E501
+        Indicates whether the health status of the power supply is critical. Supported values are false (not critical) and true (critical).  # noqa: E501
 
         :param missing: The missing of this PowerSupplyInfo.  # noqa: E501
         :type: bool

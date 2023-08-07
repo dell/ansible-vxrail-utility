@@ -518,7 +518,7 @@ class VxRailInstallationApi(object):
 
         :param async_req bool
         :param list[CustomerSuppliedHostInfo] body: Management IP and password for all customer supplied hosts (required)
-        :return: DiscoveredNodesInfoV4
+        :return: DiscoveredNodesInfoV3
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -540,7 +540,7 @@ class VxRailInstallationApi(object):
 
         :param async_req bool
         :param list[CustomerSuppliedHostInfo] body: Management IP and password for all customer supplied hosts (required)
-        :return: DiscoveredNodesInfoV4
+        :return: DiscoveredNodesInfoV3
                  If the method is called asynchronously,
                  returns the request thread.
         """
