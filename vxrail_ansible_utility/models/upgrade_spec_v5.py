@@ -34,7 +34,7 @@ class UpgradeSpecV5(object):
         'witness': 'WitnessSpec',
         'upgrade_sequence': 'UpgradeSequence',
         'target_hosts': 'list[HostBaseSpec]',
-        'update_rules': 'UpgradeSpecV7UpdateRules'
+        'update_rules': 'UpgradeSpecV5UpdateRules'
     }
 
     attribute_map = {
@@ -211,7 +211,7 @@ class UpgradeSpecV5(object):
 
 
         :return: The update_rules of this UpgradeSpecV5.  # noqa: E501
-        :rtype: UpgradeSpecV7UpdateRules
+        :rtype: UpgradeSpecV5UpdateRules
         """
         return self._update_rules
 
@@ -221,7 +221,7 @@ class UpgradeSpecV5(object):
 
 
         :param update_rules: The update_rules of this UpgradeSpecV5.  # noqa: E501
-        :type: UpgradeSpecV7UpdateRules
+        :type: UpgradeSpecV5UpdateRules
         """
 
         self._update_rules = update_rules

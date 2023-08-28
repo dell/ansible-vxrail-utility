@@ -247,7 +247,7 @@ class NicV2(object):
     def firmware_family_version(self):
         """Gets the firmware_family_version of this NicV2.  # noqa: E501
 
-        Version of the firmware for the NIC.  # noqa: E501
+        Firmware version of the NIC.  # noqa: E501
 
         :return: The firmware_family_version of this NicV2.  # noqa: E501
         :rtype: str
@@ -258,7 +258,7 @@ class NicV2(object):
     def firmware_family_version(self, firmware_family_version):
         """Sets the firmware_family_version of this NicV2.
 
-        Version of the firmware for the NIC.  # noqa: E501
+        Firmware version of the NIC.  # noqa: E501
 
         :param firmware_family_version: The firmware_family_version of this NicV2.  # noqa: E501
         :type: str

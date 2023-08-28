@@ -43,7 +43,7 @@ class DiscoveredNodeInfoV5(object):
         'ssl_thumbprint': 'str',
         'ssh_thumbprint': 'str',
         'uuid': 'DiscoveredNodeUuidInfo',
-        'hardware_profile': 'DiscoveredNodeHardwareProfileInfoV2',
+        'hardware_profile': 'DiscoveredNodeHardwareProfileInfo',
         'disk_group_config': 'DiscoveredNodeDiskGroupConfigInfo',
         'storage_types': 'list[str]',
         'configuration_state': 'str',
@@ -493,7 +493,7 @@ class DiscoveredNodeInfoV5(object):
 
 
         :return: The hardware_profile of this DiscoveredNodeInfoV5.  # noqa: E501
-        :rtype: DiscoveredNodeHardwareProfileInfoV2
+        :rtype: DiscoveredNodeHardwareProfileInfo
         """
         return self._hardware_profile
 
@@ -503,7 +503,7 @@ class DiscoveredNodeInfoV5(object):
 
 
         :param hardware_profile: The hardware_profile of this DiscoveredNodeInfoV5.  # noqa: E501
-        :type: DiscoveredNodeHardwareProfileInfoV2
+        :type: DiscoveredNodeHardwareProfileInfo
         """
         if hardware_profile is None:
             raise ValueError("Invalid value for `hardware_profile`, must not be `None`")  # noqa: E501
