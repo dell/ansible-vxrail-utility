@@ -31,25 +31,22 @@ class SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm(object):
         'management_ip': 'str',
         'witness_ip': 'str',
         'netmask': 'str',
-        'username': 'str',
-        'password': 'str'
+        'accounts': 'SystemInitSpecV5VxrailManagedWitnessNodeWitnessVmAccounts'
     }
 
     attribute_map = {
         'management_ip': 'management_ip',
         'witness_ip': 'witness_ip',
         'netmask': 'netmask',
-        'username': 'username',
-        'password': 'password'
+        'accounts': 'accounts'
     }
 
-    def __init__(self, management_ip=None, witness_ip=None, netmask=None, username=None, password=None):  # noqa: E501
+    def __init__(self, management_ip=None, witness_ip=None, netmask=None, accounts=None):  # noqa: E501
         """SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm - a model defined in Swagger"""  # noqa: E501
         self._management_ip = None
         self._witness_ip = None
         self._netmask = None
-        self._username = None
-        self._password = None
+        self._accounts = None
         self.discriminator = None
         if management_ip is not None:
             self.management_ip = management_ip
@@ -57,10 +54,8 @@ class SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm(object):
             self.witness_ip = witness_ip
         if netmask is not None:
             self.netmask = netmask
-        if username is not None:
-            self.username = username
-        if password is not None:
-            self.password = password
+        if accounts is not None:
+            self.accounts = accounts
 
     @property
     def management_ip(self):
@@ -132,50 +127,25 @@ class SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm(object):
         self._netmask = netmask
 
     @property
-    def username(self):
-        """Gets the username of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm.  # noqa: E501
+    def accounts(self):
+        """Gets the accounts of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm.  # noqa: E501
 
-        Username of the account  # noqa: E501
 
-        :return: The username of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm.  # noqa: E501
-        :rtype: str
+        :return: The accounts of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm.  # noqa: E501
+        :rtype: SystemInitSpecV5VxrailManagedWitnessNodeWitnessVmAccounts
         """
-        return self._username
+        return self._accounts
 
-    @username.setter
-    def username(self, username):
-        """Sets the username of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm.
+    @accounts.setter
+    def accounts(self, accounts):
+        """Sets the accounts of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm.
 
-        Username of the account  # noqa: E501
 
-        :param username: The username of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm.  # noqa: E501
-        :type: str
+        :param accounts: The accounts of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm.  # noqa: E501
+        :type: SystemInitSpecV5VxrailManagedWitnessNodeWitnessVmAccounts
         """
 
-        self._username = username
-
-    @property
-    def password(self):
-        """Gets the password of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm.  # noqa: E501
-
-        Password of the account  # noqa: E501
-
-        :return: The password of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm.  # noqa: E501
-        :rtype: str
-        """
-        return self._password
-
-    @password.setter
-    def password(self, password):
-        """Sets the password of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm.
-
-        Password of the account  # noqa: E501
-
-        :param password: The password of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm.  # noqa: E501
-        :type: str
-        """
-
-        self._password = password
+        self._accounts = accounts
 
     def to_dict(self):
         """Returns the model properties as a dict"""

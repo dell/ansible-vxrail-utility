@@ -32,7 +32,7 @@ class SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled(object):
         'hostname': 'str',
         'management_ip': 'str',
         'customer_supplied': 'CustomerSuppliedHostInfoV2',
-        'accounts': 'SystemInitSpecV5VxrailManagedWitnessNodeWitnessSledAccounts'
+        'accounts': 'SystemInitSpecV5VxrailManagedWitnessNodeWitnessVmAccounts'
     }
 
     attribute_map = {
@@ -158,7 +158,7 @@ class SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled(object):
 
 
         :return: The accounts of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled.  # noqa: E501
-        :rtype: SystemInitSpecV5VxrailManagedWitnessNodeWitnessSledAccounts
+        :rtype: SystemInitSpecV5VxrailManagedWitnessNodeWitnessVmAccounts
         """
         return self._accounts
 
@@ -168,7 +168,7 @@ class SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled(object):
 
 
         :param accounts: The accounts of this SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled.  # noqa: E501
-        :type: SystemInitSpecV5VxrailManagedWitnessNodeWitnessSledAccounts
+        :type: SystemInitSpecV5VxrailManagedWitnessNodeWitnessVmAccounts
         """
 
         self._accounts = accounts

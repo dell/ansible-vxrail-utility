@@ -67,7 +67,7 @@ class ProfileInfo(object):
         """
         if profile is None:
             raise ValueError("Invalid value for `profile`, must not be `None`")  # noqa: E501
-        allowed_values = ["BUNDLE_INTEGRITY_CHECK", "PRE_UPGRADE", "PROACTIVE_HEALTH", "NODE_EXPANSION"]  # noqa: E501
+        allowed_values = ["BUNDLE_INTEGRITY_CHECK", "ADVISORY_REPORT", "PRE_UPGRADE", "PROACTIVE_HEALTH", "NODE_EXPANSION"]  # noqa: E501
         if profile not in allowed_values:
             raise ValueError(
                 "Invalid value for `profile` ({0}), must be one of {1}"  # noqa: E501

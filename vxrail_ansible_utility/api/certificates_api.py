@@ -792,13 +792,13 @@ class CertificatesApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def v1_trust_store_certificates_get(self, **kwargs):  # noqa: E501
+    def v1_trust_store_certificates_fingerprints_get(self, **kwargs):  # noqa: E501
         """Get a list of fingerprints retrieved from the certificates in the VxRail Manager trust store used by the HTTP client.  # noqa: E501
 
         API to retrieve a fingerprint list (using the open SSL command to get the certificate fingerprints in VxRail Manager trust store).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v1_trust_store_certificates_get(async_req=True)
+        >>> thread = api.v1_trust_store_certificates_fingerprints_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -808,18 +808,18 @@ class CertificatesApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.v1_trust_store_certificates_get_with_http_info(**kwargs)  # noqa: E501
+            return self.v1_trust_store_certificates_fingerprints_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.v1_trust_store_certificates_get_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.v1_trust_store_certificates_fingerprints_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def v1_trust_store_certificates_get_with_http_info(self, **kwargs):  # noqa: E501
+    def v1_trust_store_certificates_fingerprints_get_with_http_info(self, **kwargs):  # noqa: E501
         """Get a list of fingerprints retrieved from the certificates in the VxRail Manager trust store used by the HTTP client.  # noqa: E501
 
         API to retrieve a fingerprint list (using the open SSL command to get the certificate fingerprints in VxRail Manager trust store).  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v1_trust_store_certificates_get_with_http_info(async_req=True)
+        >>> thread = api.v1_trust_store_certificates_fingerprints_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -839,7 +839,7 @@ class CertificatesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method v1_trust_store_certificates_get" % key
+                    " to method v1_trust_store_certificates_fingerprints_get" % key
                 )
             params[key] = val
         del params['kwargs']
