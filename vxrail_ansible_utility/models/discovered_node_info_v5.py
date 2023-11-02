@@ -39,6 +39,7 @@ class DiscoveredNodeInfoV5(object):
         'ipv6': 'str',
         'asset_tag': 'str',
         'serial_number': 'str',
+        'host_psnt': 'str',
         'primary': 'bool',
         'ssl_thumbprint': 'str',
         'ssh_thumbprint': 'str',
@@ -63,6 +64,7 @@ class DiscoveredNodeInfoV5(object):
         'ipv6': 'ipv6',
         'asset_tag': 'asset_tag',
         'serial_number': 'serial_number',
+        'host_psnt': 'host_psnt',
         'primary': 'primary',
         'ssl_thumbprint': 'ssl_thumbprint',
         'ssh_thumbprint': 'ssh_thumbprint',
@@ -75,7 +77,7 @@ class DiscoveredNodeInfoV5(object):
         'violations': 'violations'
     }
 
-    def __init__(self, id=None, esxi_version=None, vxm_system_version=None, evo_uuid=None, primary_ip=None, idrac_ip=None, idrac_ipv6=None, ip=None, ipv6=None, asset_tag=None, serial_number=None, primary=None, ssl_thumbprint=None, ssh_thumbprint=None, uuid=None, hardware_profile=None, disk_group_config=None, storage_types=None, configuration_state=None, model=None, violations=None):  # noqa: E501
+    def __init__(self, id=None, esxi_version=None, vxm_system_version=None, evo_uuid=None, primary_ip=None, idrac_ip=None, idrac_ipv6=None, ip=None, ipv6=None, asset_tag=None, serial_number=None, host_psnt=None, primary=None, ssl_thumbprint=None, ssh_thumbprint=None, uuid=None, hardware_profile=None, disk_group_config=None, storage_types=None, configuration_state=None, model=None, violations=None):  # noqa: E501
         """DiscoveredNodeInfoV5 - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._esxi_version = None
@@ -88,6 +90,7 @@ class DiscoveredNodeInfoV5(object):
         self._ipv6 = None
         self._asset_tag = None
         self._serial_number = None
+        self._host_psnt = None
         self._primary = None
         self._ssl_thumbprint = None
         self._ssh_thumbprint = None
@@ -117,6 +120,8 @@ class DiscoveredNodeInfoV5(object):
             self.ipv6 = ipv6
         self.asset_tag = asset_tag
         self.serial_number = serial_number
+        if host_psnt is not None:
+            self.host_psnt = host_psnt
         self.primary = primary
         self.ssl_thumbprint = ssl_thumbprint
         self.ssh_thumbprint = ssh_thumbprint
@@ -390,6 +395,29 @@ class DiscoveredNodeInfoV5(object):
             raise ValueError("Invalid value for `serial_number`, must not be `None`")  # noqa: E501
 
         self._serial_number = serial_number
+
+    @property
+    def host_psnt(self):
+        """Gets the host_psnt of this DiscoveredNodeInfoV5.  # noqa: E501
+
+        PSNT of the node  # noqa: E501
+
+        :return: The host_psnt of this DiscoveredNodeInfoV5.  # noqa: E501
+        :rtype: str
+        """
+        return self._host_psnt
+
+    @host_psnt.setter
+    def host_psnt(self, host_psnt):
+        """Sets the host_psnt of this DiscoveredNodeInfoV5.
+
+        PSNT of the node  # noqa: E501
+
+        :param host_psnt: The host_psnt of this DiscoveredNodeInfoV5.  # noqa: E501
+        :type: str
+        """
+
+        self._host_psnt = host_psnt
 
     @property
     def primary(self):

@@ -35,6 +35,7 @@ class SystemInitSpecV5Global(object):
         'syslog_servers': 'list[str]',
         'cluster_type': 'str',
         'cluster_vsan_prefix_length_ipv6': 'int',
+        'cluster_vsan_gateway_ipv6': 'str',
         'cluster_vmotion_prefix_length_ipv6': 'int',
         'cluster_management_prefix_length_ipv6': 'int',
         'cluster_management_gateway_ipv6': 'str',
@@ -45,6 +46,7 @@ class SystemInitSpecV5Global(object):
         'cluster_management_netmask': 'str',
         'cluster_management_gateway': 'str',
         'cluster_vsan_netmask': 'str',
+        'cluster_vsan_gateway': 'str',
         'cluster_vmotion_netmask': 'str',
         'cluster_witness_netmask': 'str',
         'cluster_witness_gateway': 'str',
@@ -60,6 +62,7 @@ class SystemInitSpecV5Global(object):
         'syslog_servers': 'syslog_servers',
         'cluster_type': 'cluster_type',
         'cluster_vsan_prefix_length_ipv6': 'cluster_vsan_prefix_length_ipv6',
+        'cluster_vsan_gateway_ipv6': 'cluster_vsan_gateway_ipv6',
         'cluster_vmotion_prefix_length_ipv6': 'cluster_vmotion_prefix_length_ipv6',
         'cluster_management_prefix_length_ipv6': 'cluster_management_prefix_length_ipv6',
         'cluster_management_gateway_ipv6': 'cluster_management_gateway_ipv6',
@@ -70,6 +73,7 @@ class SystemInitSpecV5Global(object):
         'cluster_management_netmask': 'cluster_management_netmask',
         'cluster_management_gateway': 'cluster_management_gateway',
         'cluster_vsan_netmask': 'cluster_vsan_netmask',
+        'cluster_vsan_gateway': 'cluster_vsan_gateway',
         'cluster_vmotion_netmask': 'cluster_vmotion_netmask',
         'cluster_witness_netmask': 'cluster_witness_netmask',
         'cluster_witness_gateway': 'cluster_witness_gateway',
@@ -77,7 +81,7 @@ class SystemInitSpecV5Global(object):
         'ha_isolation_addresses': 'ha_isolation_addresses'
     }
 
-    def __init__(self, ip_version=None, ntp_servers=None, is_internal_dns=None, dns_servers=None, syslog_servers=None, cluster_type=None, cluster_vsan_prefix_length_ipv6=None, cluster_vmotion_prefix_length_ipv6=None, cluster_management_prefix_length_ipv6=None, cluster_management_gateway_ipv6=None, cluster_systemvm_netmask=None, cluster_systemvm_gateway=None, cluster_systemvm_prefix_length_ipv6=None, cluster_systemvm_gateway_ipv6=None, cluster_management_netmask=None, cluster_management_gateway=None, cluster_vsan_netmask=None, cluster_vmotion_netmask=None, cluster_witness_netmask=None, cluster_witness_gateway=None, top_level_domain=None, ha_isolation_addresses=None):  # noqa: E501
+    def __init__(self, ip_version=None, ntp_servers=None, is_internal_dns=None, dns_servers=None, syslog_servers=None, cluster_type=None, cluster_vsan_prefix_length_ipv6=None, cluster_vsan_gateway_ipv6=None, cluster_vmotion_prefix_length_ipv6=None, cluster_management_prefix_length_ipv6=None, cluster_management_gateway_ipv6=None, cluster_systemvm_netmask=None, cluster_systemvm_gateway=None, cluster_systemvm_prefix_length_ipv6=None, cluster_systemvm_gateway_ipv6=None, cluster_management_netmask=None, cluster_management_gateway=None, cluster_vsan_netmask=None, cluster_vsan_gateway=None, cluster_vmotion_netmask=None, cluster_witness_netmask=None, cluster_witness_gateway=None, top_level_domain=None, ha_isolation_addresses=None):  # noqa: E501
         """SystemInitSpecV5Global - a model defined in Swagger"""  # noqa: E501
         self._ip_version = None
         self._ntp_servers = None
@@ -86,6 +90,7 @@ class SystemInitSpecV5Global(object):
         self._syslog_servers = None
         self._cluster_type = None
         self._cluster_vsan_prefix_length_ipv6 = None
+        self._cluster_vsan_gateway_ipv6 = None
         self._cluster_vmotion_prefix_length_ipv6 = None
         self._cluster_management_prefix_length_ipv6 = None
         self._cluster_management_gateway_ipv6 = None
@@ -96,6 +101,7 @@ class SystemInitSpecV5Global(object):
         self._cluster_management_netmask = None
         self._cluster_management_gateway = None
         self._cluster_vsan_netmask = None
+        self._cluster_vsan_gateway = None
         self._cluster_vmotion_netmask = None
         self._cluster_witness_netmask = None
         self._cluster_witness_gateway = None
@@ -116,6 +122,8 @@ class SystemInitSpecV5Global(object):
             self.cluster_type = cluster_type
         if cluster_vsan_prefix_length_ipv6 is not None:
             self.cluster_vsan_prefix_length_ipv6 = cluster_vsan_prefix_length_ipv6
+        if cluster_vsan_gateway_ipv6 is not None:
+            self.cluster_vsan_gateway_ipv6 = cluster_vsan_gateway_ipv6
         if cluster_vmotion_prefix_length_ipv6 is not None:
             self.cluster_vmotion_prefix_length_ipv6 = cluster_vmotion_prefix_length_ipv6
         if cluster_management_prefix_length_ipv6 is not None:
@@ -136,6 +144,8 @@ class SystemInitSpecV5Global(object):
             self.cluster_management_gateway = cluster_management_gateway
         if cluster_vsan_netmask is not None:
             self.cluster_vsan_netmask = cluster_vsan_netmask
+        if cluster_vsan_gateway is not None:
+            self.cluster_vsan_gateway = cluster_vsan_gateway
         if cluster_vmotion_netmask is not None:
             self.cluster_vmotion_netmask = cluster_vmotion_netmask
         if cluster_witness_netmask is not None:
@@ -319,6 +329,29 @@ class SystemInitSpecV5Global(object):
         """
 
         self._cluster_vsan_prefix_length_ipv6 = cluster_vsan_prefix_length_ipv6
+
+    @property
+    def cluster_vsan_gateway_ipv6(self):
+        """Gets the cluster_vsan_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
+
+        Internal use only  # noqa: E501
+
+        :return: The cluster_vsan_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
+        :rtype: str
+        """
+        return self._cluster_vsan_gateway_ipv6
+
+    @cluster_vsan_gateway_ipv6.setter
+    def cluster_vsan_gateway_ipv6(self, cluster_vsan_gateway_ipv6):
+        """Sets the cluster_vsan_gateway_ipv6 of this SystemInitSpecV5Global.
+
+        Internal use only  # noqa: E501
+
+        :param cluster_vsan_gateway_ipv6: The cluster_vsan_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
+        :type: str
+        """
+
+        self._cluster_vsan_gateway_ipv6 = cluster_vsan_gateway_ipv6
 
     @property
     def cluster_vmotion_prefix_length_ipv6(self):
@@ -549,6 +582,29 @@ class SystemInitSpecV5Global(object):
         """
 
         self._cluster_vsan_netmask = cluster_vsan_netmask
+
+    @property
+    def cluster_vsan_gateway(self):
+        """Gets the cluster_vsan_gateway of this SystemInitSpecV5Global.  # noqa: E501
+
+        Gateway address for cluster vSAN nodes  # noqa: E501
+
+        :return: The cluster_vsan_gateway of this SystemInitSpecV5Global.  # noqa: E501
+        :rtype: str
+        """
+        return self._cluster_vsan_gateway
+
+    @cluster_vsan_gateway.setter
+    def cluster_vsan_gateway(self, cluster_vsan_gateway):
+        """Sets the cluster_vsan_gateway of this SystemInitSpecV5Global.
+
+        Gateway address for cluster vSAN nodes  # noqa: E501
+
+        :param cluster_vsan_gateway: The cluster_vsan_gateway of this SystemInitSpecV5Global.  # noqa: E501
+        :type: str
+        """
+
+        self._cluster_vsan_gateway = cluster_vsan_gateway
 
     @property
     def cluster_vmotion_netmask(self):

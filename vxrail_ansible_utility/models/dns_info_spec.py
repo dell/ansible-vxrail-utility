@@ -45,15 +45,17 @@ class DNSInfoSpec(object):
         self._vcenter = None
         self._servers = None
         self.discriminator = None
-        self.components = components
-        self.vcenter = vcenter
+        if components is not None:
+            self.components = components
+        if vcenter is not None:
+            self.vcenter = vcenter
         self.servers = servers
 
     @property
     def components(self):
         """Gets the components of this DNSInfoSpec.  # noqa: E501
 
-        Indicates which DNS servers are updated. Supported values are \"VXM\" or \"ALL\". \"ALL\" is the default. If ALL is set, all DNS servers in the cluster are replaced. If VXM is set, only the DNS server for VxRail Manager is replaced.  # noqa: E501
+        The default value of the components field is \"ALL\", as the DNS server for the VxRail cluster must be consistent.  # noqa: E501
 
         :return: The components of this DNSInfoSpec.  # noqa: E501
         :rtype: str
@@ -64,13 +66,11 @@ class DNSInfoSpec(object):
     def components(self, components):
         """Sets the components of this DNSInfoSpec.
 
-        Indicates which DNS servers are updated. Supported values are \"VXM\" or \"ALL\". \"ALL\" is the default. If ALL is set, all DNS servers in the cluster are replaced. If VXM is set, only the DNS server for VxRail Manager is replaced.  # noqa: E501
+        The default value of the components field is \"ALL\", as the DNS server for the VxRail cluster must be consistent.  # noqa: E501
 
         :param components: The components of this DNSInfoSpec.  # noqa: E501
         :type: str
         """
-        if components is None:
-            raise ValueError("Invalid value for `components`, must not be `None`")  # noqa: E501
 
         self._components = components
 
@@ -92,8 +92,6 @@ class DNSInfoSpec(object):
         :param vcenter: The vcenter of this DNSInfoSpec.  # noqa: E501
         :type: User
         """
-        if vcenter is None:
-            raise ValueError("Invalid value for `vcenter`, must not be `None`")  # noqa: E501
 
         self._vcenter = vcenter
 

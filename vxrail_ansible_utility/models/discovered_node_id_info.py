@@ -55,7 +55,7 @@ class DiscoveredNodeIdInfo(object):
     def appliance_id(self):
         """Gets the appliance_id of this DiscoveredNodeIdInfo.  # noqa: E501
 
-        PSNT/appliance ID of the node  # noqa: E501
+        Chassis or appliance ID of the node.  # noqa: E501
 
         :return: The appliance_id of this DiscoveredNodeIdInfo.  # noqa: E501
         :rtype: str
@@ -66,7 +66,7 @@ class DiscoveredNodeIdInfo(object):
     def appliance_id(self, appliance_id):
         """Sets the appliance_id of this DiscoveredNodeIdInfo.
 
-        PSNT/appliance ID of the node  # noqa: E501
+        Chassis or appliance ID of the node.  # noqa: E501
 
         :param appliance_id: The appliance_id of this DiscoveredNodeIdInfo.  # noqa: E501
         :type: str
