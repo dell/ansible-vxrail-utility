@@ -51,7 +51,7 @@ class DiskGroupTypeAndDesInfo(object):
     def type(self):
         """Gets the type of this DiskGroupTypeAndDesInfo.  # noqa: E501
 
-        The type of disk group configuration  # noqa: E501
+        The type of disk group configuration.  # noqa: E501
 
         :return: The type of this DiskGroupTypeAndDesInfo.  # noqa: E501
         :rtype: str
@@ -62,7 +62,7 @@ class DiskGroupTypeAndDesInfo(object):
     def type(self, type):
         """Sets the type of this DiskGroupTypeAndDesInfo.
 
-        The type of disk group configuration  # noqa: E501
+        The type of disk group configuration.  # noqa: E501
 
         :param type: The type of this DiskGroupTypeAndDesInfo.  # noqa: E501
         :type: str
@@ -80,7 +80,7 @@ class DiskGroupTypeAndDesInfo(object):
     def description(self):
         """Gets the description of this DiskGroupTypeAndDesInfo.  # noqa: E501
 
-        Description of the disk group type  # noqa: E501
+        Description of the disk group type.  # noqa: E501
 
         :return: The description of this DiskGroupTypeAndDesInfo.  # noqa: E501
         :rtype: str
@@ -91,7 +91,7 @@ class DiskGroupTypeAndDesInfo(object):
     def description(self, description):
         """Sets the description of this DiskGroupTypeAndDesInfo.
 
-        Description of the disk group type  # noqa: E501
+        Description of the disk group type.  # noqa: E501
 
         :param description: The description of this DiskGroupTypeAndDesInfo.  # noqa: E501
         :type: str

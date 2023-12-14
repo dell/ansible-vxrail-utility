@@ -30,7 +30,7 @@ class RequestStatusInfo(object):
     swagger_types = {
         'id': 'str',
         'owner': 'str',
-        'state': 'str',
+        'state': 'RequestState',
         'error': 'str',
         'progress': 'int',
         'start_time': 'int',
@@ -142,10 +142,9 @@ class RequestStatusInfo(object):
     def state(self):
         """Gets the state of this RequestStatusInfo.  # noqa: E501
 
-        The current state of the execution  # noqa: E501
 
         :return: The state of this RequestStatusInfo.  # noqa: E501
-        :rtype: str
+        :rtype: RequestState
         """
         return self._state
 
@@ -153,17 +152,10 @@ class RequestStatusInfo(object):
     def state(self, state):
         """Sets the state of this RequestStatusInfo.
 
-        The current state of the execution  # noqa: E501
 
         :param state: The state of this RequestStatusInfo.  # noqa: E501
-        :type: str
+        :type: RequestState
         """
-        allowed_values = ["UNKNOWN", "STARTED", "IN_PROGRESS", "COMPLETED", "FAILED", "ABANDONED", "ABORTED"]  # noqa: E501
-        if state not in allowed_values:
-            raise ValueError(
-                "Invalid value for `state` ({0}), must be one of {1}"  # noqa: E501
-                .format(state, allowed_values)
-            )
 
         self._state = state
 

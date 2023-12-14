@@ -75,7 +75,7 @@ class StaticIPSettingsSpecV2(object):
     def ip(self):
         """Gets the ip of this StaticIPSettingsSpecV2.  # noqa: E501
 
-        The static IP address to be set for VxRail Manager  # noqa: E501
+        The static IPv4 address to be set for VxRail Manager  # noqa: E501
 
         :return: The ip of this StaticIPSettingsSpecV2.  # noqa: E501
         :rtype: str
@@ -86,7 +86,7 @@ class StaticIPSettingsSpecV2(object):
     def ip(self, ip):
         """Sets the ip of this StaticIPSettingsSpecV2.
 
-        The static IP address to be set for VxRail Manager  # noqa: E501
+        The static IPv4 address to be set for VxRail Manager  # noqa: E501
 
         :param ip: The ip of this StaticIPSettingsSpecV2.  # noqa: E501
         :type: str
@@ -98,7 +98,7 @@ class StaticIPSettingsSpecV2(object):
     def gateway(self):
         """Gets the gateway of this StaticIPSettingsSpecV2.  # noqa: E501
 
-        The network gateway address to be used for VxRail Manager  # noqa: E501
+        The network IPv4 gateway address to be used for VxRail Manager  # noqa: E501
 
         :return: The gateway of this StaticIPSettingsSpecV2.  # noqa: E501
         :rtype: str
@@ -109,7 +109,7 @@ class StaticIPSettingsSpecV2(object):
     def gateway(self, gateway):
         """Sets the gateway of this StaticIPSettingsSpecV2.
 
-        The network gateway address to be used for VxRail Manager  # noqa: E501
+        The network IPv4 gateway address to be used for VxRail Manager  # noqa: E501
 
         :param gateway: The gateway of this StaticIPSettingsSpecV2.  # noqa: E501
         :type: str
@@ -169,7 +169,7 @@ class StaticIPSettingsSpecV2(object):
     def ipv6(self):
         """Gets the ipv6 of this StaticIPSettingsSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The static IPv6 address to be set for VxRail Manager  # noqa: E501
 
         :return: The ipv6 of this StaticIPSettingsSpecV2.  # noqa: E501
         :rtype: str
@@ -180,7 +180,7 @@ class StaticIPSettingsSpecV2(object):
     def ipv6(self, ipv6):
         """Sets the ipv6 of this StaticIPSettingsSpecV2.
 
-        Internal use only  # noqa: E501
+        The static IPv6 address to be set for VxRail Manager  # noqa: E501
 
         :param ipv6: The ipv6 of this StaticIPSettingsSpecV2.  # noqa: E501
         :type: str
@@ -192,7 +192,7 @@ class StaticIPSettingsSpecV2(object):
     def gateway_ipv6(self):
         """Gets the gateway_ipv6 of this StaticIPSettingsSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The network IPv6 gateway address to be used for VxRail Manager  # noqa: E501
 
         :return: The gateway_ipv6 of this StaticIPSettingsSpecV2.  # noqa: E501
         :rtype: str
@@ -203,7 +203,7 @@ class StaticIPSettingsSpecV2(object):
     def gateway_ipv6(self, gateway_ipv6):
         """Sets the gateway_ipv6 of this StaticIPSettingsSpecV2.
 
-        Internal use only  # noqa: E501
+        The network IPv6 gateway address to be used for VxRail Manager  # noqa: E501
 
         :param gateway_ipv6: The gateway_ipv6 of this StaticIPSettingsSpecV2.  # noqa: E501
         :type: str
@@ -215,7 +215,7 @@ class StaticIPSettingsSpecV2(object):
     def prefix_length_ipv6(self):
         """Gets the prefix_length_ipv6 of this StaticIPSettingsSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The prefix length to be used for VxRail Manager  # noqa: E501
 
         :return: The prefix_length_ipv6 of this StaticIPSettingsSpecV2.  # noqa: E501
         :rtype: int
@@ -226,7 +226,7 @@ class StaticIPSettingsSpecV2(object):
     def prefix_length_ipv6(self, prefix_length_ipv6):
         """Sets the prefix_length_ipv6 of this StaticIPSettingsSpecV2.
 
-        Internal use only  # noqa: E501
+        The prefix length to be used for VxRail Manager  # noqa: E501
 
         :param prefix_length_ipv6: The prefix_length_ipv6 of this StaticIPSettingsSpecV2.  # noqa: E501
         :type: int

@@ -44,7 +44,7 @@ class ClusterHostInfoV2(object):
         'led_status': 'str',
         'health': 'str',
         'missing': 'bool',
-        'ip_set': 'ClusterHostInfoIpSet',
+        'ip_set': 'ClusterHostInfoV2IpSet',
         'ip_set_ipv6': 'ClusterHostInfoV2IpSetIpv6',
         'tpm_present': 'bool',
         'operational_status': 'str',
@@ -516,7 +516,7 @@ class ClusterHostInfoV2(object):
 
 
         :return: The ip_set of this ClusterHostInfoV2.  # noqa: E501
-        :rtype: ClusterHostInfoIpSet
+        :rtype: ClusterHostInfoV2IpSet
         """
         return self._ip_set
 
@@ -526,7 +526,7 @@ class ClusterHostInfoV2(object):
 
 
         :param ip_set: The ip_set of this ClusterHostInfoV2.  # noqa: E501
-        :type: ClusterHostInfoIpSet
+        :type: ClusterHostInfoV2IpSet
         """
 
         self._ip_set = ip_set

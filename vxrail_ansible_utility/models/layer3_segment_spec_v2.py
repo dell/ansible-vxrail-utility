@@ -40,7 +40,7 @@ class Layer3SegmentSpecV2(object):
         'vsan_gateway_ipv6': 'str',
         'management_topology': 'str',
         'vsan_netmask': 'str',
-        'vsan_prefix_legnth_ipv6': 'int',
+        'vsan_prefix_length_ipv6': 'int',
         'vsan_vlan': 'int',
         'vsan_init_gateway': 'str',
         'vsan_init_gateway_ipv6': 'str',
@@ -68,7 +68,7 @@ class Layer3SegmentSpecV2(object):
         'vsan_gateway_ipv6': 'vsan_gateway_ipv6',
         'management_topology': 'management_topology',
         'vsan_netmask': 'vsan_netmask',
-        'vsan_prefix_legnth_ipv6': 'vsan_prefix_legnth_ipv6',
+        'vsan_prefix_length_ipv6': 'vsan_prefix_length_ipv6',
         'vsan_vlan': 'vsan_vlan',
         'vsan_init_gateway': 'vsan_init_gateway',
         'vsan_init_gateway_ipv6': 'vsan_init_gateway_ipv6',
@@ -83,7 +83,7 @@ class Layer3SegmentSpecV2(object):
         'vmotion_topology': 'vmotion_topology'
     }
 
-    def __init__(self, segment_info_version=None, segment_label=None, proxy_ip=None, management_gateway=None, management_netmask=None, management_gateway_ipv6=None, management_prefix_length_ipv6=None, management_vlan=None, vsan_gateway=None, vsan_gateway_ipv6=None, management_topology=None, vsan_netmask=None, vsan_prefix_legnth_ipv6=None, vsan_vlan=None, vsan_init_gateway=None, vsan_init_gateway_ipv6=None, vsan_topology=None, vmotion_gateway=None, vmotion_gateway_ipv6=None, vmotion_netmask=None, vmotion_prefix_length_ipv6=None, vmotion_vlan=None, vmotion_init_gateway=None, vmotion_init_gateway_ipv6=None, vmotion_topology=None):  # noqa: E501
+    def __init__(self, segment_info_version=None, segment_label=None, proxy_ip=None, management_gateway=None, management_netmask=None, management_gateway_ipv6=None, management_prefix_length_ipv6=None, management_vlan=None, vsan_gateway=None, vsan_gateway_ipv6=None, management_topology=None, vsan_netmask=None, vsan_prefix_length_ipv6=None, vsan_vlan=None, vsan_init_gateway=None, vsan_init_gateway_ipv6=None, vsan_topology=None, vmotion_gateway=None, vmotion_gateway_ipv6=None, vmotion_netmask=None, vmotion_prefix_length_ipv6=None, vmotion_vlan=None, vmotion_init_gateway=None, vmotion_init_gateway_ipv6=None, vmotion_topology=None):  # noqa: E501
         """Layer3SegmentSpecV2 - a model defined in Swagger"""  # noqa: E501
         self._segment_info_version = None
         self._segment_label = None
@@ -97,7 +97,7 @@ class Layer3SegmentSpecV2(object):
         self._vsan_gateway_ipv6 = None
         self._management_topology = None
         self._vsan_netmask = None
-        self._vsan_prefix_legnth_ipv6 = None
+        self._vsan_prefix_length_ipv6 = None
         self._vsan_vlan = None
         self._vsan_init_gateway = None
         self._vsan_init_gateway_ipv6 = None
@@ -134,8 +134,8 @@ class Layer3SegmentSpecV2(object):
             self.management_topology = management_topology
         if vsan_netmask is not None:
             self.vsan_netmask = vsan_netmask
-        if vsan_prefix_legnth_ipv6 is not None:
-            self.vsan_prefix_legnth_ipv6 = vsan_prefix_legnth_ipv6
+        if vsan_prefix_length_ipv6 is not None:
+            self.vsan_prefix_length_ipv6 = vsan_prefix_length_ipv6
         if vsan_vlan is not None:
             self.vsan_vlan = vsan_vlan
         if vsan_init_gateway is not None:
@@ -165,7 +165,7 @@ class Layer3SegmentSpecV2(object):
     def segment_info_version(self):
         """Gets the segment_info_version of this Layer3SegmentSpecV2.  # noqa: E501
 
-        segment info format version. for SPECV2, it is for Get API.  # noqa: E501
+        The segment information format version for SPECV2 is GET API.  # noqa: E501
 
         :return: The segment_info_version of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -176,7 +176,7 @@ class Layer3SegmentSpecV2(object):
     def segment_info_version(self, segment_info_version):
         """Sets the segment_info_version of this Layer3SegmentSpecV2.
 
-        segment info format version. for SPECV2, it is for Get API.  # noqa: E501
+        The segment information format version for SPECV2 is GET API.  # noqa: E501
 
         :param segment_info_version: The segment_info_version of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -236,7 +236,7 @@ class Layer3SegmentSpecV2(object):
     def management_gateway(self):
         """Gets the management_gateway of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The IPv4 gateway address of the management traffic for the current segment  # noqa: E501
+        The IPv4 gateway address of the management traffic for the current segment.  # noqa: E501
 
         :return: The management_gateway of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -247,7 +247,7 @@ class Layer3SegmentSpecV2(object):
     def management_gateway(self, management_gateway):
         """Sets the management_gateway of this Layer3SegmentSpecV2.
 
-        The IPv4 gateway address of the management traffic for the current segment  # noqa: E501
+        The IPv4 gateway address of the management traffic for the current segment.  # noqa: E501
 
         :param management_gateway: The management_gateway of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -259,7 +259,7 @@ class Layer3SegmentSpecV2(object):
     def management_netmask(self):
         """Gets the management_netmask of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The subnet mask of the management traffic for the current segment  # noqa: E501
+        The subnet mask of the management traffic for the current segment.  # noqa: E501
 
         :return: The management_netmask of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -270,7 +270,7 @@ class Layer3SegmentSpecV2(object):
     def management_netmask(self, management_netmask):
         """Sets the management_netmask of this Layer3SegmentSpecV2.
 
-        The subnet mask of the management traffic for the current segment  # noqa: E501
+        The subnet mask of the management traffic for the current segment.  # noqa: E501
 
         :param management_netmask: The management_netmask of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -282,7 +282,7 @@ class Layer3SegmentSpecV2(object):
     def management_gateway_ipv6(self):
         """Gets the management_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The IPv6 gateway address of the management traffic for the current segment.  # noqa: E501
 
         :return: The management_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -293,7 +293,7 @@ class Layer3SegmentSpecV2(object):
     def management_gateway_ipv6(self, management_gateway_ipv6):
         """Sets the management_gateway_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        The IPv6 gateway address of the management traffic for the current segment.  # noqa: E501
 
         :param management_gateway_ipv6: The management_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -305,7 +305,7 @@ class Layer3SegmentSpecV2(object):
     def management_prefix_length_ipv6(self):
         """Gets the management_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The prefix length of the management traffic for the current segment.  # noqa: E501
 
         :return: The management_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: int
@@ -316,7 +316,7 @@ class Layer3SegmentSpecV2(object):
     def management_prefix_length_ipv6(self, management_prefix_length_ipv6):
         """Sets the management_prefix_length_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        The prefix length of the management traffic for the current segment.  # noqa: E501
 
         :param management_prefix_length_ipv6: The management_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: int
@@ -328,7 +328,7 @@ class Layer3SegmentSpecV2(object):
     def management_vlan(self):
         """Gets the management_vlan of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The VLAN ID of the management traffic for the current segment  # noqa: E501
+        The VLAN ID of the management traffic for the current segment.  # noqa: E501
 
         :return: The management_vlan of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: int
@@ -339,7 +339,7 @@ class Layer3SegmentSpecV2(object):
     def management_vlan(self, management_vlan):
         """Sets the management_vlan of this Layer3SegmentSpecV2.
 
-        The VLAN ID of the management traffic for the current segment  # noqa: E501
+        The VLAN ID of the management traffic for the current segment.  # noqa: E501
 
         :param management_vlan: The management_vlan of this Layer3SegmentSpecV2.  # noqa: E501
         :type: int
@@ -351,7 +351,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_gateway(self):
         """Gets the vsan_gateway of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The IPv4 gateway address of the vSAN traffic for the current segment  # noqa: E501
+        The IPv4 gateway address of the VMware vSAN traffic for the current segment.  # noqa: E501
 
         :return: The vsan_gateway of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -362,7 +362,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_gateway(self, vsan_gateway):
         """Sets the vsan_gateway of this Layer3SegmentSpecV2.
 
-        The IPv4 gateway address of the vSAN traffic for the current segment  # noqa: E501
+        The IPv4 gateway address of the VMware vSAN traffic for the current segment.  # noqa: E501
 
         :param vsan_gateway: The vsan_gateway of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -374,7 +374,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_gateway_ipv6(self):
         """Gets the vsan_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The IPv6 gateway address of the VMware vSAN traffic for the current segment.  # noqa: E501
 
         :return: The vsan_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -385,7 +385,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_gateway_ipv6(self, vsan_gateway_ipv6):
         """Sets the vsan_gateway_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        The IPv6 gateway address of the VMware vSAN traffic for the current segment.  # noqa: E501
 
         :param vsan_gateway_ipv6: The vsan_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -397,7 +397,7 @@ class Layer3SegmentSpecV2(object):
     def management_topology(self):
         """Gets the management_topology of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The topology type for management traffic for the VxRail cluster  # noqa: E501
+        The topology type for management traffic for the VxRail cluster.  # noqa: E501
 
         :return: The management_topology of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -408,7 +408,7 @@ class Layer3SegmentSpecV2(object):
     def management_topology(self, management_topology):
         """Sets the management_topology of this Layer3SegmentSpecV2.
 
-        The topology type for management traffic for the VxRail cluster  # noqa: E501
+        The topology type for management traffic for the VxRail cluster.  # noqa: E501
 
         :param management_topology: The management_topology of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -426,7 +426,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_netmask(self):
         """Gets the vsan_netmask of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The subnet mask for the vSAN traffic for the current segment  # noqa: E501
+        The subnet mask for the VMware vSAN traffic for the current segment.  # noqa: E501
 
         :return: The vsan_netmask of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -437,7 +437,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_netmask(self, vsan_netmask):
         """Sets the vsan_netmask of this Layer3SegmentSpecV2.
 
-        The subnet mask for the vSAN traffic for the current segment  # noqa: E501
+        The subnet mask for the VMware vSAN traffic for the current segment.  # noqa: E501
 
         :param vsan_netmask: The vsan_netmask of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -446,33 +446,33 @@ class Layer3SegmentSpecV2(object):
         self._vsan_netmask = vsan_netmask
 
     @property
-    def vsan_prefix_legnth_ipv6(self):
-        """Gets the vsan_prefix_legnth_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
+    def vsan_prefix_length_ipv6(self):
+        """Gets the vsan_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The prefix length for the VMware vSAN traffic for the current segment.  # noqa: E501
 
-        :return: The vsan_prefix_legnth_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
+        :return: The vsan_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: int
         """
-        return self._vsan_prefix_legnth_ipv6
+        return self._vsan_prefix_length_ipv6
 
-    @vsan_prefix_legnth_ipv6.setter
-    def vsan_prefix_legnth_ipv6(self, vsan_prefix_legnth_ipv6):
-        """Sets the vsan_prefix_legnth_ipv6 of this Layer3SegmentSpecV2.
+    @vsan_prefix_length_ipv6.setter
+    def vsan_prefix_length_ipv6(self, vsan_prefix_length_ipv6):
+        """Sets the vsan_prefix_length_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        The prefix length for the VMware vSAN traffic for the current segment.  # noqa: E501
 
-        :param vsan_prefix_legnth_ipv6: The vsan_prefix_legnth_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
+        :param vsan_prefix_length_ipv6: The vsan_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: int
         """
 
-        self._vsan_prefix_legnth_ipv6 = vsan_prefix_legnth_ipv6
+        self._vsan_prefix_length_ipv6 = vsan_prefix_length_ipv6
 
     @property
     def vsan_vlan(self):
         """Gets the vsan_vlan of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The VLAN ID for the vSAN traffic for the current segment  # noqa: E501
+        The VLAN ID for the VMware vSAN traffic for the current segment.  # noqa: E501
 
         :return: The vsan_vlan of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: int
@@ -483,7 +483,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_vlan(self, vsan_vlan):
         """Sets the vsan_vlan of this Layer3SegmentSpecV2.
 
-        The VLAN ID for the vSAN traffic for the current segment  # noqa: E501
+        The VLAN ID for the VMware vSAN traffic for the current segment.  # noqa: E501
 
         :param vsan_vlan: The vsan_vlan of this Layer3SegmentSpecV2.  # noqa: E501
         :type: int
@@ -495,7 +495,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_init_gateway(self):
         """Gets the vsan_init_gateway of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The IPv4 gateway address of the vSAN traffic for the initial segment. **Note:** When vsan_topology is set as DIFF_SUBNET, this value must be provided during the first L3 segment creation.  # noqa: E501
+        The IPv4 gateway address of the VMware vSAN traffic for the initial segment. **Note:** When vsan_topology is set as DIFF_SUBNET, this value must be provided during the first L3 segment creation.  # noqa: E501
 
         :return: The vsan_init_gateway of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -506,7 +506,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_init_gateway(self, vsan_init_gateway):
         """Sets the vsan_init_gateway of this Layer3SegmentSpecV2.
 
-        The IPv4 gateway address of the vSAN traffic for the initial segment. **Note:** When vsan_topology is set as DIFF_SUBNET, this value must be provided during the first L3 segment creation.  # noqa: E501
+        The IPv4 gateway address of the VMware vSAN traffic for the initial segment. **Note:** When vsan_topology is set as DIFF_SUBNET, this value must be provided during the first L3 segment creation.  # noqa: E501
 
         :param vsan_init_gateway: The vsan_init_gateway of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -518,7 +518,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_init_gateway_ipv6(self):
         """Gets the vsan_init_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The IPv6 gateway address of the VMware vSAN traffic for the initial segment. **Note:** When vsan_topology is set as DIFF_SUBNET, this value must be provided during the first L3 segment creation.  # noqa: E501
 
         :return: The vsan_init_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -529,7 +529,7 @@ class Layer3SegmentSpecV2(object):
     def vsan_init_gateway_ipv6(self, vsan_init_gateway_ipv6):
         """Sets the vsan_init_gateway_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        The IPv6 gateway address of the VMware vSAN traffic for the initial segment. **Note:** When vsan_topology is set as DIFF_SUBNET, this value must be provided during the first L3 segment creation.  # noqa: E501
 
         :param vsan_init_gateway_ipv6: The vsan_init_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -570,7 +570,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_gateway(self):
         """Gets the vmotion_gateway of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The IPv4 gateway address of the vMotion traffic of the current segment  # noqa: E501
+        The IPv4 gateway address of the VMware vSphere vMotion traffic of the current segment.  # noqa: E501
 
         :return: The vmotion_gateway of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -581,7 +581,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_gateway(self, vmotion_gateway):
         """Sets the vmotion_gateway of this Layer3SegmentSpecV2.
 
-        The IPv4 gateway address of the vMotion traffic of the current segment  # noqa: E501
+        The IPv4 gateway address of the VMware vSphere vMotion traffic of the current segment.  # noqa: E501
 
         :param vmotion_gateway: The vmotion_gateway of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -593,7 +593,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_gateway_ipv6(self):
         """Gets the vmotion_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The IPv6 gateway address of the VMware vSphere vMotion traffic of the current segment.  # noqa: E501
 
         :return: The vmotion_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -604,7 +604,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_gateway_ipv6(self, vmotion_gateway_ipv6):
         """Sets the vmotion_gateway_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        The IPv6 gateway address of the VMware vSphere vMotion traffic of the current segment.  # noqa: E501
 
         :param vmotion_gateway_ipv6: The vmotion_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -616,7 +616,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_netmask(self):
         """Gets the vmotion_netmask of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The subnet mask for the vMotion traffic of the current segment  # noqa: E501
+        The subnet mask for the VMware vSphere vMotion traffic of the current segment.  # noqa: E501
 
         :return: The vmotion_netmask of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -627,7 +627,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_netmask(self, vmotion_netmask):
         """Sets the vmotion_netmask of this Layer3SegmentSpecV2.
 
-        The subnet mask for the vMotion traffic of the current segment  # noqa: E501
+        The subnet mask for the VMware vSphere vMotion traffic of the current segment.  # noqa: E501
 
         :param vmotion_netmask: The vmotion_netmask of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -639,7 +639,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_prefix_length_ipv6(self):
         """Gets the vmotion_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The prefix length for the VMware vSphere vMotion traffic of the current segment.  # noqa: E501
 
         :return: The vmotion_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: int
@@ -650,7 +650,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_prefix_length_ipv6(self, vmotion_prefix_length_ipv6):
         """Sets the vmotion_prefix_length_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        The prefix length for the VMware vSphere vMotion traffic of the current segment.  # noqa: E501
 
         :param vmotion_prefix_length_ipv6: The vmotion_prefix_length_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: int
@@ -662,7 +662,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_vlan(self):
         """Gets the vmotion_vlan of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The VLAN ID for the vMotion traffic of the current segment  # noqa: E501
+        The VLAN ID for the  VMware vSphere vMotion traffic of the current segment  # noqa: E501
 
         :return: The vmotion_vlan of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: int
@@ -673,7 +673,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_vlan(self, vmotion_vlan):
         """Sets the vmotion_vlan of this Layer3SegmentSpecV2.
 
-        The VLAN ID for the vMotion traffic of the current segment  # noqa: E501
+        The VLAN ID for the  VMware vSphere vMotion traffic of the current segment  # noqa: E501
 
         :param vmotion_vlan: The vmotion_vlan of this Layer3SegmentSpecV2.  # noqa: E501
         :type: int
@@ -685,7 +685,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_init_gateway(self):
         """Gets the vmotion_init_gateway of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The IPv4 gateway address of the vMotion traffic for the initial segment. **Note:** When vmotion_topology is set as DIFF_SUBNET, this value must be provided during the first L3 segment creation.  # noqa: E501
+        The IPv4 gateway address of the VMware vSphere vMotion traffic for the initial segment. **Note:** When vmotion_topology is set as DIFF_SUBNET, this value must be provided during the first L3 segment creation.  # noqa: E501
 
         :return: The vmotion_init_gateway of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -696,7 +696,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_init_gateway(self, vmotion_init_gateway):
         """Sets the vmotion_init_gateway of this Layer3SegmentSpecV2.
 
-        The IPv4 gateway address of the vMotion traffic for the initial segment. **Note:** When vmotion_topology is set as DIFF_SUBNET, this value must be provided during the first L3 segment creation.  # noqa: E501
+        The IPv4 gateway address of the VMware vSphere vMotion traffic for the initial segment. **Note:** When vmotion_topology is set as DIFF_SUBNET, this value must be provided during the first L3 segment creation.  # noqa: E501
 
         :param vmotion_init_gateway: The vmotion_init_gateway of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -708,7 +708,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_init_gateway_ipv6(self):
         """Gets the vmotion_init_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The IPv6 gateway address of the VMware vSphere vMotion traffic for the initial segment. **Note:** When vmotion_topology is set as DIFF_SUBNET, this value must be provided during the first L3 segment creation.  # noqa: E501
 
         :return: The vmotion_init_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -719,7 +719,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_init_gateway_ipv6(self, vmotion_init_gateway_ipv6):
         """Sets the vmotion_init_gateway_ipv6 of this Layer3SegmentSpecV2.
 
-        Internal use only  # noqa: E501
+        The IPv6 gateway address of the VMware vSphere vMotion traffic for the initial segment. **Note:** When vmotion_topology is set as DIFF_SUBNET, this value must be provided during the first L3 segment creation.  # noqa: E501
 
         :param vmotion_init_gateway_ipv6: The vmotion_init_gateway_ipv6 of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str
@@ -731,7 +731,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_topology(self):
         """Gets the vmotion_topology of this Layer3SegmentSpecV2.  # noqa: E501
 
-        The topology type for the vMotion traffic for the VxRail cluster  # noqa: E501
+        The topology type for the VMware vSphere vMotion traffic for the VxRail cluster.  # noqa: E501
 
         :return: The vmotion_topology of this Layer3SegmentSpecV2.  # noqa: E501
         :rtype: str
@@ -742,7 +742,7 @@ class Layer3SegmentSpecV2(object):
     def vmotion_topology(self, vmotion_topology):
         """Sets the vmotion_topology of this Layer3SegmentSpecV2.
 
-        The topology type for the vMotion traffic for the VxRail cluster  # noqa: E501
+        The topology type for the VMware vSphere vMotion traffic for the VxRail cluster.  # noqa: E501
 
         :param vmotion_topology: The vmotion_topology of this Layer3SegmentSpecV2.  # noqa: E501
         :type: str

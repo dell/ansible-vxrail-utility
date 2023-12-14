@@ -281,7 +281,7 @@ class DiscoveredNodeInfoV5(object):
     def idrac_ipv6(self):
         """Gets the idrac_ipv6 of this DiscoveredNodeInfoV5.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        iDRAC IPv6 address of the node  # noqa: E501
 
         :return: The idrac_ipv6 of this DiscoveredNodeInfoV5.  # noqa: E501
         :rtype: str
@@ -292,7 +292,7 @@ class DiscoveredNodeInfoV5(object):
     def idrac_ipv6(self, idrac_ipv6):
         """Sets the idrac_ipv6 of this DiscoveredNodeInfoV5.
 
-        Internal use only  # noqa: E501
+        iDRAC IPv6 address of the node  # noqa: E501
 
         :param idrac_ipv6: The idrac_ipv6 of this DiscoveredNodeInfoV5.  # noqa: E501
         :type: str
@@ -327,7 +327,7 @@ class DiscoveredNodeInfoV5(object):
     def ipv6(self):
         """Gets the ipv6 of this DiscoveredNodeInfoV5.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        IPv6 address of the node  # noqa: E501
 
         :return: The ipv6 of this DiscoveredNodeInfoV5.  # noqa: E501
         :rtype: str
@@ -338,7 +338,7 @@ class DiscoveredNodeInfoV5(object):
     def ipv6(self, ipv6):
         """Sets the ipv6 of this DiscoveredNodeInfoV5.
 
-        Internal use only  # noqa: E501
+        IPv6 address of the node  # noqa: E501
 
         :param ipv6: The ipv6 of this DiscoveredNodeInfoV5.  # noqa: E501
         :type: str

@@ -232,6 +232,7 @@ class GpuInfoV2(object):
     def gpu_health(self):
         """Gets the gpu_health of this GpuInfoV2.  # noqa: E501
 
+        Health status of the GPU.  # noqa: E501
 
         :return: The gpu_health of this GpuInfoV2.  # noqa: E501
         :rtype: str
@@ -242,6 +243,7 @@ class GpuInfoV2(object):
     def gpu_health(self, gpu_health):
         """Sets the gpu_health of this GpuInfoV2.
 
+        Health status of the GPU.  # noqa: E501
 
         :param gpu_health: The gpu_health of this GpuInfoV2.  # noqa: E501
         :type: str
@@ -253,6 +255,7 @@ class GpuInfoV2(object):
     def gpu_part_number(self):
         """Gets the gpu_part_number of this GpuInfoV2.  # noqa: E501
 
+        Part number of the GPU.  # noqa: E501
 
         :return: The gpu_part_number of this GpuInfoV2.  # noqa: E501
         :rtype: str
@@ -263,6 +266,7 @@ class GpuInfoV2(object):
     def gpu_part_number(self, gpu_part_number):
         """Sets the gpu_part_number of this GpuInfoV2.
 
+        Part number of the GPU.  # noqa: E501
 
         :param gpu_part_number: The gpu_part_number of this GpuInfoV2.  # noqa: E501
         :type: str
@@ -274,6 +278,7 @@ class GpuInfoV2(object):
     def gpu_state(self):
         """Gets the gpu_state of this GpuInfoV2.  # noqa: E501
 
+        State of the GPU.  # noqa: E501
 
         :return: The gpu_state of this GpuInfoV2.  # noqa: E501
         :rtype: str
@@ -284,6 +289,7 @@ class GpuInfoV2(object):
     def gpu_state(self, gpu_state):
         """Sets the gpu_state of this GpuInfoV2.
 
+        State of the GPU.  # noqa: E501
 
         :param gpu_state: The gpu_state of this GpuInfoV2.  # noqa: E501
         :type: str
@@ -295,6 +301,7 @@ class GpuInfoV2(object):
     def last_update_time(self):
         """Gets the last_update_time of this GpuInfoV2.  # noqa: E501
 
+        Last updated time of the GPU.   # noqa: E501
 
         :return: The last_update_time of this GpuInfoV2.  # noqa: E501
         :rtype: int
@@ -305,6 +312,7 @@ class GpuInfoV2(object):
     def last_update_time(self, last_update_time):
         """Sets the last_update_time of this GpuInfoV2.
 
+        Last updated time of the GPU.   # noqa: E501
 
         :param last_update_time: The last_update_time of this GpuInfoV2.  # noqa: E501
         :type: int
@@ -316,6 +324,7 @@ class GpuInfoV2(object):
     def serial_number(self):
         """Gets the serial_number of this GpuInfoV2.  # noqa: E501
 
+        Serial number of the GPU.  # noqa: E501
 
         :return: The serial_number of this GpuInfoV2.  # noqa: E501
         :rtype: str
@@ -326,6 +335,7 @@ class GpuInfoV2(object):
     def serial_number(self, serial_number):
         """Sets the serial_number of this GpuInfoV2.
 
+        Serial number of the GPU.  # noqa: E501
 
         :param serial_number: The serial_number of this GpuInfoV2.  # noqa: E501
         :type: str

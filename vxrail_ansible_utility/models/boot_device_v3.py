@@ -404,7 +404,7 @@ class BootDeviceV3(object):
     def health(self):
         """Gets the health of this BootDeviceV3.  # noqa: E501
 
-        Health status of the boot device (percentage)  # noqa: E501
+        Health status of the boot device in percentage.  # noqa: E501
 
         :return: The health of this BootDeviceV3.  # noqa: E501
         :rtype: str
@@ -415,7 +415,7 @@ class BootDeviceV3(object):
     def health(self, health):
         """Sets the health of this BootDeviceV3.
 
-        Health status of the boot device (percentage)  # noqa: E501
+        Health status of the boot device in percentage.  # noqa: E501
 
         :param health: The health of this BootDeviceV3.  # noqa: E501
         :type: str

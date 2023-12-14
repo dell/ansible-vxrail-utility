@@ -89,7 +89,7 @@ class SystemInitSpecV5VcenterSsoDomain(object):
     def port(self):
         """Gets the port of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
 
-        The port of the SSO domain  # noqa: E501
+        The port of the SSO domain.  # noqa: E501
 
         :return: The port of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
         :rtype: int
@@ -100,7 +100,7 @@ class SystemInitSpecV5VcenterSsoDomain(object):
     def port(self, port):
         """Sets the port of this SystemInitSpecV5VcenterSsoDomain.
 
-        The port of the SSO domain  # noqa: E501
+        The port of the SSO domain.  # noqa: E501
 
         :param port: The port of this SystemInitSpecV5VcenterSsoDomain.  # noqa: E501
         :type: int

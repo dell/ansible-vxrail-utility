@@ -56,7 +56,8 @@ class HeartbeatInfo(object):
         self.discriminator = None
         if id is not None:
             self.id = id
-        self.status = status
+        if status is not None:
+            self.status = status
         if begin_time is not None:
             self.begin_time = begin_time
         if end_time is not None:
@@ -109,8 +110,6 @@ class HeartbeatInfo(object):
         :param status: The status of this HeartbeatInfo.  # noqa: E501
         :type: str
         """
-        if status is None:
-            raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501
         allowed_values = ["SUCCESS", "FAIL", "ESRS_INACTIVE", "INACTIVE"]  # noqa: E501
         if status not in allowed_values:
             raise ValueError(
@@ -124,7 +123,7 @@ class HeartbeatInfo(object):
     def begin_time(self):
         """Gets the begin_time of this HeartbeatInfo.  # noqa: E501
 
-        The timestamp that status data started to be collected  # noqa: E501
+        The timestamp when the status data started to collect.  # noqa: E501
 
         :return: The begin_time of this HeartbeatInfo.  # noqa: E501
         :rtype: datetime
@@ -135,7 +134,7 @@ class HeartbeatInfo(object):
     def begin_time(self, begin_time):
         """Sets the begin_time of this HeartbeatInfo.
 
-        The timestamp that status data started to be collected  # noqa: E501
+        The timestamp when the status data started to collect.  # noqa: E501
 
         :param begin_time: The begin_time of this HeartbeatInfo.  # noqa: E501
         :type: datetime
@@ -147,7 +146,7 @@ class HeartbeatInfo(object):
     def end_time(self):
         """Gets the end_time of this HeartbeatInfo.  # noqa: E501
 
-        The timestamp that status data stopped being collected  # noqa: E501
+        The timestamp when the status data stopped being collected.  # noqa: E501
 
         :return: The end_time of this HeartbeatInfo.  # noqa: E501
         :rtype: datetime
@@ -158,7 +157,7 @@ class HeartbeatInfo(object):
     def end_time(self, end_time):
         """Sets the end_time of this HeartbeatInfo.
 
-        The timestamp that status data stopped being collected  # noqa: E501
+        The timestamp when the status data stopped being collected.  # noqa: E501
 
         :param end_time: The end_time of this HeartbeatInfo.  # noqa: E501
         :type: datetime

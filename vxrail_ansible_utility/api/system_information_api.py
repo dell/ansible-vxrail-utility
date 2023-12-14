@@ -32,441 +32,6 @@ class SystemInformationApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def query_vx_rail_manager_system_information_v2(self, **kwargs):  # noqa: E501
-        """Get VxRail system information (v2)  # noqa: E501
-
-        Get VxRail system information (v2).  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.query_vx_rail_manager_system_information_v2(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: VxmSystemInfoV2
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.query_vx_rail_manager_system_information_v2_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.query_vx_rail_manager_system_information_v2_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def query_vx_rail_manager_system_information_v2_with_http_info(self, **kwargs):  # noqa: E501
-        """Get VxRail system information (v2)  # noqa: E501
-
-        Get VxRail system information (v2).  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.query_vx_rail_manager_system_information_v2_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: VxmSystemInfoV2
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = []  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method query_vx_rail_manager_system_information_v2" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['basicAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/v2/system', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='VxmSystemInfoV2',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def query_vx_rail_manager_system_information_v3(self, **kwargs):  # noqa: E501
-        """Get VxRail system information (v3)  # noqa: E501
-
-        Get VxRail system information (v3).  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.query_vx_rail_manager_system_information_v3(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: VxmSystemInfoV3
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.query_vx_rail_manager_system_information_v3_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.query_vx_rail_manager_system_information_v3_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def query_vx_rail_manager_system_information_v3_with_http_info(self, **kwargs):  # noqa: E501
-        """Get VxRail system information (v3)  # noqa: E501
-
-        Get VxRail system information (v3).  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.query_vx_rail_manager_system_information_v3_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: VxmSystemInfoV3
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = []  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method query_vx_rail_manager_system_information_v3" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['basicAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/v3/system', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='VxmSystemInfoV3',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def query_vx_rail_manager_system_information_v4(self, **kwargs):  # noqa: E501
-        """Get VxRail system information (v4)  # noqa: E501
-
-        Get VxRail system information (v4). Added support for satellite nodes.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.query_vx_rail_manager_system_information_v4(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: VxmSystemInfoV4
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.query_vx_rail_manager_system_information_v4_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.query_vx_rail_manager_system_information_v4_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def query_vx_rail_manager_system_information_v4_with_http_info(self, **kwargs):  # noqa: E501
-        """Get VxRail system information (v4)  # noqa: E501
-
-        Get VxRail system information (v4). Added support for satellite nodes.  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.query_vx_rail_manager_system_information_v4_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: VxmSystemInfoV4
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = []  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method query_vx_rail_manager_system_information_v4" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['basicAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/v4/system', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='VxmSystemInfoV4',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def query_vx_rail_manager_system_information_v5(self, **kwargs):  # noqa: E501
-        """Get VxRail system information (v5).  # noqa: E501
-
-        VxRail system information (v5). If the cluster type is dynamic node, then Deployment_type displays \"DYNAMIC_NODE\" instead of \"COMPUTE\".  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.query_vx_rail_manager_system_information_v5(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: InlineResponse2001
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.query_vx_rail_manager_system_information_v5_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.query_vx_rail_manager_system_information_v5_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def query_vx_rail_manager_system_information_v5_with_http_info(self, **kwargs):  # noqa: E501
-        """Get VxRail system information (v5).  # noqa: E501
-
-        VxRail system information (v5). If the cluster type is dynamic node, then Deployment_type displays \"DYNAMIC_NODE\" instead of \"COMPUTE\".  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.query_vx_rail_manager_system_information_v5_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: InlineResponse2001
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = []  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method query_vx_rail_manager_system_information_v5" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['basicAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/v5/system', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='InlineResponse2001',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def v1_query_vx_rail_manager_system_information(self, **kwargs):  # noqa: E501
-        """Get VxRail system information (v1)  # noqa: E501
-
-        Get VxRail system information (v1).  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v1_query_vx_rail_manager_system_information(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: VxmSystemInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.v1_query_vx_rail_manager_system_information_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.v1_query_vx_rail_manager_system_information_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def v1_query_vx_rail_manager_system_information_with_http_info(self, **kwargs):  # noqa: E501
-        """Get VxRail system information (v1)  # noqa: E501
-
-        Get VxRail system information (v1).  # noqa: E501
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v1_query_vx_rail_manager_system_information_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: VxmSystemInfo
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = []  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method v1_query_vx_rail_manager_system_information" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['basicAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/v1/system', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='VxmSystemInfo',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
     def v1_system_available_hosts_get(self, **kwargs):  # noqa: E501
         """Get information about available hosts  # noqa: E501
 
@@ -737,7 +302,7 @@ class SystemInformationApi(object):
             collection_formats=collection_formats)
 
     def v1_system_dns_post(self, body, **kwargs):  # noqa: E501
-        """Set DNS for VxRail cluster  # noqa: E501
+        """Set DNS of VxRail cluster  # noqa: E501
 
         Set the DNS servers for the cluster.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -759,7 +324,7 @@ class SystemInformationApi(object):
             return data
 
     def v1_system_dns_post_with_http_info(self, body, **kwargs):  # noqa: E501
-        """Set DNS for VxRail cluster  # noqa: E501
+        """Set DNS of VxRail cluster  # noqa: E501
 
         Set the DNS servers for the cluster.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
@@ -1095,7 +660,7 @@ class SystemInformationApi(object):
             body_params = params['body']
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
+            ['application/json', 'text/html'])  # noqa: E501
 
         # HTTP header `Content-Type`
         header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
@@ -1113,6 +678,93 @@ class SystemInformationApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v1_vx_rail_manager_system_information_get(self, **kwargs):  # noqa: E501
+        """Get VxRail system information (v1)  # noqa: E501
+
+        Get VxRail system information (v1).  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_vx_rail_manager_system_information_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: VxmSystemInfo
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v1_vx_rail_manager_system_information_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.v1_vx_rail_manager_system_information_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def v1_vx_rail_manager_system_information_get_with_http_info(self, **kwargs):  # noqa: E501
+        """Get VxRail system information (v1)  # noqa: E501
+
+        Get VxRail system information (v1).  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_vx_rail_manager_system_information_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: VxmSystemInfo
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v1_vx_rail_manager_system_information_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v1/system', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='VxmSystemInfo',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1204,6 +856,712 @@ class SystemInformationApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type='list[ClusterHostInfoV2]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v2_system_dns_get(self, **kwargs):  # noqa: E501
+        """Get DNS of VxRail cluster  # noqa: E501
+
+        Get information about the DNS servers for the cluster.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v2_system_dns_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: DNSInfoV2
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v2_system_dns_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.v2_system_dns_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def v2_system_dns_get_with_http_info(self, **kwargs):  # noqa: E501
+        """Get DNS of VxRail cluster  # noqa: E501
+
+        Get information about the DNS servers for the cluster.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v2_system_dns_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: DNSInfoV2
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v2_system_dns_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v2/system/dns', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='DNSInfoV2',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v2_system_dns_post(self, body, **kwargs):  # noqa: E501
+        """Set DNS for VxRail cluster  # noqa: E501
+
+        Set the DNS servers for the cluster.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v2_system_dns_post(body, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param DNSInfoSpecV2 body: DNS servers for VxRail cluster (required)
+        :return: DNSInfoV2
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v2_system_dns_post_with_http_info(body, **kwargs)  # noqa: E501
+        else:
+            (data) = self.v2_system_dns_post_with_http_info(body, **kwargs)  # noqa: E501
+            return data
+
+    def v2_system_dns_post_with_http_info(self, body, **kwargs):  # noqa: E501
+        """Set DNS for VxRail cluster  # noqa: E501
+
+        Set the DNS servers for the cluster.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v2_system_dns_post_with_http_info(body, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param DNSInfoSpecV2 body: DNS servers for VxRail cluster (required)
+        :return: DNSInfoV2
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['body']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v2_system_dns_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'body' is set
+        if ('body' not in params or
+                params['body'] is None):
+            raise ValueError("Missing the required parameter `body` when calling `v2_system_dns_post`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'body' in params:
+            body_params = params['body']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v2/system/dns', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='DNSInfoV2',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v2_vx_rail_manager_system_information_get(self, **kwargs):  # noqa: E501
+        """Get VxRail system information (v2)  # noqa: E501
+
+        Get VxRail system information (v2).  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v2_vx_rail_manager_system_information_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: VxmSystemInfoV2
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v2_vx_rail_manager_system_information_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.v2_vx_rail_manager_system_information_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def v2_vx_rail_manager_system_information_get_with_http_info(self, **kwargs):  # noqa: E501
+        """Get VxRail system information (v2)  # noqa: E501
+
+        Get VxRail system information (v2).  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v2_vx_rail_manager_system_information_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: VxmSystemInfoV2
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v2_vx_rail_manager_system_information_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v2/system', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='VxmSystemInfoV2',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v3_system_cluster_hosts_get(self, **kwargs):  # noqa: E501
+        """Get information about configured hosts  # noqa: E501
+
+        Get information about configured hosts in the VxRail cluster. Added a new field, last_boot_time.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v3_system_cluster_hosts_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str filter: You can filter a list of hosts by the fields; id, appliance_id, slot, model, is_primary_node, bios_uuid, and cluster_affinity using the supported operators, eq and ne.
+        :return: list[ClusterHostInfoV3]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v3_system_cluster_hosts_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.v3_system_cluster_hosts_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def v3_system_cluster_hosts_get_with_http_info(self, **kwargs):  # noqa: E501
+        """Get information about configured hosts  # noqa: E501
+
+        Get information about configured hosts in the VxRail cluster. Added a new field, last_boot_time.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v3_system_cluster_hosts_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str filter: You can filter a list of hosts by the fields; id, appliance_id, slot, model, is_primary_node, bios_uuid, and cluster_affinity using the supported operators, eq and ne.
+        :return: list[ClusterHostInfoV3]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['filter']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v3_system_cluster_hosts_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'filter' in params:
+            query_params.append(('$filter', params['filter']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v3/system/cluster-hosts', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[ClusterHostInfoV3]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v3_vx_rail_manager_system_information_get(self, **kwargs):  # noqa: E501
+        """Get VxRail system information (v3)  # noqa: E501
+
+        Get VxRail system information (v3).  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v3_vx_rail_manager_system_information_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: VxmSystemInfoV3
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v3_vx_rail_manager_system_information_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.v3_vx_rail_manager_system_information_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def v3_vx_rail_manager_system_information_get_with_http_info(self, **kwargs):  # noqa: E501
+        """Get VxRail system information (v3)  # noqa: E501
+
+        Get VxRail system information (v3).  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v3_vx_rail_manager_system_information_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: VxmSystemInfoV3
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v3_vx_rail_manager_system_information_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v3/system', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='VxmSystemInfoV3',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v4_vx_rail_manager_system_information_get(self, **kwargs):  # noqa: E501
+        """Get VxRail system information (v4)  # noqa: E501
+
+        Get VxRail system information (v4). Added support for satellite nodes.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v4_vx_rail_manager_system_information_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: VxmSystemInfoV4
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v4_vx_rail_manager_system_information_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.v4_vx_rail_manager_system_information_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def v4_vx_rail_manager_system_information_get_with_http_info(self, **kwargs):  # noqa: E501
+        """Get VxRail system information (v4)  # noqa: E501
+
+        Get VxRail system information (v4). Added support for satellite nodes.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v4_vx_rail_manager_system_information_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: VxmSystemInfoV4
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v4_vx_rail_manager_system_information_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v4/system', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='VxmSystemInfoV4',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v5_query_vx_rail_manager_system_information_get(self, **kwargs):  # noqa: E501
+        """Get VxRail system information (v5).  # noqa: E501
+
+        VxRail system information (v5). If the cluster type is dynamic node, then Deployment_type displays \"DYNAMIC_NODE\" instead of \"COMPUTE\".  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v5_query_vx_rail_manager_system_information_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: InlineResponse2001
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v5_query_vx_rail_manager_system_information_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.v5_query_vx_rail_manager_system_information_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def v5_query_vx_rail_manager_system_information_get_with_http_info(self, **kwargs):  # noqa: E501
+        """Get VxRail system information (v5).  # noqa: E501
+
+        VxRail system information (v5). If the cluster type is dynamic node, then Deployment_type displays \"DYNAMIC_NODE\" instead of \"COMPUTE\".  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v5_query_vx_rail_manager_system_information_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: InlineResponse2001
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v5_query_vx_rail_manager_system_information_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v5/system', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='InlineResponse2001',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+    
+    def query_cluster_configured_host_info(self, **kwargs):  # noqa: E501
+        """Get cluster configured hosts information  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.query_cluster_configured_host_info(async_req=True)
+        >>> result = thread.get()
+        :param async_req bool
+        :return: list[PrivateClusterHostInfo]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.query_cluster_configured_host_info_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.query_cluster_configured_host_info_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def query_cluster_configured_host_info_with_http_info(self, **kwargs):  # noqa: E501
+        """Get cluster configured hosts information  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.query_cluster_configured_host_info_with_http_info(async_req=True)
+        >>> result = thread.get()
+        :param async_req bool
+        :return: list[PrivateClusterHostInfo]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method query_cluster_configured_host_info" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/private/system/cluster-hosts', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[PrivateClusterHostInfo]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

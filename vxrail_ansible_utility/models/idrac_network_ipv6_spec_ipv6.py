@@ -61,7 +61,7 @@ class IdracNetworkIPv6SpecIpv6(object):
     def ip_address(self):
         """Gets the ip_address of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The IPv6 MAC address of the iDRAC  # noqa: E501
 
         :return: The ip_address of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
         :rtype: str
@@ -72,7 +72,7 @@ class IdracNetworkIPv6SpecIpv6(object):
     def ip_address(self, ip_address):
         """Sets the ip_address of this IdracNetworkIPv6SpecIpv6.
 
-        Internal use only  # noqa: E501
+        The IPv6 MAC address of the iDRAC  # noqa: E501
 
         :param ip_address: The ip_address of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
         :type: str
@@ -84,7 +84,7 @@ class IdracNetworkIPv6SpecIpv6(object):
     def prefix_length(self):
         """Gets the prefix_length of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The prefix length of the iDRAC  # noqa: E501
 
         :return: The prefix_length of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
         :rtype: int
@@ -95,7 +95,7 @@ class IdracNetworkIPv6SpecIpv6(object):
     def prefix_length(self, prefix_length):
         """Sets the prefix_length of this IdracNetworkIPv6SpecIpv6.
 
-        Internal use only  # noqa: E501
+        The prefix length of the iDRAC  # noqa: E501
 
         :param prefix_length: The prefix_length of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
         :type: int
@@ -107,7 +107,7 @@ class IdracNetworkIPv6SpecIpv6(object):
     def gateway(self):
         """Gets the gateway of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The IPv6 gateway address of the iDRAC  # noqa: E501
 
         :return: The gateway of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
         :rtype: str
@@ -118,7 +118,7 @@ class IdracNetworkIPv6SpecIpv6(object):
     def gateway(self, gateway):
         """Sets the gateway of this IdracNetworkIPv6SpecIpv6.
 
-        Internal use only  # noqa: E501
+        The IPv6 gateway address of the iDRAC  # noqa: E501
 
         :param gateway: The gateway of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
         :type: str
@@ -130,7 +130,7 @@ class IdracNetworkIPv6SpecIpv6(object):
     def auto_config_enabled(self):
         """Gets the auto_config_enabled of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        Whether DHCP service enabled or not  # noqa: E501
 
         :return: The auto_config_enabled of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
         :rtype: bool
@@ -141,7 +141,7 @@ class IdracNetworkIPv6SpecIpv6(object):
     def auto_config_enabled(self, auto_config_enabled):
         """Sets the auto_config_enabled of this IdracNetworkIPv6SpecIpv6.
 
-        Internal use only  # noqa: E501
+        Whether DHCP service enabled or not  # noqa: E501
 
         :param auto_config_enabled: The auto_config_enabled of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
         :type: bool
