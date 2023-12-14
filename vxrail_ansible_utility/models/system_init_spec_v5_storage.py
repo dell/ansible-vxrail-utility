@@ -30,25 +30,30 @@ class SystemInitSpecV5Storage(object):
     swagger_types = {
         'disk_group_type': 'str',
         'primary_storage_type': 'str',
+        'params': 'SystemInitSpecV5StorageParams',
         'vsan_hci_mesh_params': 'SystemInitSpecV5StorageVsanHciMeshParams'
     }
 
     attribute_map = {
         'disk_group_type': 'disk_group_type',
         'primary_storage_type': 'primary_storage_type',
+        'params': 'params',
         'vsan_hci_mesh_params': 'vsan_hci_mesh_params'
     }
 
-    def __init__(self, disk_group_type=None, primary_storage_type=None, vsan_hci_mesh_params=None):  # noqa: E501
+    def __init__(self, disk_group_type=None, primary_storage_type=None, params=None, vsan_hci_mesh_params=None):  # noqa: E501
         """SystemInitSpecV5Storage - a model defined in Swagger"""  # noqa: E501
         self._disk_group_type = None
         self._primary_storage_type = None
+        self._params = None
         self._vsan_hci_mesh_params = None
         self.discriminator = None
         if disk_group_type is not None:
             self.disk_group_type = disk_group_type
         if primary_storage_type is not None:
             self.primary_storage_type = primary_storage_type
+        if params is not None:
+            self.params = params
         if vsan_hci_mesh_params is not None:
             self.vsan_hci_mesh_params = vsan_hci_mesh_params
 
@@ -101,7 +106,7 @@ class SystemInitSpecV5Storage(object):
         :param primary_storage_type: The primary_storage_type of this SystemInitSpecV5Storage.  # noqa: E501
         :type: str
         """
-        allowed_values = ["VMFS_ON_FC", "EXTERNAL", "VSAN_HCI_MESH"]  # noqa: E501
+        allowed_values = ["VMFS_ON_FC", "EXTERNAL", "VVOL", "VSAN_HCI_MESH"]  # noqa: E501
         if primary_storage_type not in allowed_values:
             raise ValueError(
                 "Invalid value for `primary_storage_type` ({0}), must be one of {1}"  # noqa: E501
@@ -109,6 +114,27 @@ class SystemInitSpecV5Storage(object):
             )
 
         self._primary_storage_type = primary_storage_type
+
+    @property
+    def params(self):
+        """Gets the params of this SystemInitSpecV5Storage.  # noqa: E501
+
+
+        :return: The params of this SystemInitSpecV5Storage.  # noqa: E501
+        :rtype: SystemInitSpecV5StorageParams
+        """
+        return self._params
+
+    @params.setter
+    def params(self, params):
+        """Sets the params of this SystemInitSpecV5Storage.
+
+
+        :param params: The params of this SystemInitSpecV5Storage.  # noqa: E501
+        :type: SystemInitSpecV5StorageParams
+        """
+
+        self._params = params
 
     @property
     def vsan_hci_mesh_params(self):

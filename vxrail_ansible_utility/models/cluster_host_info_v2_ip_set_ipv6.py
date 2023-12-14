@@ -56,7 +56,7 @@ class ClusterHostInfoV2IpSetIpv6(object):
     def management_ip(self):
         """Gets the management_ip of this ClusterHostInfoV2IpSetIpv6.  # noqa: E501
 
-        Internal use only.  # noqa: E501
+        IPv6 for management.  # noqa: E501
 
         :return: The management_ip of this ClusterHostInfoV2IpSetIpv6.  # noqa: E501
         :rtype: str
@@ -67,7 +67,7 @@ class ClusterHostInfoV2IpSetIpv6(object):
     def management_ip(self, management_ip):
         """Sets the management_ip of this ClusterHostInfoV2IpSetIpv6.
 
-        Internal use only.  # noqa: E501
+        IPv6 for management.  # noqa: E501
 
         :param management_ip: The management_ip of this ClusterHostInfoV2IpSetIpv6.  # noqa: E501
         :type: str
@@ -79,7 +79,7 @@ class ClusterHostInfoV2IpSetIpv6(object):
     def vsan_ip(self):
         """Gets the vsan_ip of this ClusterHostInfoV2IpSetIpv6.  # noqa: E501
 
-        Internal use only.  # noqa: E501
+        IPv6 for VMware vSAN.  # noqa: E501
 
         :return: The vsan_ip of this ClusterHostInfoV2IpSetIpv6.  # noqa: E501
         :rtype: str
@@ -90,7 +90,7 @@ class ClusterHostInfoV2IpSetIpv6(object):
     def vsan_ip(self, vsan_ip):
         """Sets the vsan_ip of this ClusterHostInfoV2IpSetIpv6.
 
-        Internal use only.  # noqa: E501
+        IPv6 for VMware vSAN.  # noqa: E501
 
         :param vsan_ip: The vsan_ip of this ClusterHostInfoV2IpSetIpv6.  # noqa: E501
         :type: str
@@ -102,7 +102,7 @@ class ClusterHostInfoV2IpSetIpv6(object):
     def vmotion_ip(self):
         """Gets the vmotion_ip of this ClusterHostInfoV2IpSetIpv6.  # noqa: E501
 
-        Internal use only.  # noqa: E501
+        IPv6 for VMware vSphere vMotion.  # noqa: E501
 
         :return: The vmotion_ip of this ClusterHostInfoV2IpSetIpv6.  # noqa: E501
         :rtype: str
@@ -113,7 +113,7 @@ class ClusterHostInfoV2IpSetIpv6(object):
     def vmotion_ip(self, vmotion_ip):
         """Sets the vmotion_ip of this ClusterHostInfoV2IpSetIpv6.
 
-        Internal use only.  # noqa: E501
+        IPv6 for VMware vSphere vMotion.  # noqa: E501
 
         :param vmotion_ip: The vmotion_ip of this ClusterHostInfoV2IpSetIpv6.  # noqa: E501
         :type: str

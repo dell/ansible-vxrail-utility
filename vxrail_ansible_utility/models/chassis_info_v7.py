@@ -44,7 +44,7 @@ class ChassisInfoV7(object):
         'health': 'str',
         'missing': 'bool',
         'hosts': 'list[HostBasicInfoV7]',
-        'witness': 'WitnessBasicInfoV2',
+        'witness': 'list[WitnessBasicInfoV2]',
         'power_supplies': 'list[PowerSupplyInfo]',
         'chassis_manager_fw_version': 'str',
         'bay': 'bool'
@@ -519,9 +519,10 @@ class ChassisInfoV7(object):
     def witness(self):
         """Gets the witness of this ChassisInfoV7.  # noqa: E501
 
+        Witness information of the chassis.  # noqa: E501
 
         :return: The witness of this ChassisInfoV7.  # noqa: E501
-        :rtype: WitnessBasicInfoV2
+        :rtype: list[WitnessBasicInfoV2]
         """
         return self._witness
 
@@ -529,9 +530,10 @@ class ChassisInfoV7(object):
     def witness(self, witness):
         """Sets the witness of this ChassisInfoV7.
 
+        Witness information of the chassis.  # noqa: E501
 
         :param witness: The witness of this ChassisInfoV7.  # noqa: E501
-        :type: WitnessBasicInfoV2
+        :type: list[WitnessBasicInfoV2]
         """
 
         self._witness = witness

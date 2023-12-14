@@ -42,10 +42,8 @@ class SystemInitSpecV5GeoLocation(object):
         self._rack_name = None
         self._position = None
         self.discriminator = None
-        if rack_name is not None:
-            self.rack_name = rack_name
-        if position is not None:
-            self.position = position
+        self.rack_name = rack_name
+        self.position = position
 
     @property
     def rack_name(self):
@@ -67,6 +65,8 @@ class SystemInitSpecV5GeoLocation(object):
         :param rack_name: The rack_name of this SystemInitSpecV5GeoLocation.  # noqa: E501
         :type: str
         """
+        if rack_name is None:
+            raise ValueError("Invalid value for `rack_name`, must not be `None`")  # noqa: E501
 
         self._rack_name = rack_name
 
@@ -90,6 +90,8 @@ class SystemInitSpecV5GeoLocation(object):
         :param position: The position of this SystemInitSpecV5GeoLocation.  # noqa: E501
         :type: int
         """
+        if position is None:
+            raise ValueError("Invalid value for `position`, must not be `None`")  # noqa: E501
 
         self._position = position
 

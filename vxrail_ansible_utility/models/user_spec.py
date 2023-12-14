@@ -49,7 +49,7 @@ class UserSpec(object):
     def username(self):
         """Gets the username of this UserSpec.  # noqa: E501
 
-        Username of the account  # noqa: E501
+        Username of the account.  # noqa: E501
 
         :return: The username of this UserSpec.  # noqa: E501
         :rtype: str
@@ -60,7 +60,7 @@ class UserSpec(object):
     def username(self, username):
         """Sets the username of this UserSpec.
 
-        Username of the account  # noqa: E501
+        Username of the account.  # noqa: E501
 
         :param username: The username of this UserSpec.  # noqa: E501
         :type: str
@@ -74,7 +74,7 @@ class UserSpec(object):
     def password(self):
         """Gets the password of this UserSpec.  # noqa: E501
 
-        Password of the account  # noqa: E501
+        Password of the account.  # noqa: E501
 
         :return: The password of this UserSpec.  # noqa: E501
         :rtype: str
@@ -85,7 +85,7 @@ class UserSpec(object):
     def password(self, password):
         """Sets the password of this UserSpec.
 
-        Password of the account  # noqa: E501
+        Password of the account.  # noqa: E501
 
         :param password: The password of this UserSpec.  # noqa: E501
         :type: str

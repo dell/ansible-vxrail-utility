@@ -79,7 +79,7 @@ class ClusterHostInfoV3IpSet(object):
     def vsan_ip(self):
         """Gets the vsan_ip of this ClusterHostInfoV3IpSet.  # noqa: E501
 
-        The vSAN IPv4 address.  # noqa: E501
+        The VMware vSAN IPv4 address.  # noqa: E501
 
         :return: The vsan_ip of this ClusterHostInfoV3IpSet.  # noqa: E501
         :rtype: str
@@ -90,7 +90,7 @@ class ClusterHostInfoV3IpSet(object):
     def vsan_ip(self, vsan_ip):
         """Sets the vsan_ip of this ClusterHostInfoV3IpSet.
 
-        The vSAN IPv4 address.  # noqa: E501
+        The VMware vSAN IPv4 address.  # noqa: E501
 
         :param vsan_ip: The vsan_ip of this ClusterHostInfoV3IpSet.  # noqa: E501
         :type: str
@@ -102,7 +102,7 @@ class ClusterHostInfoV3IpSet(object):
     def vmotion_ip(self):
         """Gets the vmotion_ip of this ClusterHostInfoV3IpSet.  # noqa: E501
 
-        vMotion IPv4 address.  # noqa: E501
+        The VMware vSphere vMotion IPv4 address.  # noqa: E501
 
         :return: The vmotion_ip of this ClusterHostInfoV3IpSet.  # noqa: E501
         :rtype: str
@@ -113,7 +113,7 @@ class ClusterHostInfoV3IpSet(object):
     def vmotion_ip(self, vmotion_ip):
         """Sets the vmotion_ip of this ClusterHostInfoV3IpSet.
 
-        vMotion IPv4 address.  # noqa: E501
+        The VMware vSphere vMotion IPv4 address.  # noqa: E501
 
         :param vmotion_ip: The vmotion_ip of this ClusterHostInfoV3IpSet.  # noqa: E501
         :type: str

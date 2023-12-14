@@ -121,12 +121,6 @@ class IdracUserUpdateSpec(object):
         """
         if privilege is None:
             raise ValueError("Invalid value for `privilege`, must not be `None`")  # noqa: E501
-        allowed_values = ["ADMIN", "OPER", "READONLY"]  # noqa: E501
-        if privilege not in allowed_values:
-            raise ValueError(
-                "Invalid value for `privilege` ({0}), must be one of {1}"  # noqa: E501
-                .format(privilege, allowed_values)
-            )
 
         self._privilege = privilege
 

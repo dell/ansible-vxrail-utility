@@ -79,7 +79,7 @@ class SystemInitSpecV5Network(object):
     def ip(self):
         """Gets the ip of this SystemInitSpecV5Network.  # noqa: E501
 
-        The IP address of component  # noqa: E501
+        The IPv4 address of component  # noqa: E501
 
         :return: The ip of this SystemInitSpecV5Network.  # noqa: E501
         :rtype: str
@@ -90,7 +90,7 @@ class SystemInitSpecV5Network(object):
     def ip(self, ip):
         """Sets the ip of this SystemInitSpecV5Network.
 
-        The IP address of component  # noqa: E501
+        The IPv4 address of component  # noqa: E501
 
         :param ip: The ip of this SystemInitSpecV5Network.  # noqa: E501
         :type: str
@@ -102,7 +102,7 @@ class SystemInitSpecV5Network(object):
     def ipv6(self):
         """Gets the ipv6 of this SystemInitSpecV5Network.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The IPv6 address of component  # noqa: E501
 
         :return: The ipv6 of this SystemInitSpecV5Network.  # noqa: E501
         :rtype: str
@@ -113,7 +113,7 @@ class SystemInitSpecV5Network(object):
     def ipv6(self, ipv6):
         """Sets the ipv6 of this SystemInitSpecV5Network.
 
-        Internal use only  # noqa: E501
+        The IPv6 address of component  # noqa: E501
 
         :param ipv6: The ipv6 of this SystemInitSpecV5Network.  # noqa: E501
         :type: str

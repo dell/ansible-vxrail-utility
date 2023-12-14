@@ -46,7 +46,7 @@ class ClusterHostInfoV3(object):
         'cluster_affinity': 'bool',
         'last_boot_time': 'str',
         'ip_set': 'ClusterHostInfoV3IpSet',
-        'ip_set_ipv6': 'ClusterHostInfoV2IpSetIpv6',
+        'ip_set_ipv6': 'ClusterHostInfoV3IpSetIpv6',
         'discovered_date': 'int',
         'bios_uuid': 'str',
         'segment_label': 'str'
@@ -565,7 +565,7 @@ class ClusterHostInfoV3(object):
 
 
         :return: The ip_set_ipv6 of this ClusterHostInfoV3.  # noqa: E501
-        :rtype: ClusterHostInfoV2IpSetIpv6
+        :rtype: ClusterHostInfoV3IpSetIpv6
         """
         return self._ip_set_ipv6
 
@@ -575,7 +575,7 @@ class ClusterHostInfoV3(object):
 
 
         :param ip_set_ipv6: The ip_set_ipv6 of this ClusterHostInfoV3.  # noqa: E501
-        :type: ClusterHostInfoV2IpSetIpv6
+        :type: ClusterHostInfoV3IpSetIpv6
         """
 
         self._ip_set_ipv6 = ip_set_ipv6

@@ -548,7 +548,7 @@ class DiskInfoV3(object):
         :param disk_claim_type: The disk_claim_type of this DiskInfoV3.  # noqa: E501
         :type: str
         """
-        allowed_values = ["non-vSAN", "vSAN", "unmanaged"]  # noqa: E501
+        allowed_values = ["non-vSAN", "vSAN", "unmanaged", "vSAN ESA"]  # noqa: E501
         if disk_claim_type not in allowed_values:
             raise ValueError(
                 "Invalid value for `disk_claim_type` ({0}), must be one of {1}"  # noqa: E501

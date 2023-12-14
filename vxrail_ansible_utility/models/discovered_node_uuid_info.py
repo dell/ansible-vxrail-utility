@@ -45,7 +45,7 @@ class DiscoveredNodeUuidInfo(object):
     def host(self):
         """Gets the host of this DiscoveredNodeUuidInfo.  # noqa: E501
 
-        The UUID of the node  # noqa: E501
+        The UUID of the node.  # noqa: E501
 
         :return: The host of this DiscoveredNodeUuidInfo.  # noqa: E501
         :rtype: str
@@ -56,7 +56,7 @@ class DiscoveredNodeUuidInfo(object):
     def host(self, host):
         """Sets the host of this DiscoveredNodeUuidInfo.
 
-        The UUID of the node  # noqa: E501
+        The UUID of the node.  # noqa: E501
 
         :param host: The host of this DiscoveredNodeUuidInfo.  # noqa: E501
         :type: str

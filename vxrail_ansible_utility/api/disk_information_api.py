@@ -32,13 +32,13 @@ class DiskInformationApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def v1_disks_get(self, **kwargs):  # noqa: E501
+    def v1_disks_information_get(self, **kwargs):  # noqa: E501
         """Get a list of disks  # noqa: E501
 
         Retrieve a list of disk drives and their associated information.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v1_disks_get(async_req=True)
+        >>> thread = api.v1_disks_information_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -48,18 +48,18 @@ class DiskInformationApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.v1_disks_get_with_http_info(**kwargs)  # noqa: E501
+            return self.v1_disks_information_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.v1_disks_get_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.v1_disks_information_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def v1_disks_get_with_http_info(self, **kwargs):  # noqa: E501
+    def v1_disks_information_get_with_http_info(self, **kwargs):  # noqa: E501
         """Get a list of disks  # noqa: E501
 
         Retrieve a list of disk drives and their associated information.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v1_disks_get_with_http_info(async_req=True)
+        >>> thread = api.v1_disks_information_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -79,7 +79,7 @@ class DiskInformationApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method v1_disks_get" % key
+                    " to method v1_disks_information_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -119,13 +119,13 @@ class DiskInformationApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def v1_disks_sn_get(self, disk_sn, **kwargs):  # noqa: E501
+    def v1_disks_information_sn_get(self, disk_sn, **kwargs):  # noqa: E501
         """Get information about a disk  # noqa: E501
 
         Retrieve information about a specific disk drive.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v1_disks_sn_get(disk_sn, async_req=True)
+        >>> thread = api.v1_disks_information_sn_get(disk_sn, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -136,18 +136,18 @@ class DiskInformationApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.v1_disks_sn_get_with_http_info(disk_sn, **kwargs)  # noqa: E501
+            return self.v1_disks_information_sn_get_with_http_info(disk_sn, **kwargs)  # noqa: E501
         else:
-            (data) = self.v1_disks_sn_get_with_http_info(disk_sn, **kwargs)  # noqa: E501
+            (data) = self.v1_disks_information_sn_get_with_http_info(disk_sn, **kwargs)  # noqa: E501
             return data
 
-    def v1_disks_sn_get_with_http_info(self, disk_sn, **kwargs):  # noqa: E501
+    def v1_disks_information_sn_get_with_http_info(self, disk_sn, **kwargs):  # noqa: E501
         """Get information about a disk  # noqa: E501
 
         Retrieve information about a specific disk drive.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.v1_disks_sn_get_with_http_info(disk_sn, async_req=True)
+        >>> thread = api.v1_disks_information_sn_get_with_http_info(disk_sn, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -168,14 +168,14 @@ class DiskInformationApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method v1_disks_sn_get" % key
+                    " to method v1_disks_information_sn_get" % key
                 )
             params[key] = val
         del params['kwargs']
         # verify the required parameter 'disk_sn' is set
         if ('disk_sn' not in params or
                 params['disk_sn'] is None):
-            raise ValueError("Missing the required parameter `disk_sn` when calling `v1_disks_sn_get`")  # noqa: E501
+            raise ValueError("Missing the required parameter `disk_sn` when calling `v1_disks_information_sn_get`")  # noqa: E501
 
         collection_formats = {}
 

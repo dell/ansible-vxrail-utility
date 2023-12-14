@@ -161,7 +161,7 @@ class SystemInitSpecV5Global(object):
     def ip_version(self):
         """Gets the ip_version of this SystemInitSpecV5Global.  # noqa: E501
 
-        IPV4 is the default value. IPV6 and DUALSTACK are for internal use only.  # noqa: E501
+        ip_version is to define the network configuration of the entire VxRail environment. It can be set either IPv4, IPv6 or Dual-stack. The default value is IPv4.  # noqa: E501
 
         :return: The ip_version of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: str
@@ -172,7 +172,7 @@ class SystemInitSpecV5Global(object):
     def ip_version(self, ip_version):
         """Sets the ip_version of this SystemInitSpecV5Global.
 
-        IPV4 is the default value. IPV6 and DUALSTACK are for internal use only.  # noqa: E501
+        ip_version is to define the network configuration of the entire VxRail environment. It can be set either IPv4, IPv6 or Dual-stack. The default value is IPv4.  # noqa: E501
 
         :param ip_version: The ip_version of this SystemInitSpecV5Global.  # noqa: E501
         :type: str
@@ -311,7 +311,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vsan_prefix_length_ipv6(self):
         """Gets the cluster_vsan_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        IPv6 prefix length for VMware vSAN cluster nodes.  # noqa: E501
 
         :return: The cluster_vsan_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: int
@@ -322,7 +322,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vsan_prefix_length_ipv6(self, cluster_vsan_prefix_length_ipv6):
         """Sets the cluster_vsan_prefix_length_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        IPv6 prefix length for VMware vSAN cluster nodes.  # noqa: E501
 
         :param cluster_vsan_prefix_length_ipv6: The cluster_vsan_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: int
@@ -334,7 +334,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vsan_gateway_ipv6(self):
         """Gets the cluster_vsan_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        IPv6 gateway for VMware vSAN node cluster.  # noqa: E501
 
         :return: The cluster_vsan_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: str
@@ -345,7 +345,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vsan_gateway_ipv6(self, cluster_vsan_gateway_ipv6):
         """Sets the cluster_vsan_gateway_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        IPv6 gateway for VMware vSAN node cluster.  # noqa: E501
 
         :param cluster_vsan_gateway_ipv6: The cluster_vsan_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: str
@@ -357,7 +357,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vmotion_prefix_length_ipv6(self):
         """Gets the cluster_vmotion_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        Prefix length for VMware vSphere vMotion node cluster.  # noqa: E501
 
         :return: The cluster_vmotion_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: int
@@ -368,7 +368,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vmotion_prefix_length_ipv6(self, cluster_vmotion_prefix_length_ipv6):
         """Sets the cluster_vmotion_prefix_length_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        Prefix length for VMware vSphere vMotion node cluster.  # noqa: E501
 
         :param cluster_vmotion_prefix_length_ipv6: The cluster_vmotion_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: int
@@ -380,7 +380,7 @@ class SystemInitSpecV5Global(object):
     def cluster_management_prefix_length_ipv6(self):
         """Gets the cluster_management_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        Prefix length for cluster management nodes  # noqa: E501
 
         :return: The cluster_management_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: int
@@ -391,7 +391,7 @@ class SystemInitSpecV5Global(object):
     def cluster_management_prefix_length_ipv6(self, cluster_management_prefix_length_ipv6):
         """Sets the cluster_management_prefix_length_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        Prefix length for cluster management nodes  # noqa: E501
 
         :param cluster_management_prefix_length_ipv6: The cluster_management_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: int
@@ -403,7 +403,7 @@ class SystemInitSpecV5Global(object):
     def cluster_management_gateway_ipv6(self):
         """Gets the cluster_management_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        IPv6 gateway for cluster management nodes  # noqa: E501
 
         :return: The cluster_management_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: str
@@ -414,7 +414,7 @@ class SystemInitSpecV5Global(object):
     def cluster_management_gateway_ipv6(self, cluster_management_gateway_ipv6):
         """Sets the cluster_management_gateway_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        IPv6 gateway for cluster management nodes  # noqa: E501
 
         :param cluster_management_gateway_ipv6: The cluster_management_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: str
@@ -449,7 +449,7 @@ class SystemInitSpecV5Global(object):
     def cluster_systemvm_gateway(self):
         """Gets the cluster_systemvm_gateway of this SystemInitSpecV5Global.  # noqa: E501
 
-        Gateway address for cluster management nodes  # noqa: E501
+        IPv4 gateway address for cluster management nodes  # noqa: E501
 
         :return: The cluster_systemvm_gateway of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: str
@@ -460,7 +460,7 @@ class SystemInitSpecV5Global(object):
     def cluster_systemvm_gateway(self, cluster_systemvm_gateway):
         """Sets the cluster_systemvm_gateway of this SystemInitSpecV5Global.
 
-        Gateway address for cluster management nodes  # noqa: E501
+        IPv4 gateway address for cluster management nodes  # noqa: E501
 
         :param cluster_systemvm_gateway: The cluster_systemvm_gateway of this SystemInitSpecV5Global.  # noqa: E501
         :type: str
@@ -472,7 +472,7 @@ class SystemInitSpecV5Global(object):
     def cluster_systemvm_prefix_length_ipv6(self):
         """Gets the cluster_systemvm_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        Prefix length for cluster management nodes  # noqa: E501
 
         :return: The cluster_systemvm_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: int
@@ -483,7 +483,7 @@ class SystemInitSpecV5Global(object):
     def cluster_systemvm_prefix_length_ipv6(self, cluster_systemvm_prefix_length_ipv6):
         """Sets the cluster_systemvm_prefix_length_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        Prefix length for cluster management nodes  # noqa: E501
 
         :param cluster_systemvm_prefix_length_ipv6: The cluster_systemvm_prefix_length_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: int
@@ -495,7 +495,7 @@ class SystemInitSpecV5Global(object):
     def cluster_systemvm_gateway_ipv6(self):
         """Gets the cluster_systemvm_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        IPv6 gateway address for cluster management nodes  # noqa: E501
 
         :return: The cluster_systemvm_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: str
@@ -506,7 +506,7 @@ class SystemInitSpecV5Global(object):
     def cluster_systemvm_gateway_ipv6(self, cluster_systemvm_gateway_ipv6):
         """Sets the cluster_systemvm_gateway_ipv6 of this SystemInitSpecV5Global.
 
-        Internal use only  # noqa: E501
+        IPv6 gateway address for cluster management nodes  # noqa: E501
 
         :param cluster_systemvm_gateway_ipv6: The cluster_systemvm_gateway_ipv6 of this SystemInitSpecV5Global.  # noqa: E501
         :type: str
@@ -564,7 +564,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vsan_netmask(self):
         """Gets the cluster_vsan_netmask of this SystemInitSpecV5Global.  # noqa: E501
 
-        Subnet mask for the vSAN cluster  # noqa: E501
+        Subnet mask for the VMware vSAN node cluster.  # noqa: E501
 
         :return: The cluster_vsan_netmask of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: str
@@ -575,7 +575,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vsan_netmask(self, cluster_vsan_netmask):
         """Sets the cluster_vsan_netmask of this SystemInitSpecV5Global.
 
-        Subnet mask for the vSAN cluster  # noqa: E501
+        Subnet mask for the VMware vSAN node cluster.  # noqa: E501
 
         :param cluster_vsan_netmask: The cluster_vsan_netmask of this SystemInitSpecV5Global.  # noqa: E501
         :type: str
@@ -587,7 +587,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vsan_gateway(self):
         """Gets the cluster_vsan_gateway of this SystemInitSpecV5Global.  # noqa: E501
 
-        Gateway address for cluster vSAN nodes  # noqa: E501
+        Gateway address for VMware vSAN node cluster.  # noqa: E501
 
         :return: The cluster_vsan_gateway of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: str
@@ -598,7 +598,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vsan_gateway(self, cluster_vsan_gateway):
         """Sets the cluster_vsan_gateway of this SystemInitSpecV5Global.
 
-        Gateway address for cluster vSAN nodes  # noqa: E501
+        Gateway address for VMware vSAN node cluster.  # noqa: E501
 
         :param cluster_vsan_gateway: The cluster_vsan_gateway of this SystemInitSpecV5Global.  # noqa: E501
         :type: str
@@ -610,7 +610,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vmotion_netmask(self):
         """Gets the cluster_vmotion_netmask of this SystemInitSpecV5Global.  # noqa: E501
 
-        Subnet mask for the vSphere vMotion cluster  # noqa: E501
+        Subnet mask for the VMware vSphere vMotion node cluster.  # noqa: E501
 
         :return: The cluster_vmotion_netmask of this SystemInitSpecV5Global.  # noqa: E501
         :rtype: str
@@ -621,7 +621,7 @@ class SystemInitSpecV5Global(object):
     def cluster_vmotion_netmask(self, cluster_vmotion_netmask):
         """Sets the cluster_vmotion_netmask of this SystemInitSpecV5Global.
 
-        Subnet mask for the vSphere vMotion cluster  # noqa: E501
+        Subnet mask for the VMware vSphere vMotion node cluster.  # noqa: E501
 
         :param cluster_vmotion_netmask: The cluster_vmotion_netmask of this SystemInitSpecV5Global.  # noqa: E501
         :type: str

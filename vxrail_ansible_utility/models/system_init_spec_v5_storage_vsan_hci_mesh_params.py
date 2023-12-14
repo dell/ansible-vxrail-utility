@@ -104,7 +104,7 @@ class SystemInitSpecV5StorageVsanHciMeshParams(object):
     def storage_policy_profile_name(self):
         """Gets the storage_policy_profile_name of this SystemInitSpecV5StorageVsanHciMeshParams.  # noqa: E501
 
-        vSAN storage policy name.  # noqa: E501
+        The vCenter policy that is applied to the VxRail Manager VM. The default policy is vSAN Default Storage Policy.  # noqa: E501
 
         :return: The storage_policy_profile_name of this SystemInitSpecV5StorageVsanHciMeshParams.  # noqa: E501
         :rtype: str
@@ -115,7 +115,7 @@ class SystemInitSpecV5StorageVsanHciMeshParams(object):
     def storage_policy_profile_name(self, storage_policy_profile_name):
         """Sets the storage_policy_profile_name of this SystemInitSpecV5StorageVsanHciMeshParams.
 
-        vSAN storage policy name.  # noqa: E501
+        The vCenter policy that is applied to the VxRail Manager VM. The default policy is vSAN Default Storage Policy.  # noqa: E501
 
         :param storage_policy_profile_name: The storage_policy_profile_name of this SystemInitSpecV5StorageVsanHciMeshParams.  # noqa: E501
         :type: str

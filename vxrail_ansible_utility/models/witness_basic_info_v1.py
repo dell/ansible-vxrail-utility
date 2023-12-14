@@ -28,14 +28,372 @@ class WitnessBasicInfoV1(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'sn': 'str',
+        'psnt': 'str',
+        'moid': 'str',
+        'hostname': 'str',
+        'os_version': 'str',
+        'bios_version': 'str',
+        'cpu': 'str',
+        'power_status': 'str',
+        'memory': 'str',
+        'witness_management': 'object',
+        'boot_devices': 'list[BootDeviceV3]',
+        'nics': 'list[NicV2]',
+        'disks': 'list[DiskInfoV2]'
     }
 
     attribute_map = {
+        'sn': 'sn',
+        'psnt': 'psnt',
+        'moid': 'moid',
+        'hostname': 'hostname',
+        'os_version': 'os_version',
+        'bios_version': 'bios_version',
+        'cpu': 'cpu',
+        'power_status': 'power_status',
+        'memory': 'memory',
+        'witness_management': 'witness_management',
+        'boot_devices': 'boot_devices',
+        'nics': 'nics',
+        'disks': 'disks'
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self, sn=None, psnt=None, moid=None, hostname=None, os_version=None, bios_version=None, cpu=None, power_status=None, memory=None, witness_management=None, boot_devices=None, nics=None, disks=None):  # noqa: E501
         """WitnessBasicInfoV1 - a model defined in Swagger"""  # noqa: E501
+        self._sn = None
+        self._psnt = None
+        self._moid = None
+        self._hostname = None
+        self._os_version = None
+        self._bios_version = None
+        self._cpu = None
+        self._power_status = None
+        self._memory = None
+        self._witness_management = None
+        self._boot_devices = None
+        self._nics = None
+        self._disks = None
         self.discriminator = None
+        if sn is not None:
+            self.sn = sn
+        if psnt is not None:
+            self.psnt = psnt
+        if moid is not None:
+            self.moid = moid
+        if hostname is not None:
+            self.hostname = hostname
+        if os_version is not None:
+            self.os_version = os_version
+        if bios_version is not None:
+            self.bios_version = bios_version
+        if cpu is not None:
+            self.cpu = cpu
+        if power_status is not None:
+            self.power_status = power_status
+        if memory is not None:
+            self.memory = memory
+        if witness_management is not None:
+            self.witness_management = witness_management
+        if boot_devices is not None:
+            self.boot_devices = boot_devices
+        if nics is not None:
+            self.nics = nics
+        if disks is not None:
+            self.disks = disks
+
+    @property
+    def sn(self):
+        """Gets the sn of this WitnessBasicInfoV1.  # noqa: E501
+
+        Serial number of the witness.  # noqa: E501
+
+        :return: The sn of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: str
+        """
+        return self._sn
+
+    @sn.setter
+    def sn(self, sn):
+        """Sets the sn of this WitnessBasicInfoV1.
+
+        Serial number of the witness.  # noqa: E501
+
+        :param sn: The sn of this WitnessBasicInfoV1.  # noqa: E501
+        :type: str
+        """
+
+        self._sn = sn
+
+    @property
+    def psnt(self):
+        """Gets the psnt of this WitnessBasicInfoV1.  # noqa: E501
+
+        PSNT of the witness  # noqa: E501
+
+        :return: The psnt of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: str
+        """
+        return self._psnt
+
+    @psnt.setter
+    def psnt(self, psnt):
+        """Sets the psnt of this WitnessBasicInfoV1.
+
+        PSNT of the witness  # noqa: E501
+
+        :param psnt: The psnt of this WitnessBasicInfoV1.  # noqa: E501
+        :type: str
+        """
+
+        self._psnt = psnt
+
+    @property
+    def moid(self):
+        """Gets the moid of this WitnessBasicInfoV1.  # noqa: E501
+
+        MOID of the witness.  # noqa: E501
+
+        :return: The moid of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: str
+        """
+        return self._moid
+
+    @moid.setter
+    def moid(self, moid):
+        """Sets the moid of this WitnessBasicInfoV1.
+
+        MOID of the witness.  # noqa: E501
+
+        :param moid: The moid of this WitnessBasicInfoV1.  # noqa: E501
+        :type: str
+        """
+
+        self._moid = moid
+
+    @property
+    def hostname(self):
+        """Gets the hostname of this WitnessBasicInfoV1.  # noqa: E501
+
+        Host name of the witness  # noqa: E501
+
+        :return: The hostname of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: str
+        """
+        return self._hostname
+
+    @hostname.setter
+    def hostname(self, hostname):
+        """Sets the hostname of this WitnessBasicInfoV1.
+
+        Host name of the witness  # noqa: E501
+
+        :param hostname: The hostname of this WitnessBasicInfoV1.  # noqa: E501
+        :type: str
+        """
+
+        self._hostname = hostname
+
+    @property
+    def os_version(self):
+        """Gets the os_version of this WitnessBasicInfoV1.  # noqa: E501
+
+        Operating System version of the witness  # noqa: E501
+
+        :return: The os_version of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: str
+        """
+        return self._os_version
+
+    @os_version.setter
+    def os_version(self, os_version):
+        """Sets the os_version of this WitnessBasicInfoV1.
+
+        Operating System version of the witness  # noqa: E501
+
+        :param os_version: The os_version of this WitnessBasicInfoV1.  # noqa: E501
+        :type: str
+        """
+
+        self._os_version = os_version
+
+    @property
+    def bios_version(self):
+        """Gets the bios_version of this WitnessBasicInfoV1.  # noqa: E501
+
+        BIOS firmware version of the witness  # noqa: E501
+
+        :return: The bios_version of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: str
+        """
+        return self._bios_version
+
+    @bios_version.setter
+    def bios_version(self, bios_version):
+        """Sets the bios_version of this WitnessBasicInfoV1.
+
+        BIOS firmware version of the witness  # noqa: E501
+
+        :param bios_version: The bios_version of this WitnessBasicInfoV1.  # noqa: E501
+        :type: str
+        """
+
+        self._bios_version = bios_version
+
+    @property
+    def cpu(self):
+        """Gets the cpu of this WitnessBasicInfoV1.  # noqa: E501
+
+        CPU information of the witness  # noqa: E501
+
+        :return: The cpu of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: str
+        """
+        return self._cpu
+
+    @cpu.setter
+    def cpu(self, cpu):
+        """Sets the cpu of this WitnessBasicInfoV1.
+
+        CPU information of the witness  # noqa: E501
+
+        :param cpu: The cpu of this WitnessBasicInfoV1.  # noqa: E501
+        :type: str
+        """
+
+        self._cpu = cpu
+
+    @property
+    def power_status(self):
+        """Gets the power_status of this WitnessBasicInfoV1.  # noqa: E501
+
+        Power status of the witness  # noqa: E501
+
+        :return: The power_status of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: str
+        """
+        return self._power_status
+
+    @power_status.setter
+    def power_status(self, power_status):
+        """Sets the power_status of this WitnessBasicInfoV1.
+
+        Power status of the witness  # noqa: E501
+
+        :param power_status: The power_status of this WitnessBasicInfoV1.  # noqa: E501
+        :type: str
+        """
+
+        self._power_status = power_status
+
+    @property
+    def memory(self):
+        """Gets the memory of this WitnessBasicInfoV1.  # noqa: E501
+
+        Memory of the witness  # noqa: E501
+
+        :return: The memory of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: str
+        """
+        return self._memory
+
+    @memory.setter
+    def memory(self, memory):
+        """Sets the memory of this WitnessBasicInfoV1.
+
+        Memory of the witness  # noqa: E501
+
+        :param memory: The memory of this WitnessBasicInfoV1.  # noqa: E501
+        :type: str
+        """
+
+        self._memory = memory
+
+    @property
+    def witness_management(self):
+        """Gets the witness_management of this WitnessBasicInfoV1.  # noqa: E501
+
+        Firmware version of the witness manager.  # noqa: E501
+
+        :return: The witness_management of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: object
+        """
+        return self._witness_management
+
+    @witness_management.setter
+    def witness_management(self, witness_management):
+        """Sets the witness_management of this WitnessBasicInfoV1.
+
+        Firmware version of the witness manager.  # noqa: E501
+
+        :param witness_management: The witness_management of this WitnessBasicInfoV1.  # noqa: E501
+        :type: object
+        """
+
+        self._witness_management = witness_management
+
+    @property
+    def boot_devices(self):
+        """Gets the boot_devices of this WitnessBasicInfoV1.  # noqa: E501
+
+
+        :return: The boot_devices of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: list[BootDeviceV3]
+        """
+        return self._boot_devices
+
+    @boot_devices.setter
+    def boot_devices(self, boot_devices):
+        """Sets the boot_devices of this WitnessBasicInfoV1.
+
+
+        :param boot_devices: The boot_devices of this WitnessBasicInfoV1.  # noqa: E501
+        :type: list[BootDeviceV3]
+        """
+
+        self._boot_devices = boot_devices
+
+    @property
+    def nics(self):
+        """Gets the nics of this WitnessBasicInfoV1.  # noqa: E501
+
+
+        :return: The nics of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: list[NicV2]
+        """
+        return self._nics
+
+    @nics.setter
+    def nics(self, nics):
+        """Sets the nics of this WitnessBasicInfoV1.
+
+
+        :param nics: The nics of this WitnessBasicInfoV1.  # noqa: E501
+        :type: list[NicV2]
+        """
+
+        self._nics = nics
+
+    @property
+    def disks(self):
+        """Gets the disks of this WitnessBasicInfoV1.  # noqa: E501
+
+
+        :return: The disks of this WitnessBasicInfoV1.  # noqa: E501
+        :rtype: list[DiskInfoV2]
+        """
+        return self._disks
+
+    @disks.setter
+    def disks(self, disks):
+        """Sets the disks of this WitnessBasicInfoV1.
+
+
+        :param disks: The disks of this WitnessBasicInfoV1.  # noqa: E501
+        :type: list[DiskInfoV2]
+        """
+
+        self._disks = disks
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -33,16 +33,16 @@ class VxRailInstallationApi(object):
         self.api_client = api_client
 
     def v1_system_initialize_customer_supplied_hosts_post(self, body, **kwargs):  # noqa: E501
-        """Return nodes by customer supplied management IP  # noqa: E501
+        """Return nodes by customer-supplied management IP address  # noqa: E501
 
-        Return nodes by the customer supplied node management IP address and ESXi root password.  # noqa: E501
+        Return nodes by the customer-supplied node management IP address and ESXi root password.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_system_initialize_customer_supplied_hosts_post(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param list[CustomerSuppliedHostInfo] body: Management IP and password for all customer supplied hosts (required)
+        :param list[CustomerSuppliedHostInfo] body: Management IP address and password for all customer-supplied hosts. (required)
         :return: list[DiscoveredNodeInfoV2]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -55,16 +55,16 @@ class VxRailInstallationApi(object):
             return data
 
     def v1_system_initialize_customer_supplied_hosts_post_with_http_info(self, body, **kwargs):  # noqa: E501
-        """Return nodes by customer supplied management IP  # noqa: E501
+        """Return nodes by customer-supplied management IP address  # noqa: E501
 
-        Return nodes by the customer supplied node management IP address and ESXi root password.  # noqa: E501
+        Return nodes by the customer-supplied node management IP address and ESXi root password.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_system_initialize_customer_supplied_hosts_post_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param list[CustomerSuppliedHostInfo] body: Management IP and password for all customer supplied hosts (required)
+        :param list[CustomerSuppliedHostInfo] body: Management IP address and password for all customer-supplied hosts. (required)
         :return: list[DiscoveredNodeInfoV2]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -508,17 +508,17 @@ class VxRailInstallationApi(object):
             collection_formats=collection_formats)
 
     def v2_system_initialize_customer_supplied_hosts_post(self, body, **kwargs):  # noqa: E501
-        """Return nodes by customer supplied management IP  # noqa: E501
+        """Return nodes by customer-supplied management IP address  # noqa: E501
 
-        Return nodes by the customer supplied node management IP address and ESXi root password.  # noqa: E501
+        Return nodes by the customer-supplied node management IP address and ESXi root password.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_system_initialize_customer_supplied_hosts_post(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param list[CustomerSuppliedHostInfo] body: Management IP and password for all customer supplied hosts (required)
-        :return: DiscoveredNodesInfoV3
+        :param list[CustomerSuppliedHostInfo] body: Management IP address and password for all customer-supplied hosts. (required)
+        :return: DiscoveredNodesInfoV4
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -530,17 +530,17 @@ class VxRailInstallationApi(object):
             return data
 
     def v2_system_initialize_customer_supplied_hosts_post_with_http_info(self, body, **kwargs):  # noqa: E501
-        """Return nodes by customer supplied management IP  # noqa: E501
+        """Return nodes by customer-supplied management IP address  # noqa: E501
 
-        Return nodes by the customer supplied node management IP address and ESXi root password.  # noqa: E501
+        Return nodes by the customer-supplied node management IP address and ESXi root password.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_system_initialize_customer_supplied_hosts_post_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param list[CustomerSuppliedHostInfo] body: Management IP and password for all customer supplied hosts (required)
-        :return: DiscoveredNodesInfoV3
+        :param list[CustomerSuppliedHostInfo] body: Management IP address and password for all customer-supplied hosts. (required)
+        :return: DiscoveredNodesInfoV4
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -598,7 +598,7 @@ class VxRailInstallationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='DiscoveredNodesInfoV3',  # noqa: E501
+            response_type='DiscoveredNodesInfoV4',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -616,7 +616,7 @@ class VxRailInstallationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: DiscoveredNodesInfoV3
+        :return: DiscoveredNodesInfoV4
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -637,7 +637,7 @@ class VxRailInstallationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: DiscoveredNodesInfoV3
+        :return: DiscoveredNodesInfoV4
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -685,7 +685,7 @@ class VxRailInstallationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='DiscoveredNodesInfoV3',  # noqa: E501
+            response_type='DiscoveredNodesInfoV4',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

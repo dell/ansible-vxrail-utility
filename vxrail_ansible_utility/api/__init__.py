@@ -21,6 +21,7 @@ from vxrail_ansible_utility.api.host_information_api import HostInformationApi
 from vxrail_ansible_utility.api.host_removal_api import HostRemovalApi
 from vxrail_ansible_utility.api.lcm_pre_check_api import LCMPreCheckApi
 from vxrail_ansible_utility.api.lcm_upgrade_api import LCMUpgradeApi
+from vxrail_ansible_utility.api.management_account_api import ManagementAccountApi
 from vxrail_ansible_utility.api.network_segment_management_api import NetworkSegmentManagementApi
 from vxrail_ansible_utility.api.pre_installation_static_ip_api import PreInstallationStaticIPApi
 from vxrail_ansible_utility.api.request_status_api import RequestStatusApi
@@ -45,3 +46,4 @@ from vxrail_ansible_utility.api.trust_store_certificates_info_api import TrustSt
 from vxrail_ansible_utility.api.virtual_machine_information_api import VirtualMachineInformationApi
 from vxrail_ansible_utility.api.vx_rail_installation_api import VxRailInstallationApi
 from vxrail_ansible_utility.api.v_center_server_mode_api import VCenterServerModeApi
+from vxrail_ansible_utility.api.v_lcm_api import VLCMApi

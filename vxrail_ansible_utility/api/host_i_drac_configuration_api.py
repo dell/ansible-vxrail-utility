@@ -42,7 +42,7 @@ class HostIDRACConfigurationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :return: list[int]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -64,7 +64,7 @@ class HostIDRACConfigurationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :return: list[int]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -137,7 +137,7 @@ class HostIDRACConfigurationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :return: IdracNetworkInfo
                  If the method is called asynchronously,
                  returns the request thread.
@@ -159,7 +159,7 @@ class HostIDRACConfigurationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :return: IdracNetworkInfo
                  If the method is called asynchronously,
                  returns the request thread.
@@ -233,7 +233,7 @@ class HostIDRACConfigurationApi(object):
 
         :param async_req bool
         :param IdracNetworkSpec body: The network parameters for the iDRAC network. (required)
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :return: Model202Nocontent
                  If the method is called asynchronously,
                  returns the request thread.
@@ -256,7 +256,7 @@ class HostIDRACConfigurationApi(object):
 
         :param async_req bool
         :param IdracNetworkSpec body: The network parameters for the iDRAC network. (required)
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :return: Model202Nocontent
                  If the method is called asynchronously,
                  returns the request thread.
@@ -339,7 +339,7 @@ class HostIDRACConfigurationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :return: list[IdracUserInfo]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -361,7 +361,7 @@ class HostIDRACConfigurationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :return: list[IdracUserInfo]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -435,7 +435,7 @@ class HostIDRACConfigurationApi(object):
 
         :param async_req bool
         :param IdracUserUpdateSpec body: The iDRAC user account information for the user to be updated. (required)
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :param str user_id: The unique identifier of the iDRAC user. The available range is between 3 and 16. (required)
         :return: Model202Nocontent
                  If the method is called asynchronously,
@@ -459,7 +459,7 @@ class HostIDRACConfigurationApi(object):
 
         :param async_req bool
         :param IdracUserUpdateSpec body: The iDRAC user account information for the user to be updated. (required)
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :param str user_id: The unique identifier of the iDRAC user. The available range is between 3 and 16. (required)
         :return: Model202Nocontent
                  If the method is called asynchronously,
@@ -550,7 +550,7 @@ class HostIDRACConfigurationApi(object):
 
         :param async_req bool
         :param IdracUserCreateSpec body: The iDRAC user account information for the user to be created. (required)
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :return: Model202Nocontent
                  If the method is called asynchronously,
                  returns the request thread.
@@ -573,7 +573,7 @@ class HostIDRACConfigurationApi(object):
 
         :param async_req bool
         :param IdracUserCreateSpec body: The iDRAC user account information for the user to be created. (required)
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :return: Model202Nocontent
                  If the method is called asynchronously,
                  returns the request thread.
@@ -656,7 +656,7 @@ class HostIDRACConfigurationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :return: IdracNetworkInfoWithIPv6
                  If the method is called asynchronously,
                  returns the request thread.
@@ -678,7 +678,7 @@ class HostIDRACConfigurationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str sn: The serial number of the host to be queried. (required)
+        :param str sn: The serial number of the host. (required)
         :return: IdracNetworkInfoWithIPv6
                  If the method is called asynchronously,
                  returns the request thread.
@@ -744,15 +744,15 @@ class HostIDRACConfigurationApi(object):
     def v2_hosts_sn_idrac_network_patch(self, body, sn, **kwargs):  # noqa: E501
         """Update the iDRAC network settings  # noqa: E501
 
-        Update the iDRAC network settings on the specified host.  # noqa: E501
+        Update the iDRAC network settings on the specified host. Update IPv4 address or IPv6 address at a time.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_hosts_sn_idrac_network_patch(body, sn, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param IdracNetworkIPv6Spec body: The network parameters for the iDRAC network. (required)
-        :param str sn: The serial number of the host to be queried. (required)
+        :param IdracNetworkIPv6Spec body: The network parameters for the iDRAC network. Enter IPv4 address or IPv6 address at a time. (required)
+        :param str sn: The serial number of the host. (required)
         :return: Model202Nocontent
                  If the method is called asynchronously,
                  returns the request thread.
@@ -767,15 +767,15 @@ class HostIDRACConfigurationApi(object):
     def v2_hosts_sn_idrac_network_patch_with_http_info(self, body, sn, **kwargs):  # noqa: E501
         """Update the iDRAC network settings  # noqa: E501
 
-        Update the iDRAC network settings on the specified host.  # noqa: E501
+        Update the iDRAC network settings on the specified host. Update IPv4 address or IPv6 address at a time.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_hosts_sn_idrac_network_patch_with_http_info(body, sn, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param IdracNetworkIPv6Spec body: The network parameters for the iDRAC network. (required)
-        :param str sn: The serial number of the host to be queried. (required)
+        :param IdracNetworkIPv6Spec body: The network parameters for the iDRAC network. Enter IPv4 address or IPv6 address at a time. (required)
+        :param str sn: The serial number of the host. (required)
         :return: Model202Nocontent
                  If the method is called asynchronously,
                  returns the request thread.
@@ -841,6 +841,121 @@ class HostIDRACConfigurationApi(object):
             post_params=form_params,
             files=local_var_files,
             response_type='Model202Nocontent',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v2_hosts_sn_idrac_user_id_put(self, body, sn, user_id, **kwargs):  # noqa: E501
+        """Update the iDRAC user account and validate the current password. Two new properties, \"current_password\" for validation and \"new_password\" are added to v2.  # noqa: E501
+
+        Update the iDRAC user account and validate the current password. Two new properties, \"current_password\" for validation and \"new_password\" are added to v2.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v2_hosts_sn_idrac_user_id_put(body, sn, user_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param IdracUserUpdateSpecV2 body: The iDRAC user account information for the user to be updated. (required)
+        :param str sn: The serial number of the host. (required)
+        :param str user_id: The unique identifier of the iDRAC user. The available range is between 3 and 16. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v2_hosts_sn_idrac_user_id_put_with_http_info(body, sn, user_id, **kwargs)  # noqa: E501
+        else:
+            (data) = self.v2_hosts_sn_idrac_user_id_put_with_http_info(body, sn, user_id, **kwargs)  # noqa: E501
+            return data
+
+    def v2_hosts_sn_idrac_user_id_put_with_http_info(self, body, sn, user_id, **kwargs):  # noqa: E501
+        """Update the iDRAC user account and validate the current password. Two new properties, \"current_password\" for validation and \"new_password\" are added to v2.  # noqa: E501
+
+        Update the iDRAC user account and validate the current password. Two new properties, \"current_password\" for validation and \"new_password\" are added to v2.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v2_hosts_sn_idrac_user_id_put_with_http_info(body, sn, user_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param IdracUserUpdateSpecV2 body: The iDRAC user account information for the user to be updated. (required)
+        :param str sn: The serial number of the host. (required)
+        :param str user_id: The unique identifier of the iDRAC user. The available range is between 3 and 16. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['body', 'sn', 'user_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v2_hosts_sn_idrac_user_id_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'body' is set
+        if ('body' not in params or
+                params['body'] is None):
+            raise ValueError("Missing the required parameter `body` when calling `v2_hosts_sn_idrac_user_id_put`")  # noqa: E501
+        # verify the required parameter 'sn' is set
+        if ('sn' not in params or
+                params['sn'] is None):
+            raise ValueError("Missing the required parameter `sn` when calling `v2_hosts_sn_idrac_user_id_put`")  # noqa: E501
+        # verify the required parameter 'user_id' is set
+        if ('user_id' not in params or
+                params['user_id'] is None):
+            raise ValueError("Missing the required parameter `user_id` when calling `v2_hosts_sn_idrac_user_id_put`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sn' in params:
+            path_params['sn'] = params['sn']  # noqa: E501
+        if 'user_id' in params:
+            path_params['userId'] = params['user_id']  # noqa: E501
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'body' in params:
+            body_params = params['body']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v2/hosts/{sn}/idrac/users/{userId}', 'PUT',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

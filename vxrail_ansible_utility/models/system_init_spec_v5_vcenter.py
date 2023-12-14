@@ -137,7 +137,7 @@ class SystemInitSpecV5Vcenter(object):
     def vxrail_supplied_vc_ip(self):
         """Gets the vxrail_supplied_vc_ip of this SystemInitSpecV5Vcenter.  # noqa: E501
 
-        The IP address of the VxRail integrated vCenter server. This property is only provided if the vCenter server is VxRail integrated.  # noqa: E501
+        The IPv4 address of the VxRail-managed VMware vCenter server. This property is only provided if the VMware vCenter server is VxRail-managed.  # noqa: E501
 
         :return: The vxrail_supplied_vc_ip of this SystemInitSpecV5Vcenter.  # noqa: E501
         :rtype: str
@@ -148,7 +148,7 @@ class SystemInitSpecV5Vcenter(object):
     def vxrail_supplied_vc_ip(self, vxrail_supplied_vc_ip):
         """Sets the vxrail_supplied_vc_ip of this SystemInitSpecV5Vcenter.
 
-        The IP address of the VxRail integrated vCenter server. This property is only provided if the vCenter server is VxRail integrated.  # noqa: E501
+        The IPv4 address of the VxRail-managed VMware vCenter server. This property is only provided if the VMware vCenter server is VxRail-managed.  # noqa: E501
 
         :param vxrail_supplied_vc_ip: The vxrail_supplied_vc_ip of this SystemInitSpecV5Vcenter.  # noqa: E501
         :type: str
@@ -160,7 +160,7 @@ class SystemInitSpecV5Vcenter(object):
     def vxrail_supplied_vc_ipv6(self):
         """Gets the vxrail_supplied_vc_ipv6 of this SystemInitSpecV5Vcenter.  # noqa: E501
 
-        Internal use only  # noqa: E501
+        The IPv6 address of the VxRail-managed VMware vCenter server. This property is only provided if the VMware vCenter server is VxRail-managed.  # noqa: E501
 
         :return: The vxrail_supplied_vc_ipv6 of this SystemInitSpecV5Vcenter.  # noqa: E501
         :rtype: str
@@ -171,7 +171,7 @@ class SystemInitSpecV5Vcenter(object):
     def vxrail_supplied_vc_ipv6(self, vxrail_supplied_vc_ipv6):
         """Sets the vxrail_supplied_vc_ipv6 of this SystemInitSpecV5Vcenter.
 
-        Internal use only  # noqa: E501
+        The IPv6 address of the VxRail-managed VMware vCenter server. This property is only provided if the VMware vCenter server is VxRail-managed.  # noqa: E501
 
         :param vxrail_supplied_vc_ipv6: The vxrail_supplied_vc_ipv6 of this SystemInitSpecV5Vcenter.  # noqa: E501
         :type: str

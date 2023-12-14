@@ -49,7 +49,7 @@ class Day1RequestValidationFieldInfo(object):
     def path(self):
         """Gets the path of this Day1RequestValidationFieldInfo.  # noqa: E501
 
-        The parameter path for the error result in the input JSON file  # noqa: E501
+        The parameter path for the error result in the input JSON file.  # noqa: E501
 
         :return: The path of this Day1RequestValidationFieldInfo.  # noqa: E501
         :rtype: str
@@ -60,7 +60,7 @@ class Day1RequestValidationFieldInfo(object):
     def path(self, path):
         """Sets the path of this Day1RequestValidationFieldInfo.
 
-        The parameter path for the error result in the input JSON file  # noqa: E501
+        The parameter path for the error result in the input JSON file.  # noqa: E501
 
         :param path: The path of this Day1RequestValidationFieldInfo.  # noqa: E501
         :type: str

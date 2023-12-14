@@ -74,7 +74,7 @@ class VirtualizationSystemInfo(object):
     def server_type(self):
         """Gets the server_type of this VirtualizationSystemInfo.  # noqa: E501
 
-        Virtualization system server type ID, such as 'VXM\", \"VCENTER', etc.  # noqa: E501
+        Virtualization system server type ID, such as \"VXM\", \"vCENTER\", etc.  # noqa: E501
 
         :return: The server_type of this VirtualizationSystemInfo.  # noqa: E501
         :rtype: str
@@ -85,7 +85,7 @@ class VirtualizationSystemInfo(object):
     def server_type(self, server_type):
         """Sets the server_type of this VirtualizationSystemInfo.
 
-        Virtualization system server type ID, such as 'VXM\", \"VCENTER', etc.  # noqa: E501
+        Virtualization system server type ID, such as \"VXM\", \"vCENTER\", etc.  # noqa: E501
 
         :param server_type: The server_type of this VirtualizationSystemInfo.  # noqa: E501
         :type: str
