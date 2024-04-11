@@ -76,7 +76,7 @@ class IdracNetworkInfo(object):
     def dhcp_enabled(self):
         """Gets the dhcp_enabled of this IdracNetworkInfo.  # noqa: E501
 
-        Whether DHCP service is enabled  # noqa: E501
+        The flag indicates whether or not DHCP is enabled to obtain an IP address. If this property is set to false, the property of IP is configured. Otherwise, an IP address is configured through DHCP.  # noqa: E501
 
         :return: The dhcp_enabled of this IdracNetworkInfo.  # noqa: E501
         :rtype: bool
@@ -87,7 +87,7 @@ class IdracNetworkInfo(object):
     def dhcp_enabled(self, dhcp_enabled):
         """Sets the dhcp_enabled of this IdracNetworkInfo.
 
-        Whether DHCP service is enabled  # noqa: E501
+        The flag indicates whether or not DHCP is enabled to obtain an IP address. If this property is set to false, the property of IP is configured. Otherwise, an IP address is configured through DHCP.  # noqa: E501
 
         :param dhcp_enabled: The dhcp_enabled of this IdracNetworkInfo.  # noqa: E501
         :type: bool

@@ -48,16 +48,20 @@ class IdracNetworkSpecIp(object):
         self._netmask = None
         self._gateway = None
         self.discriminator = None
-        self.type = type
-        self.ip_address = ip_address
-        self.netmask = netmask
-        self.gateway = gateway
+        if type is not None:
+            self.type = type
+        if ip_address is not None:
+            self.ip_address = ip_address
+        if netmask is not None:
+            self.netmask = netmask
+        if gateway is not None:
+            self.gateway = gateway
 
     @property
     def type(self):
         """Gets the type of this IdracNetworkSpecIp.  # noqa: E501
 
-        The VLAN ID settings of the iDRAC. Only IPv4 is supported in the current version  # noqa: E501
+        The IPv4 address information about the iDRAC. Only IPv4 is supported in the current version  # noqa: E501
 
         :return: The type of this IdracNetworkSpecIp.  # noqa: E501
         :rtype: str
@@ -68,13 +72,11 @@ class IdracNetworkSpecIp(object):
     def type(self, type):
         """Sets the type of this IdracNetworkSpecIp.
 
-        The VLAN ID settings of the iDRAC. Only IPv4 is supported in the current version  # noqa: E501
+        The IPv4 address information about the iDRAC. Only IPv4 is supported in the current version  # noqa: E501
 
         :param type: The type of this IdracNetworkSpecIp.  # noqa: E501
         :type: str
         """
-        if type is None:
-            raise ValueError("Invalid value for `type`, must not be `None`")  # noqa: E501
         allowed_values = ["ipv4"]  # noqa: E501
         if type not in allowed_values:
             raise ValueError(
@@ -88,7 +90,7 @@ class IdracNetworkSpecIp(object):
     def ip_address(self):
         """Gets the ip_address of this IdracNetworkSpecIp.  # noqa: E501
 
-        The MAC address of the iDRAC  # noqa: E501
+        The static IPv4 address of the IDRAC. To configure the IPv4 address, set the dhcp_enabled property as false. The entire IP address property is not required to configure the IP address through DHCP.  # noqa: E501
 
         :return: The ip_address of this IdracNetworkSpecIp.  # noqa: E501
         :rtype: str
@@ -99,13 +101,11 @@ class IdracNetworkSpecIp(object):
     def ip_address(self, ip_address):
         """Sets the ip_address of this IdracNetworkSpecIp.
 
-        The MAC address of the iDRAC  # noqa: E501
+        The static IPv4 address of the IDRAC. To configure the IPv4 address, set the dhcp_enabled property as false. The entire IP address property is not required to configure the IP address through DHCP.  # noqa: E501
 
         :param ip_address: The ip_address of this IdracNetworkSpecIp.  # noqa: E501
         :type: str
         """
-        if ip_address is None:
-            raise ValueError("Invalid value for `ip_address`, must not be `None`")  # noqa: E501
 
         self._ip_address = ip_address
 
@@ -129,8 +129,6 @@ class IdracNetworkSpecIp(object):
         :param netmask: The netmask of this IdracNetworkSpecIp.  # noqa: E501
         :type: str
         """
-        if netmask is None:
-            raise ValueError("Invalid value for `netmask`, must not be `None`")  # noqa: E501
 
         self._netmask = netmask
 
@@ -154,8 +152,6 @@ class IdracNetworkSpecIp(object):
         :param gateway: The gateway of this IdracNetworkSpecIp.  # noqa: E501
         :type: str
         """
-        if gateway is None:
-            raise ValueError("Invalid value for `gateway`, must not be `None`")  # noqa: E501
 
         self._gateway = gateway
 

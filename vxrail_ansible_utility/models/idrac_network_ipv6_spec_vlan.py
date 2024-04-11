@@ -42,8 +42,7 @@ class IdracNetworkIPv6SpecVlan(object):
         self._vlan_id = None
         self._vlan_priority = None
         self.discriminator = None
-        if vlan_id is not None:
-            self.vlan_id = vlan_id
+        self.vlan_id = vlan_id
         if vlan_priority is not None:
             self.vlan_priority = vlan_priority
 
@@ -67,6 +66,8 @@ class IdracNetworkIPv6SpecVlan(object):
         :param vlan_id: The vlan_id of this IdracNetworkIPv6SpecVlan.  # noqa: E501
         :type: int
         """
+        if vlan_id is None:
+            raise ValueError("Invalid value for `vlan_id`, must not be `None`")  # noqa: E501
 
         self._vlan_id = vlan_id
 
