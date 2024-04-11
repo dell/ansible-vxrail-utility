@@ -134,7 +134,7 @@ class SupportLogsApi(object):
 
         :param async_req bool
         :param str log_id: The unique identifier of the log that you want to download. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -156,7 +156,7 @@ class SupportLogsApi(object):
 
         :param async_req bool
         :param str log_id: The unique identifier of the log that you want to download. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -197,7 +197,7 @@ class SupportLogsApi(object):
         body_params = None
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/octet-stream', 'application/json'])  # noqa: E501
+            ['application/json'])  # noqa: E501
 
         # Authentication setting
         auth_settings = ['basicAuth']  # noqa: E501
@@ -210,7 +210,7 @@ class SupportLogsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='Componentsresponses200',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

@@ -11,9 +11,9 @@
 """
 
 from setuptools import setup, find_packages  # noqa: H301
-NAME = "vxrail_ansible_utility"
-VERSION = "vxrail-ansible"
 
+NAME = "vxrail_ansible_utility"
+VERSION = "2.4.1"
 # To install the library, run the following
 #
 # python setup.py install

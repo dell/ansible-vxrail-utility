@@ -54,14 +54,13 @@ class IdracNetworkIPv6SpecIpv4(object):
             self.netmask = netmask
         if gateway is not None:
             self.gateway = gateway
-        if dhcp_enabled is not None:
-            self.dhcp_enabled = dhcp_enabled
+        self.dhcp_enabled = dhcp_enabled
 
     @property
     def ip_address(self):
         """Gets the ip_address of this IdracNetworkIPv6SpecIpv4.  # noqa: E501
 
-        The MAC address of the iDRAC  # noqa: E501
+        The static IPv4 address of the IDRAC. To configure the IPv4 address, set the dhcp_enabled property as false. The IPv4 address information is not required to configure the IPv4 address through DHCP.  # noqa: E501
 
         :return: The ip_address of this IdracNetworkIPv6SpecIpv4.  # noqa: E501
         :rtype: str
@@ -72,7 +71,7 @@ class IdracNetworkIPv6SpecIpv4(object):
     def ip_address(self, ip_address):
         """Sets the ip_address of this IdracNetworkIPv6SpecIpv4.
 
-        The MAC address of the iDRAC  # noqa: E501
+        The static IPv4 address of the IDRAC. To configure the IPv4 address, set the dhcp_enabled property as false. The IPv4 address information is not required to configure the IPv4 address through DHCP.  # noqa: E501
 
         :param ip_address: The ip_address of this IdracNetworkIPv6SpecIpv4.  # noqa: E501
         :type: str
@@ -130,7 +129,7 @@ class IdracNetworkIPv6SpecIpv4(object):
     def dhcp_enabled(self):
         """Gets the dhcp_enabled of this IdracNetworkIPv6SpecIpv4.  # noqa: E501
 
-        Whether DHCP service enabled or not  # noqa: E501
+        The flag indicates whether or not DHCP is enabled to obtain an IPv4 address. If this property is set to false, the property of IPv4 is configured. Otherwise, an IPv4 address is configured through DHCP.  # noqa: E501
 
         :return: The dhcp_enabled of this IdracNetworkIPv6SpecIpv4.  # noqa: E501
         :rtype: bool
@@ -141,11 +140,13 @@ class IdracNetworkIPv6SpecIpv4(object):
     def dhcp_enabled(self, dhcp_enabled):
         """Sets the dhcp_enabled of this IdracNetworkIPv6SpecIpv4.
 
-        Whether DHCP service enabled or not  # noqa: E501
+        The flag indicates whether or not DHCP is enabled to obtain an IPv4 address. If this property is set to false, the property of IPv4 is configured. Otherwise, an IPv4 address is configured through DHCP.  # noqa: E501
 
         :param dhcp_enabled: The dhcp_enabled of this IdracNetworkIPv6SpecIpv4.  # noqa: E501
         :type: bool
         """
+        if dhcp_enabled is None:
+            raise ValueError("Invalid value for `dhcp_enabled`, must not be `None`")  # noqa: E501
 
         self._dhcp_enabled = dhcp_enabled
 

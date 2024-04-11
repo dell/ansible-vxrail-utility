@@ -744,14 +744,14 @@ class HostIDRACConfigurationApi(object):
     def v2_hosts_sn_idrac_network_patch(self, body, sn, **kwargs):  # noqa: E501
         """Update the iDRAC network settings  # noqa: E501
 
-        Update the iDRAC network settings on the specified host. Update IPv4 address or IPv6 address at a time.  # noqa: E501
+        Update the IPv4 or IPv6 address of the iDRAC network settings on the specified host.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_hosts_sn_idrac_network_patch(body, sn, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param IdracNetworkIPv6Spec body: The network parameters for the iDRAC network. Enter IPv4 address or IPv6 address at a time. (required)
+        :param IdracNetworkIPv6Spec body: The network parameters for the iDRAC network. An IPv4 address or IPv6 address property is required. (required)
         :param str sn: The serial number of the host. (required)
         :return: Model202Nocontent
                  If the method is called asynchronously,
@@ -767,14 +767,14 @@ class HostIDRACConfigurationApi(object):
     def v2_hosts_sn_idrac_network_patch_with_http_info(self, body, sn, **kwargs):  # noqa: E501
         """Update the iDRAC network settings  # noqa: E501
 
-        Update the iDRAC network settings on the specified host. Update IPv4 address or IPv6 address at a time.  # noqa: E501
+        Update the IPv4 or IPv6 address of the iDRAC network settings on the specified host.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v2_hosts_sn_idrac_network_patch_with_http_info(body, sn, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param IdracNetworkIPv6Spec body: The network parameters for the iDRAC network. Enter IPv4 address or IPv6 address at a time. (required)
+        :param IdracNetworkIPv6Spec body: The network parameters for the iDRAC network. An IPv4 address or IPv6 address property is required. (required)
         :param str sn: The serial number of the host. (required)
         :return: Model202Nocontent
                  If the method is called asynchronously,

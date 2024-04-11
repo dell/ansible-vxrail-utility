@@ -179,7 +179,7 @@ class DiscoveredNodeNICProfilesInfo(object):
         :param selectable_load_balance_policy: The selectable_load_balance_policy of this DiscoveredNodeNICProfilesInfo.  # noqa: E501
         :type: list[str]
         """
-        allowed_values = ["LOCALLOADBALANCE_SRCMAC", "FAILOVER_EXPLICIT", "LOADBALANCE_LOADBASED", "LOADBALANCE_SRCID"]  # noqa: E501
+        allowed_values = ["LOADBALANCE_SRCMAC", "FAILOVER_EXPLICIT", "LOADBALANCE_LOADBASED", "LOADBALANCE_SRCID"]  # noqa: E501
         if not set(selectable_load_balance_policy).issubset(set(allowed_values)):
             raise ValueError(
                 "Invalid values for `selectable_load_balance_policy` [{0}], must be a subset of [{1}]"  # noqa: E501
