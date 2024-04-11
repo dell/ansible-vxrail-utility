@@ -30,7 +30,7 @@ class IdracNetworkSpec(object):
     swagger_types = {
         'ip': 'IdracNetworkSpecIp',
         'dhcp_enabled': 'bool',
-        'vlan': 'IdracNetworkSpecVlan'
+        'vlan': 'IdracNetworkIPv6SpecVlan'
     }
 
     attribute_map = {
@@ -47,8 +47,7 @@ class IdracNetworkSpec(object):
         self.discriminator = None
         if ip is not None:
             self.ip = ip
-        if dhcp_enabled is not None:
-            self.dhcp_enabled = dhcp_enabled
+        self.dhcp_enabled = dhcp_enabled
         if vlan is not None:
             self.vlan = vlan
 
@@ -77,7 +76,7 @@ class IdracNetworkSpec(object):
     def dhcp_enabled(self):
         """Gets the dhcp_enabled of this IdracNetworkSpec.  # noqa: E501
 
-        Whether DHCP service enabled or not  # noqa: E501
+        The flag indicates whether or not DHCP is enabled to obtain an IPv4 address. If this property is set to false, the property of IPv4 is configured. Otherwise, an IPv4 address is configured through DHCP.  # noqa: E501
 
         :return: The dhcp_enabled of this IdracNetworkSpec.  # noqa: E501
         :rtype: bool
@@ -88,11 +87,13 @@ class IdracNetworkSpec(object):
     def dhcp_enabled(self, dhcp_enabled):
         """Sets the dhcp_enabled of this IdracNetworkSpec.
 
-        Whether DHCP service enabled or not  # noqa: E501
+        The flag indicates whether or not DHCP is enabled to obtain an IPv4 address. If this property is set to false, the property of IPv4 is configured. Otherwise, an IPv4 address is configured through DHCP.  # noqa: E501
 
         :param dhcp_enabled: The dhcp_enabled of this IdracNetworkSpec.  # noqa: E501
         :type: bool
         """
+        if dhcp_enabled is None:
+            raise ValueError("Invalid value for `dhcp_enabled`, must not be `None`")  # noqa: E501
 
         self._dhcp_enabled = dhcp_enabled
 
@@ -102,7 +103,7 @@ class IdracNetworkSpec(object):
 
 
         :return: The vlan of this IdracNetworkSpec.  # noqa: E501
-        :rtype: IdracNetworkSpecVlan
+        :rtype: IdracNetworkIPv6SpecVlan
         """
         return self._vlan
 
@@ -112,7 +113,7 @@ class IdracNetworkSpec(object):
 
 
         :param vlan: The vlan of this IdracNetworkSpec.  # noqa: E501
-        :type: IdracNetworkSpecVlan
+        :type: IdracNetworkIPv6SpecVlan
         """
 
         self._vlan = vlan

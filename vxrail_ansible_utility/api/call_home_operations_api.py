@@ -129,7 +129,7 @@ class CallHomeOperationsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -150,7 +150,7 @@ class CallHomeOperationsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -198,7 +198,7 @@ class CallHomeOperationsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='Componentsresponses200',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -217,7 +217,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param CallhomeDeploySpec body: Information about the SRS server to be deployed. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -239,7 +239,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param CallhomeDeploySpec body: Information about the SRS server to be deployed. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -297,7 +297,7 @@ class CallHomeOperationsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='Componentsresponses200',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -502,7 +502,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param ExternalCallhomeRegisterSpec body: Information about each of the external SRS servers to be registered. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -524,7 +524,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param ExternalCallhomeRegisterSpec body: Information about each of the external SRS servers to be registered. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -582,7 +582,7 @@ class CallHomeOperationsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='Componentsresponses200',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -601,7 +601,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param AccessCodeSpec body: Access code for activating an internal call home server. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -623,7 +623,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param AccessCodeSpec body: Access code for activating an internal call home server. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -681,7 +681,7 @@ class CallHomeOperationsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='Componentsresponses200',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -700,7 +700,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param SRSUpgradeSpec body: Parameters for activating a software upgrade on the internal SRS server. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -722,7 +722,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param SRSUpgradeSpec body: Parameters for activating a software upgrade on the internal SRS server. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -780,7 +780,7 @@ class CallHomeOperationsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='Componentsresponses200',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -799,7 +799,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param CallhomeDeploySpecV2 body: Details for SRS to be deployed. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -821,7 +821,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param CallhomeDeploySpecV2 body: Details for SRS to be deployed. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -879,7 +879,7 @@ class CallHomeOperationsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='Componentsresponses200',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -898,7 +898,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param EnableCallhomeSpecV2 body: (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -920,7 +920,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param EnableCallhomeSpecV2 body: (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -978,7 +978,7 @@ class CallHomeOperationsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='Componentsresponses200',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -997,7 +997,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param ExternalCallhomeRegisterSpecV2 body: Information about each of the external SRS servers to be registered. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1019,7 +1019,7 @@ class CallHomeOperationsApi(object):
 
         :param async_req bool
         :param ExternalCallhomeRegisterSpecV2 body: Information about each of the external SRS servers to be registered. (required)
-        :return: Componentsresponses200
+        :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1077,7 +1077,7 @@ class CallHomeOperationsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='Componentsresponses200',  # noqa: E501
+            response_type=None,  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

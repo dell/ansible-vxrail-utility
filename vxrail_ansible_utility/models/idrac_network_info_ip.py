@@ -61,7 +61,7 @@ class IdracNetworkInfoIp(object):
     def type(self):
         """Gets the type of this IdracNetworkInfoIp.  # noqa: E501
 
-        The VLAN ID settings of the iDRAC  # noqa: E501
+        The type of the iDRAC IP address. Only the IPv4 address is supported in the current version.  # noqa: E501
 
         :return: The type of this IdracNetworkInfoIp.  # noqa: E501
         :rtype: str
@@ -72,7 +72,7 @@ class IdracNetworkInfoIp(object):
     def type(self, type):
         """Sets the type of this IdracNetworkInfoIp.
 
-        The VLAN ID settings of the iDRAC  # noqa: E501
+        The type of the iDRAC IP address. Only the IPv4 address is supported in the current version.  # noqa: E501
 
         :param type: The type of this IdracNetworkInfoIp.  # noqa: E501
         :type: str
@@ -90,7 +90,7 @@ class IdracNetworkInfoIp(object):
     def ip_address(self):
         """Gets the ip_address of this IdracNetworkInfoIp.  # noqa: E501
 
-        The MAC address of the iDRAC  # noqa: E501
+        The static IPv4 address of the IDRAC. To configure the provided IPv4 address, set the dhcp_enabled property as false. The entire property of the IP address is not required to configure the IP address through DHCP.  # noqa: E501
 
         :return: The ip_address of this IdracNetworkInfoIp.  # noqa: E501
         :rtype: str
@@ -101,7 +101,7 @@ class IdracNetworkInfoIp(object):
     def ip_address(self, ip_address):
         """Sets the ip_address of this IdracNetworkInfoIp.
 
-        The MAC address of the iDRAC  # noqa: E501
+        The static IPv4 address of the IDRAC. To configure the provided IPv4 address, set the dhcp_enabled property as false. The entire property of the IP address is not required to configure the IP address through DHCP.  # noqa: E501
 
         :param ip_address: The ip_address of this IdracNetworkInfoIp.  # noqa: E501
         :type: str

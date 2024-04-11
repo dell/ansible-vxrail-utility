@@ -54,14 +54,13 @@ class IdracNetworkIPv6SpecIpv6(object):
             self.prefix_length = prefix_length
         if gateway is not None:
             self.gateway = gateway
-        if auto_config_enabled is not None:
-            self.auto_config_enabled = auto_config_enabled
+        self.auto_config_enabled = auto_config_enabled
 
     @property
     def ip_address(self):
         """Gets the ip_address of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
 
-        The IPv6 MAC address of the iDRAC  # noqa: E501
+        The static IPv6 address of the IDRAC. To configure the IPv6 address, set the property of auto_config_enabled as false. The IPv6 address information is not required to configure the IPv6 address through DHCP.  # noqa: E501
 
         :return: The ip_address of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
         :rtype: str
@@ -72,7 +71,7 @@ class IdracNetworkIPv6SpecIpv6(object):
     def ip_address(self, ip_address):
         """Sets the ip_address of this IdracNetworkIPv6SpecIpv6.
 
-        The IPv6 MAC address of the iDRAC  # noqa: E501
+        The static IPv6 address of the IDRAC. To configure the IPv6 address, set the property of auto_config_enabled as false. The IPv6 address information is not required to configure the IPv6 address through DHCP.  # noqa: E501
 
         :param ip_address: The ip_address of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
         :type: str
@@ -130,7 +129,7 @@ class IdracNetworkIPv6SpecIpv6(object):
     def auto_config_enabled(self):
         """Gets the auto_config_enabled of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
 
-        Whether DHCP service enabled or not  # noqa: E501
+        The flag indicates whether or not DHCP is enabled to obtain an IPv6 address. If this property is set to false, the property of IPv6 is configured. Otherwise, an IPv6 address is configured through DHCP.  # noqa: E501
 
         :return: The auto_config_enabled of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
         :rtype: bool
@@ -141,11 +140,13 @@ class IdracNetworkIPv6SpecIpv6(object):
     def auto_config_enabled(self, auto_config_enabled):
         """Sets the auto_config_enabled of this IdracNetworkIPv6SpecIpv6.
 
-        Whether DHCP service enabled or not  # noqa: E501
+        The flag indicates whether or not DHCP is enabled to obtain an IPv6 address. If this property is set to false, the property of IPv6 is configured. Otherwise, an IPv6 address is configured through DHCP.  # noqa: E501
 
         :param auto_config_enabled: The auto_config_enabled of this IdracNetworkIPv6SpecIpv6.  # noqa: E501
         :type: bool
         """
+        if auto_config_enabled is None:
+            raise ValueError("Invalid value for `auto_config_enabled`, must not be `None`")  # noqa: E501
 
         self._auto_config_enabled = auto_config_enabled
 
