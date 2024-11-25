@@ -186,7 +186,7 @@ class UpgradeSpecV7(object):
     def target_hosts(self):
         """Gets the target_hosts of this UpgradeSpecV7.  # noqa: E501
 
-        (Optional) Hosts to be upgraded. The target_hosts object only applies to a cluster when vLCM is enabled.  # noqa: E501
+        (Optional) Hosts to be upgraded.  # noqa: E501
 
         :return: The target_hosts of this UpgradeSpecV7.  # noqa: E501
         :rtype: list[HostBaseSpec]
@@ -197,7 +197,7 @@ class UpgradeSpecV7(object):
     def target_hosts(self, target_hosts):
         """Sets the target_hosts of this UpgradeSpecV7.
 
-        (Optional) Hosts to be upgraded. The target_hosts object only applies to a cluster when vLCM is enabled.  # noqa: E501
+        (Optional) Hosts to be upgraded.  # noqa: E501
 
         :param target_hosts: The target_hosts of this UpgradeSpecV7.  # noqa: E501
         :type: list[HostBaseSpec]

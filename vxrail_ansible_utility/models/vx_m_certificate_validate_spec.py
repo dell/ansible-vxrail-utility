@@ -29,7 +29,7 @@ class VxMCertificateValidateSpec(object):
     """
     swagger_types = {
         'cert': 'str',
-        'root_cert_chain': 'list',
+        'root_cert_chain': 'list[str]',
         'private_key': 'str',
         'password': 'str'
     }
@@ -87,7 +87,7 @@ class VxMCertificateValidateSpec(object):
         Contents of the certificate chain in PEM format. The root CA certificate comes first, followed by the intermediate CA certificates (if any).  # noqa: E501
 
         :return: The root_cert_chain of this VxMCertificateValidateSpec.  # noqa: E501
-        :rtype: list
+        :rtype: list[str]
         """
         return self._root_cert_chain
 
@@ -98,7 +98,7 @@ class VxMCertificateValidateSpec(object):
         Contents of the certificate chain in PEM format. The root CA certificate comes first, followed by the intermediate CA certificates (if any).  # noqa: E501
 
         :param root_cert_chain: The root_cert_chain of this VxMCertificateValidateSpec.  # noqa: E501
-        :type: list
+        :type: list[str]
         """
         if root_cert_chain is None:
             raise ValueError("Invalid value for `root_cert_chain`, must not be `None`")  # noqa: E501
