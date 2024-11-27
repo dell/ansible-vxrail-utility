@@ -28,101 +28,14 @@ class TemporaryIpSettingSpec(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'temporary_ip': 'str',
-        'gateway': 'str',
-        'netmask': 'str'
     }
 
     attribute_map = {
-        'temporary_ip': 'temporary_ip',
-        'gateway': 'gateway',
-        'netmask': 'netmask'
     }
 
-    def __init__(self, temporary_ip=None, gateway=None, netmask=None):  # noqa: E501
+    def __init__(self):  # noqa: E501
         """TemporaryIpSettingSpec - a model defined in Swagger"""  # noqa: E501
-        self._temporary_ip = None
-        self._gateway = None
-        self._netmask = None
         self.discriminator = None
-        self.temporary_ip = temporary_ip
-        self.gateway = gateway
-        self.netmask = netmask
-
-    @property
-    def temporary_ip(self):
-        """Gets the temporary_ip of this TemporaryIpSettingSpec.  # noqa: E501
-
-        Temporary IP to be used during the vCenter upgrade  # noqa: E501
-
-        :return: The temporary_ip of this TemporaryIpSettingSpec.  # noqa: E501
-        :rtype: str
-        """
-        return self._temporary_ip
-
-    @temporary_ip.setter
-    def temporary_ip(self, temporary_ip):
-        """Sets the temporary_ip of this TemporaryIpSettingSpec.
-
-        Temporary IP to be used during the vCenter upgrade  # noqa: E501
-
-        :param temporary_ip: The temporary_ip of this TemporaryIpSettingSpec.  # noqa: E501
-        :type: str
-        """
-        if temporary_ip is None:
-            raise ValueError("Invalid value for `temporary_ip`, must not be `None`")  # noqa: E501
-
-        self._temporary_ip = temporary_ip
-
-    @property
-    def gateway(self):
-        """Gets the gateway of this TemporaryIpSettingSpec.  # noqa: E501
-
-        Gateway to be used during the vCenter upgrade  # noqa: E501
-
-        :return: The gateway of this TemporaryIpSettingSpec.  # noqa: E501
-        :rtype: str
-        """
-        return self._gateway
-
-    @gateway.setter
-    def gateway(self, gateway):
-        """Sets the gateway of this TemporaryIpSettingSpec.
-
-        Gateway to be used during the vCenter upgrade  # noqa: E501
-
-        :param gateway: The gateway of this TemporaryIpSettingSpec.  # noqa: E501
-        :type: str
-        """
-        if gateway is None:
-            raise ValueError("Invalid value for `gateway`, must not be `None`")  # noqa: E501
-
-        self._gateway = gateway
-
-    @property
-    def netmask(self):
-        """Gets the netmask of this TemporaryIpSettingSpec.  # noqa: E501
-
-        Netmask to be used during the vCenter upgrade  # noqa: E501
-
-        :return: The netmask of this TemporaryIpSettingSpec.  # noqa: E501
-        :rtype: str
-        """
-        return self._netmask
-
-    @netmask.setter
-    def netmask(self, netmask):
-        """Sets the netmask of this TemporaryIpSettingSpec.
-
-        Netmask to be used during the vCenter upgrade  # noqa: E501
-
-        :param netmask: The netmask of this TemporaryIpSettingSpec.  # noqa: E501
-        :type: str
-        """
-        if netmask is None:
-            raise ValueError("Invalid value for `netmask`, must not be `None`")  # noqa: E501
-
-        self._netmask = netmask
 
     def to_dict(self):
         """Returns the model properties as a dict"""

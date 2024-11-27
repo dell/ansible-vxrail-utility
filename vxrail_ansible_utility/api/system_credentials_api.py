@@ -332,7 +332,7 @@ class SystemCredentialsApi(object):
     def v3_system_update_credential_put(self, body, **kwargs):  # noqa: E501
         """Update the management user passwords (v3)  # noqa: E501
 
-        Update the management user passwords that are stored in VxRail Manager for the VMware vCenter Server and ESXi hosts, and validate the VMware vCenter Server management account's current password. Two new properties, \"current_password\" for validation and \"new_password\" are added to v3.  # noqa: E501
+        Update the management user passwords that are stored in VxRail Manager for the VMware vCenter Server and ESXi hosts, and validate current password of the VMware vCenter Server management account. Two new properties, \"current_password\" for validation and \"new_password\" are added to v3. Note: The VMware vCenter Server management account is not supported in the 7.0 train release due to the administrative account and management account being located under different domains.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v3_system_update_credential_put(body, async_req=True)
@@ -354,7 +354,7 @@ class SystemCredentialsApi(object):
     def v3_system_update_credential_put_with_http_info(self, body, **kwargs):  # noqa: E501
         """Update the management user passwords (v3)  # noqa: E501
 
-        Update the management user passwords that are stored in VxRail Manager for the VMware vCenter Server and ESXi hosts, and validate the VMware vCenter Server management account's current password. Two new properties, \"current_password\" for validation and \"new_password\" are added to v3.  # noqa: E501
+        Update the management user passwords that are stored in VxRail Manager for the VMware vCenter Server and ESXi hosts, and validate current password of the VMware vCenter Server management account. Two new properties, \"current_password\" for validation and \"new_password\" are added to v3. Note: The VMware vCenter Server management account is not supported in the 7.0 train release due to the administrative account and management account being located under different domains.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v3_system_update_credential_put_with_http_info(body, async_req=True)

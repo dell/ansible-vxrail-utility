@@ -62,7 +62,7 @@ class AccountCredentialSpecV3(object):
     def component(self):
         """Gets the component of this AccountCredentialSpecV3.  # noqa: E501
 
-        The type of component to be updated.  # noqa: E501
+        The type of component to be updated  # noqa: E501
 
         :return: The component of this AccountCredentialSpecV3.  # noqa: E501
         :rtype: str
@@ -73,7 +73,7 @@ class AccountCredentialSpecV3(object):
     def component(self, component):
         """Sets the component of this AccountCredentialSpecV3.
 
-        The type of component to be updated.  # noqa: E501
+        The type of component to be updated  # noqa: E501
 
         :param component: The component of this AccountCredentialSpecV3.  # noqa: E501
         :type: str
@@ -93,7 +93,7 @@ class AccountCredentialSpecV3(object):
     def hostname(self):
         """Gets the hostname of this AccountCredentialSpecV3.  # noqa: E501
 
-        The hostname of the vCenter or ESXi host  # noqa: E501
+        The hostname of the VMware vCenter Server or ESXi host  # noqa: E501
 
         :return: The hostname of this AccountCredentialSpecV3.  # noqa: E501
         :rtype: str
@@ -104,7 +104,7 @@ class AccountCredentialSpecV3(object):
     def hostname(self, hostname):
         """Sets the hostname of this AccountCredentialSpecV3.
 
-        The hostname of the vCenter or ESXi host  # noqa: E501
+        The hostname of the VMware vCenter Server or ESXi host  # noqa: E501
 
         :param hostname: The hostname of this AccountCredentialSpecV3.  # noqa: E501
         :type: str

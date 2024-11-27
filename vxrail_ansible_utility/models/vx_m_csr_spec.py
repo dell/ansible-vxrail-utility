@@ -35,7 +35,7 @@ class VxMCsrSpec(object):
         'organization_unit': 'str',
         'common_name': 'str',
         'email_address': 'str',
-        'subject_alt_name': 'list[object]'
+        'subject_alt_name': 'list[str]'
     }
 
     attribute_map = {
@@ -250,7 +250,7 @@ class VxMCsrSpec(object):
         Specify the IP addresses or domains as the alternate names.  # noqa: E501
 
         :return: The subject_alt_name of this VxMCsrSpec.  # noqa: E501
-        :rtype: list[object]
+        :rtype: list[str]
         """
         return self._subject_alt_name
 
@@ -261,7 +261,7 @@ class VxMCsrSpec(object):
         Specify the IP addresses or domains as the alternate names.  # noqa: E501
 
         :param subject_alt_name: The subject_alt_name of this VxMCsrSpec.  # noqa: E501
-        :type: list[object]
+        :type: list[str]
         """
 
         self._subject_alt_name = subject_alt_name

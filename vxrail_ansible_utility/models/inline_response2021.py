@@ -28,41 +28,40 @@ class InlineResponse2021(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'request_id': 'str'
+        'task_id': 'str'
     }
 
     attribute_map = {
-        'request_id': 'request_id'
+        'task_id': 'task_id'
     }
 
-    def __init__(self, request_id=None):  # noqa: E501
+    def __init__(self, task_id=None):  # noqa: E501
         """InlineResponse2021 - a model defined in Swagger"""  # noqa: E501
-        self._request_id = None
+        self._task_id = None
         self.discriminator = None
-        self.request_id = request_id
+        if task_id is not None:
+            self.task_id = task_id
 
     @property
-    def request_id(self):
-        """Gets the request_id of this InlineResponse2021.  # noqa: E501
+    def task_id(self):
+        """Gets the task_id of this InlineResponse2021.  # noqa: E501
 
 
-        :return: The request_id of this InlineResponse2021.  # noqa: E501
-        :rtype: Uuid
+        :return: The task_id of this InlineResponse2021.  # noqa: E501
+        :rtype: str
         """
-        return self._request_id
+        return self._task_id
 
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this InlineResponse2021.
+    @task_id.setter
+    def task_id(self, task_id):
+        """Sets the task_id of this InlineResponse2021.
 
 
-        :param request_id: The request_id of this InlineResponse2021.  # noqa: E501
-        :type: Uuid
+        :param task_id: The task_id of this InlineResponse2021.  # noqa: E501
+        :type: str
         """
-        if request_id is None:
-            raise ValueError("Invalid value for `request_id`, must not be `None`")  # noqa: E501
 
-        self._request_id = request_id
+        self._task_id = task_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

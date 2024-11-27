@@ -45,7 +45,7 @@ class UpgradeSequence(object):
     def preferred_fault_domain_first(self):
         """Gets the preferred_fault_domain_first of this UpgradeSequence.  # noqa: E501
 
-        Whether to upgrade preferred fault domain hosts first  # noqa: E501
+        Whether to upgrade preferred fault domain hosts first.  # noqa: E501
 
         :return: The preferred_fault_domain_first of this UpgradeSequence.  # noqa: E501
         :rtype: bool
@@ -56,7 +56,7 @@ class UpgradeSequence(object):
     def preferred_fault_domain_first(self, preferred_fault_domain_first):
         """Sets the preferred_fault_domain_first of this UpgradeSequence.
 
-        Whether to upgrade preferred fault domain hosts first  # noqa: E501
+        Whether to upgrade preferred fault domain hosts first.  # noqa: E501
 
         :param preferred_fault_domain_first: The preferred_fault_domain_first of this UpgradeSequence.  # noqa: E501
         :type: bool

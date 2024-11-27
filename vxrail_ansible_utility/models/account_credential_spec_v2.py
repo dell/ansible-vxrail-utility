@@ -76,7 +76,7 @@ class AccountCredentialSpecV2(object):
         """
         if component is None:
             raise ValueError("Invalid value for `component`, must not be `None`")  # noqa: E501
-        allowed_values = ["VC", "ESXI"]  # noqa: E501
+        allowed_values = ["vc", "esxi"]  # noqa: E501
         if component not in allowed_values:
             raise ValueError(
                 "Invalid value for `component` ({0}), must be one of {1}"  # noqa: E501
@@ -89,7 +89,7 @@ class AccountCredentialSpecV2(object):
     def hostname(self):
         """Gets the hostname of this AccountCredentialSpecV2.  # noqa: E501
 
-        The hostname of the vCenter or ESXi host  # noqa: E501
+        The hostname of the VMware vCenter Server or ESXi host  # noqa: E501
 
         :return: The hostname of this AccountCredentialSpecV2.  # noqa: E501
         :rtype: str
@@ -100,7 +100,7 @@ class AccountCredentialSpecV2(object):
     def hostname(self, hostname):
         """Sets the hostname of this AccountCredentialSpecV2.
 
-        The hostname of the vCenter or ESXi host  # noqa: E501
+        The hostname of the VMware vCenter Server or ESXi host  # noqa: E501
 
         :param hostname: The hostname of this AccountCredentialSpecV2.  # noqa: E501
         :type: str

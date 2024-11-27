@@ -83,7 +83,7 @@ class UpdatedManagementAccountInfo(object):
     def hostname(self):
         """Gets the hostname of this UpdatedManagementAccountInfo.  # noqa: E501
 
-        The hostname of the vCenter or ESXi host  # noqa: E501
+        The hostname of the VMware vCenter Server or ESXi host  # noqa: E501
 
         :return: The hostname of this UpdatedManagementAccountInfo.  # noqa: E501
         :rtype: str
@@ -94,7 +94,7 @@ class UpdatedManagementAccountInfo(object):
     def hostname(self, hostname):
         """Sets the hostname of this UpdatedManagementAccountInfo.
 
-        The hostname of the vCenter or ESXi host  # noqa: E501
+        The hostname of the VMware vCenter Server or ESXi host  # noqa: E501
 
         :param hostname: The hostname of this UpdatedManagementAccountInfo.  # noqa: E501
         :type: str

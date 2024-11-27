@@ -71,7 +71,7 @@ class WitnessSpec(object):
     def auto_witness_upgrade(self):
         """Gets the auto_witness_upgrade of this WitnessSpec.  # noqa: E501
 
-        Whether VxRail will automatically upgrade the witness node  # noqa: E501
+        Whether VxRail will automatically upgrade the witness node.  # noqa: E501
 
         :return: The auto_witness_upgrade of this WitnessSpec.  # noqa: E501
         :rtype: bool
@@ -82,7 +82,7 @@ class WitnessSpec(object):
     def auto_witness_upgrade(self, auto_witness_upgrade):
         """Sets the auto_witness_upgrade of this WitnessSpec.
 
-        Whether VxRail will automatically upgrade the witness node  # noqa: E501
+        Whether VxRail will automatically upgrade the witness node.  # noqa: E501
 
         :param auto_witness_upgrade: The auto_witness_upgrade of this WitnessSpec.  # noqa: E501
         :type: bool

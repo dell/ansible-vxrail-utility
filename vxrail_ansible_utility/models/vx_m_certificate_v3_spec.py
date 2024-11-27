@@ -31,7 +31,7 @@ class VxMCertificateV3Spec(object):
         'vc_admin_account': 'str',
         'vc_admin_password': 'str',
         'cert': 'str',
-        'root_cert_chain': 'list[object]',
+        'root_cert_chain': 'list[str]',
         'private_key': 'str',
         'password': 'str'
     }
@@ -145,7 +145,7 @@ class VxMCertificateV3Spec(object):
         Contents of the certificate chain in PEM format. The root CA certificate comes first, followed by the intermediate CA certificates (if any).  # noqa: E501
 
         :return: The root_cert_chain of this VxMCertificateV3Spec.  # noqa: E501
-        :rtype: list[object]
+        :rtype: list[str]
         """
         return self._root_cert_chain
 
@@ -156,7 +156,7 @@ class VxMCertificateV3Spec(object):
         Contents of the certificate chain in PEM format. The root CA certificate comes first, followed by the intermediate CA certificates (if any).  # noqa: E501
 
         :param root_cert_chain: The root_cert_chain of this VxMCertificateV3Spec.  # noqa: E501
-        :type: list[object]
+        :type: list[str]
         """
         if root_cert_chain is None:
             raise ValueError("Invalid value for `root_cert_chain`, must not be `None`")  # noqa: E501
