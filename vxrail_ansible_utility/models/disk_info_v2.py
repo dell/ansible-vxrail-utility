@@ -578,7 +578,7 @@ class DiskInfoV2(object):
     def disk_claim_type(self):
         """Gets the disk_claim_type of this DiskInfoV2.  # noqa: E501
 
-        Type of storage claimed for the disk. Disks can be claimed as non-vSAN or vSAN storage.  # noqa: E501
+        Type of storage claimed for the disk. Disks can be claimed as NON_VSAN or VSAN storage.  # noqa: E501
 
         :return: The disk_claim_type of this DiskInfoV2.  # noqa: E501
         :rtype: str
@@ -589,12 +589,12 @@ class DiskInfoV2(object):
     def disk_claim_type(self, disk_claim_type):
         """Sets the disk_claim_type of this DiskInfoV2.
 
-        Type of storage claimed for the disk. Disks can be claimed as non-vSAN or vSAN storage.  # noqa: E501
+        Type of storage claimed for the disk. Disks can be claimed as NON_VSAN or VSAN storage.  # noqa: E501
 
         :param disk_claim_type: The disk_claim_type of this DiskInfoV2.  # noqa: E501
         :type: str
         """
-        allowed_values = ["non-vSAN", "vSAN", "unmanaged"]  # noqa: E501
+        allowed_values = ["NON_VSAN", "VSAN", "UNMANAGED"]  # noqa: E501
         if disk_claim_type not in allowed_values:
             raise ValueError(
                 "Invalid value for `disk_claim_type` ({0}), must be one of {1}"  # noqa: E501

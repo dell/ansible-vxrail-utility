@@ -29,14 +29,14 @@ class SystemInitSpecV6(object):
     """
     swagger_types = {
         'version': 'str',
-        '_global': 'SystemInitSpecV6Global',
-        'hosts': 'list[SystemInitSpecV6Hosts]',
-        'vcenter': 'SystemInitSpecV6Vcenter',
+        '_global': 'SystemInitSpecV5Global',
+        'hosts': 'list[SystemInitSpecV5Hosts]',
+        'vcenter': 'SystemInitSpecV5Vcenter',
         'witness_node': 'SystemInitSpecV6WitnessNode',
         'vxrail_managed_witness_node': 'SystemInitSpecV6VxrailManagedWitnessNode',
-        'vxrail_manager': 'SystemInitSpecV6VxrailManager',
-        'network': 'SystemInitSpecV6Network1',
-        'storage': 'SystemInitSpecV6Storage'
+        'vxrail_manager': 'SystemInitSpecV5VxrailManager',
+        'network': 'SystemInitSpecV5Network1',
+        'storage': 'SystemInitSpecV5Storage'
     }
 
     attribute_map = {
@@ -107,7 +107,7 @@ class SystemInitSpecV6(object):
 
 
         :return: The _global of this SystemInitSpecV6.  # noqa: E501
-        :rtype: SystemInitSpecV6Global
+        :rtype: SystemInitSpecV5Global
         """
         return self.__global
 
@@ -117,7 +117,7 @@ class SystemInitSpecV6(object):
 
 
         :param _global: The _global of this SystemInitSpecV6.  # noqa: E501
-        :type: SystemInitSpecV6Global
+        :type: SystemInitSpecV5Global
         """
         if _global is None:
             raise ValueError("Invalid value for `_global`, must not be `None`")  # noqa: E501
@@ -131,7 +131,7 @@ class SystemInitSpecV6(object):
         Configuration settings for each of the VxRail hosts  # noqa: E501
 
         :return: The hosts of this SystemInitSpecV6.  # noqa: E501
-        :rtype: list[SystemInitSpecV6Hosts]
+        :rtype: list[SystemInitSpecV5Hosts]
         """
         return self._hosts
 
@@ -142,7 +142,7 @@ class SystemInitSpecV6(object):
         Configuration settings for each of the VxRail hosts  # noqa: E501
 
         :param hosts: The hosts of this SystemInitSpecV6.  # noqa: E501
-        :type: list[SystemInitSpecV6Hosts]
+        :type: list[SystemInitSpecV5Hosts]
         """
         if hosts is None:
             raise ValueError("Invalid value for `hosts`, must not be `None`")  # noqa: E501
@@ -155,7 +155,7 @@ class SystemInitSpecV6(object):
 
 
         :return: The vcenter of this SystemInitSpecV6.  # noqa: E501
-        :rtype: SystemInitSpecV6Vcenter
+        :rtype: SystemInitSpecV5Vcenter
         """
         return self._vcenter
 
@@ -165,7 +165,7 @@ class SystemInitSpecV6(object):
 
 
         :param vcenter: The vcenter of this SystemInitSpecV6.  # noqa: E501
-        :type: SystemInitSpecV6Vcenter
+        :type: SystemInitSpecV5Vcenter
         """
         if vcenter is None:
             raise ValueError("Invalid value for `vcenter`, must not be `None`")  # noqa: E501
@@ -220,7 +220,7 @@ class SystemInitSpecV6(object):
 
 
         :return: The vxrail_manager of this SystemInitSpecV6.  # noqa: E501
-        :rtype: SystemInitSpecV6VxrailManager
+        :rtype: SystemInitSpecV5VxrailManager
         """
         return self._vxrail_manager
 
@@ -230,7 +230,7 @@ class SystemInitSpecV6(object):
 
 
         :param vxrail_manager: The vxrail_manager of this SystemInitSpecV6.  # noqa: E501
-        :type: SystemInitSpecV6VxrailManager
+        :type: SystemInitSpecV5VxrailManager
         """
         if vxrail_manager is None:
             raise ValueError("Invalid value for `vxrail_manager`, must not be `None`")  # noqa: E501
@@ -243,7 +243,7 @@ class SystemInitSpecV6(object):
 
 
         :return: The network of this SystemInitSpecV6.  # noqa: E501
-        :rtype: SystemInitSpecV6Network1
+        :rtype: SystemInitSpecV5Network1
         """
         return self._network
 
@@ -253,7 +253,7 @@ class SystemInitSpecV6(object):
 
 
         :param network: The network of this SystemInitSpecV6.  # noqa: E501
-        :type: SystemInitSpecV6Network1
+        :type: SystemInitSpecV5Network1
         """
         if network is None:
             raise ValueError("Invalid value for `network`, must not be `None`")  # noqa: E501
@@ -266,7 +266,7 @@ class SystemInitSpecV6(object):
 
 
         :return: The storage of this SystemInitSpecV6.  # noqa: E501
-        :rtype: SystemInitSpecV6Storage
+        :rtype: SystemInitSpecV5Storage
         """
         return self._storage
 
@@ -276,7 +276,7 @@ class SystemInitSpecV6(object):
 
 
         :param storage: The storage of this SystemInitSpecV6.  # noqa: E501
-        :type: SystemInitSpecV6Storage
+        :type: SystemInitSpecV5Storage
         """
 
         self._storage = storage
