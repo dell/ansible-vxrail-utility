@@ -914,14 +914,14 @@ class LCMUpgradeApi(object):
     def upgrade_v9(self, body, **kwargs):  # noqa: E501
         """Perform an upgrade of the VxRail system (v9)  # noqa: E501
 
-        Performs an upgrade of VxRail software and hardware. Version 9 of this API retries the existing upgrade that started with version 8 or later versions of the API. It also includes an optional parameter, target_hosts, which indicates the nodes that require an upgrade. If the property is empty, this API upgrades all the nodes in the cluster. For clusters running version 8.0.300, it also supports the vLCM-only functionalities, enforce_quick_patch, parallel_remediation for a Dynamic node cluster, and enable_quick_boot. [Supported from 8.0.300]  # noqa: E501
+        Performs an upgrade of VxRail software and hardware. Version 9 of this API retries the existing upgrade that started with version 8 or later versions of the API. It also includes an optional parameter, target_hosts, which indicates the nodes that require an upgrade. If the property is empty, this API upgrades all the nodes in the cluster. For clusters running version 8.0.300, it also supports the vLCM-only functionalities, enforce_quick_patch, parallel_remediation for a Dynamic node cluster, and enable_quick_boot. [Supported from 8.0.320]  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upgrade_v9(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param UpgradeSpecV9 body: Input parameters required for the upgrade. (required)
+        :param UpgradeSpecV980320 body: Input parameters required for the upgrade. (required)
         :return: AsyncLcmRequestSuccessResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -936,14 +936,14 @@ class LCMUpgradeApi(object):
     def upgrade_v9_with_http_info(self, body, **kwargs):  # noqa: E501
         """Perform an upgrade of the VxRail system (v9)  # noqa: E501
 
-        Performs an upgrade of VxRail software and hardware. Version 9 of this API retries the existing upgrade that started with version 8 or later versions of the API. It also includes an optional parameter, target_hosts, which indicates the nodes that require an upgrade. If the property is empty, this API upgrades all the nodes in the cluster. For clusters running version 8.0.300, it also supports the vLCM-only functionalities, enforce_quick_patch, parallel_remediation for a Dynamic node cluster, and enable_quick_boot. [Supported from 8.0.300]  # noqa: E501
+        Performs an upgrade of VxRail software and hardware. Version 9 of this API retries the existing upgrade that started with version 8 or later versions of the API. It also includes an optional parameter, target_hosts, which indicates the nodes that require an upgrade. If the property is empty, this API upgrades all the nodes in the cluster. For clusters running version 8.0.300, it also supports the vLCM-only functionalities, enforce_quick_patch, parallel_remediation for a Dynamic node cluster, and enable_quick_boot. [Supported from 8.0.320]  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.upgrade_v9_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param UpgradeSpecV9 body: Input parameters required for the upgrade. (required)
+        :param UpgradeSpecV980320 body: Input parameters required for the upgrade. (required)
         :return: AsyncLcmRequestSuccessResponse
                  If the method is called asynchronously,
                  returns the request thread.

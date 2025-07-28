@@ -327,8 +327,8 @@ class VxRailInstallationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param SystemInitSpecV5 body: JSON configuration parameters to initialize the VxRail system (required)
-        :param bool dryrun: Performs a validation of the initial input configuration. Set true to cause a dry run and false to configure and deploy a new cluster. The default value is false.
+        :param SystemInitSpecV7 body: JSON configuration parameters to initialize the VxRail system (required)
+        :param bool dryrun: Performs a validation of the initial input configuration. Set the value to true for a dry run and false to configure and deploy a new cluster. The default value is false.
         :return: InlineResponse202
                  If the method is called asynchronously,
                  returns the request thread.
@@ -350,8 +350,8 @@ class VxRailInstallationApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param SystemInitSpecV5 body: JSON configuration parameters to initialize the VxRail system (required)
-        :param bool dryrun: Performs a validation of the initial input configuration. Set true to cause a dry run and false to configure and deploy a new cluster. The default value is false.
+        :param SystemInitSpecV7 body: JSON configuration parameters to initialize the VxRail system (required)
+        :param bool dryrun: Performs a validation of the initial input configuration. Set the value to true for a dry run and false to configure and deploy a new cluster. The default value is false.
         :return: InlineResponse202
                  If the method is called asynchronously,
                  returns the request thread.

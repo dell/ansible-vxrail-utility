@@ -30,8 +30,8 @@ class SystemInitSpecV5Network1Vds(object):
     swagger_types = {
         'name': 'str',
         'mtu': 'int',
-        'nic_mappings': 'list[SystemInitSpecV5Network1NicMappings]',
-        'portgroups': 'list[SystemInitSpecV5Network1Portgroups]'
+        'nic_mappings': 'list[SystemInitNetworkV7NicMappings]',
+        'portgroups': 'list[SystemInitNetworkV7Portgroups]'
     }
 
     attribute_map = {
@@ -110,7 +110,7 @@ class SystemInitSpecV5Network1Vds(object):
         This property is only used for a ADVANCED_VXRAIL_SUPPLIED_VDS and ADVANCED_CUSTOMER_SUPPLIED_VDS nic_profile  # noqa: E501
 
         :return: The nic_mappings of this SystemInitSpecV5Network1Vds.  # noqa: E501
-        :rtype: list[SystemInitSpecV5Network1NicMappings]
+        :rtype: list[SystemInitNetworkV7NicMappings]
         """
         return self._nic_mappings
 
@@ -121,7 +121,7 @@ class SystemInitSpecV5Network1Vds(object):
         This property is only used for a ADVANCED_VXRAIL_SUPPLIED_VDS and ADVANCED_CUSTOMER_SUPPLIED_VDS nic_profile  # noqa: E501
 
         :param nic_mappings: The nic_mappings of this SystemInitSpecV5Network1Vds.  # noqa: E501
-        :type: list[SystemInitSpecV5Network1NicMappings]
+        :type: list[SystemInitNetworkV7NicMappings]
         """
 
         self._nic_mappings = nic_mappings
@@ -132,7 +132,7 @@ class SystemInitSpecV5Network1Vds(object):
 
 
         :return: The portgroups of this SystemInitSpecV5Network1Vds.  # noqa: E501
-        :rtype: list[SystemInitSpecV5Network1Portgroups]
+        :rtype: list[SystemInitNetworkV7Portgroups]
         """
         return self._portgroups
 
@@ -142,7 +142,7 @@ class SystemInitSpecV5Network1Vds(object):
 
 
         :param portgroups: The portgroups of this SystemInitSpecV5Network1Vds.  # noqa: E501
-        :type: list[SystemInitSpecV5Network1Portgroups]
+        :type: list[SystemInitNetworkV7Portgroups]
         """
 
         self._portgroups = portgroups

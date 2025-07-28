@@ -32,7 +32,7 @@ class SystemInitSpecV6VxrailManagedWitnessNodeWitnessVm(object):
         'management_ip': 'str',
         'witness_ip': 'str',
         'netmask': 'str',
-        'accounts': 'SystemInitSpecV6VxrailManagedWitnessNodeWitnessVmAccounts'
+        'accounts': 'SystemInitSpecV5VxrailManagedWitnessNodeWitnessVmAccounts'
     }
 
     attribute_map = {
@@ -161,7 +161,7 @@ class SystemInitSpecV6VxrailManagedWitnessNodeWitnessVm(object):
 
 
         :return: The accounts of this SystemInitSpecV6VxrailManagedWitnessNodeWitnessVm.  # noqa: E501
-        :rtype: SystemInitSpecV6VxrailManagedWitnessNodeWitnessVmAccounts
+        :rtype: SystemInitSpecV5VxrailManagedWitnessNodeWitnessVmAccounts
         """
         return self._accounts
 
@@ -171,7 +171,7 @@ class SystemInitSpecV6VxrailManagedWitnessNodeWitnessVm(object):
 
 
         :param accounts: The accounts of this SystemInitSpecV6VxrailManagedWitnessNodeWitnessVm.  # noqa: E501
-        :type: SystemInitSpecV6VxrailManagedWitnessNodeWitnessVmAccounts
+        :type: SystemInitSpecV5VxrailManagedWitnessNodeWitnessVmAccounts
         """
 
         self._accounts = accounts
