@@ -151,7 +151,7 @@ class LogInfo(object):
     def creation_time(self):
         """Gets the creation_time of this LogInfo.  # noqa: E501
 
-        Time the support log was created.  # noqa: E501
+        Time that the support log was created  # noqa: E501
 
         :return: The creation_time of this LogInfo.  # noqa: E501
         :rtype: int
@@ -162,7 +162,7 @@ class LogInfo(object):
     def creation_time(self, creation_time):
         """Sets the creation_time of this LogInfo.
 
-        Time the support log was created.  # noqa: E501
+        Time that the support log was created  # noqa: E501
 
         :param creation_time: The creation_time of this LogInfo.  # noqa: E501
         :type: int
