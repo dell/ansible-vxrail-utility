@@ -29,7 +29,7 @@ class SystemInitSpecV5VxrailManagedWitnessNode(object):
     """
     swagger_types = {
         'witness_vm': 'SystemInitSpecV5VxrailManagedWitnessNodeWitnessVm',
-        'witness_sled': 'SystemInitVxMWitnessNodeV7WitnessSled'
+        'witness_sled': 'SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class SystemInitSpecV5VxrailManagedWitnessNode(object):
 
 
         :return: The witness_sled of this SystemInitSpecV5VxrailManagedWitnessNode.  # noqa: E501
-        :rtype: SystemInitVxMWitnessNodeV7WitnessSled
+        :rtype: SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled
         """
         return self._witness_sled
 
@@ -84,7 +84,7 @@ class SystemInitSpecV5VxrailManagedWitnessNode(object):
 
 
         :param witness_sled: The witness_sled of this SystemInitSpecV5VxrailManagedWitnessNode.  # noqa: E501
-        :type: SystemInitVxMWitnessNodeV7WitnessSled
+        :type: SystemInitSpecV5VxrailManagedWitnessNodeWitnessSled
         """
 
         self._witness_sled = witness_sled
