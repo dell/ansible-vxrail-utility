@@ -28,8 +28,8 @@ class SystemInitSpecV6VxrailManagedWitnessNode(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'witness_vm': 'SystemInitSpecV6VxrailManagedWitnessNodeWitnessVm',
-        'witness_sled': 'SystemInitSpecV6VxrailManagedWitnessNodeWitnessSled'
+        'witness_vm': 'SystemInitVxMWitnessNodeV7WitnessVm',
+        'witness_sled': 'SystemInitVxMWitnessNodeV7WitnessSled'
     }
 
     attribute_map = {
@@ -53,7 +53,7 @@ class SystemInitSpecV6VxrailManagedWitnessNode(object):
 
 
         :return: The witness_vm of this SystemInitSpecV6VxrailManagedWitnessNode.  # noqa: E501
-        :rtype: SystemInitSpecV6VxrailManagedWitnessNodeWitnessVm
+        :rtype: SystemInitVxMWitnessNodeV7WitnessVm
         """
         return self._witness_vm
 
@@ -63,7 +63,7 @@ class SystemInitSpecV6VxrailManagedWitnessNode(object):
 
 
         :param witness_vm: The witness_vm of this SystemInitSpecV6VxrailManagedWitnessNode.  # noqa: E501
-        :type: SystemInitSpecV6VxrailManagedWitnessNodeWitnessVm
+        :type: SystemInitVxMWitnessNodeV7WitnessVm
         """
 
         self._witness_vm = witness_vm
@@ -74,7 +74,7 @@ class SystemInitSpecV6VxrailManagedWitnessNode(object):
 
 
         :return: The witness_sled of this SystemInitSpecV6VxrailManagedWitnessNode.  # noqa: E501
-        :rtype: SystemInitSpecV6VxrailManagedWitnessNodeWitnessSled
+        :rtype: SystemInitVxMWitnessNodeV7WitnessSled
         """
         return self._witness_sled
 
@@ -84,7 +84,7 @@ class SystemInitSpecV6VxrailManagedWitnessNode(object):
 
 
         :param witness_sled: The witness_sled of this SystemInitSpecV6VxrailManagedWitnessNode.  # noqa: E501
-        :type: SystemInitSpecV6VxrailManagedWitnessNodeWitnessSled
+        :type: SystemInitVxMWitnessNodeV7WitnessSled
         """
 
         self._witness_sled = witness_sled

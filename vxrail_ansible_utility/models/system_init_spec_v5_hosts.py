@@ -34,7 +34,7 @@ class SystemInitSpecV5Hosts(object):
         'accounts': 'SystemInitSpecV5Accounts',
         'network': 'list[SystemInitSpecV5Network]',
         'storage': 'HostStorageInfo',
-        'geo_location': 'SystemInitSpecV5GeoLocation'
+        'geo_location': 'SystemInitHostsV7GeoLocation'
     }
 
     attribute_map = {
@@ -208,7 +208,7 @@ class SystemInitSpecV5Hosts(object):
 
 
         :return: The geo_location of this SystemInitSpecV5Hosts.  # noqa: E501
-        :rtype: SystemInitSpecV5GeoLocation
+        :rtype: SystemInitHostsV7GeoLocation
         """
         return self._geo_location
 
@@ -218,7 +218,7 @@ class SystemInitSpecV5Hosts(object):
 
 
         :param geo_location: The geo_location of this SystemInitSpecV5Hosts.  # noqa: E501
-        :type: SystemInitSpecV5GeoLocation
+        :type: SystemInitHostsV7GeoLocation
         """
 
         self._geo_location = geo_location

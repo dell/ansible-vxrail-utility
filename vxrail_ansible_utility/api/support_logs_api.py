@@ -42,8 +42,8 @@ class SupportLogsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str filter: Query conditions for the support logs. Equal(eq), and not equal(ne) supported fields: id, path, types, nodes. In addition, types and nodes are collection condition fields, which mean the value is equal though the sequence is different. For example, 'node1, node2, node3' is equal to 'node3, node2, node1'. Example: $filter=id eq 'VxRail_Support_Bundle_52fd1cfc-4646-8a7d-d4ba-721c3da3808e_2018_10_08_08_30_44 and nodes eq 'node1, node2, node3'
-        :return: list[LogInfo]
+        :param str filter: Query conditions for the support logs are Equal(eq), and not equal(ne). Supported fields are id, path, types, and nodes. In addition, types and nodes are collection condition fields, which means the value is equal though the sequence is different. For example, 'node1, node2, node3' is equal to 'node3, node2, node1'. Example: $filter=id eq 'VxRail_Support_Bundle_52fd1cfc-4646-8a7d-d4ba-721c3da3808e_2018_10_08_08_30_44 and nodes eq 'node1, node2, node3'
+        :return: list[LogInfoV2]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -64,8 +64,8 @@ class SupportLogsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param str filter: Query conditions for the support logs. Equal(eq), and not equal(ne) supported fields: id, path, types, nodes. In addition, types and nodes are collection condition fields, which mean the value is equal though the sequence is different. For example, 'node1, node2, node3' is equal to 'node3, node2, node1'. Example: $filter=id eq 'VxRail_Support_Bundle_52fd1cfc-4646-8a7d-d4ba-721c3da3808e_2018_10_08_08_30_44 and nodes eq 'node1, node2, node3'
-        :return: list[LogInfo]
+        :param str filter: Query conditions for the support logs are Equal(eq), and not equal(ne). Supported fields are id, path, types, and nodes. In addition, types and nodes are collection condition fields, which means the value is equal though the sequence is different. For example, 'node1, node2, node3' is equal to 'node3, node2, node1'. Example: $filter=id eq 'VxRail_Support_Bundle_52fd1cfc-4646-8a7d-d4ba-721c3da3808e_2018_10_08_08_30_44 and nodes eq 'node1, node2, node3'
+        :return: list[LogInfoV2]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -115,7 +115,7 @@ class SupportLogsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[LogInfo]',  # noqa: E501
+            response_type='list[LogInfoV2]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -323,7 +323,7 @@ class SupportLogsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param LogSpec body: The specified types and nodes for the log bundle collection. (required)
+        :param LogSpecV2 body: The specified types and nodes for the log bundle collection. (required)
         :return: InlineResponse202
                  If the method is called asynchronously,
                  returns the request thread.
@@ -345,7 +345,7 @@ class SupportLogsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param LogSpec body: The specified types and nodes for the log bundle collection. (required)
+        :param LogSpecV2 body: The specified types and nodes for the log bundle collection. (required)
         :return: InlineResponse202
                  If the method is called asynchronously,
                  returns the request thread.

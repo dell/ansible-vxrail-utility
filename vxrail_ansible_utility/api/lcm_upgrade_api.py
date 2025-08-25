@@ -1010,6 +1010,750 @@ class LCMUpgradeApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def v1_lcm_available_online_updates_download_post(self, update_id, **kwargs):  # noqa: E501
+        """Start download of a specific update  # noqa: E501
+
+        Initiate the download process for a specific VxRail system update by its ID.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_available_online_updates_download_post(update_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int update_id: Unique identifier of the update to download (required)
+        :return: AcceptedRequestInfo
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v1_lcm_available_online_updates_download_post_with_http_info(update_id, **kwargs)  # noqa: E501
+        else:
+            (data) = self.v1_lcm_available_online_updates_download_post_with_http_info(update_id, **kwargs)  # noqa: E501
+            return data
+
+    def v1_lcm_available_online_updates_download_post_with_http_info(self, update_id, **kwargs):  # noqa: E501
+        """Start download of a specific update  # noqa: E501
+
+        Initiate the download process for a specific VxRail system update by its ID.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_available_online_updates_download_post_with_http_info(update_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int update_id: Unique identifier of the update to download (required)
+        :return: AcceptedRequestInfo
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['update_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v1_lcm_available_online_updates_download_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'update_id' is set
+        if ('update_id' not in params or
+                params['update_id'] is None):
+            raise ValueError("Missing the required parameter `update_id` when calling `v1_lcm_available_online_updates_download_post`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'update_id' in params:
+            path_params['update_id'] = params['update_id']  # noqa: E501
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v1/lcm/available-online-updates/{update_id}/download', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='AcceptedRequestInfo',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v1_lcm_available_online_updates_get(self, **kwargs):  # noqa: E501
+        """Get available online updates  # noqa: E501
+
+        Retrieve a list of available online updates for VxRail system lifecycle management.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_available_online_updates_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str type: Bundle type filter (FULL_BUNDLE or ADC_SINGLE_PATCH)
+        :return: list[LcmAvailableOnlineUpdateResponse]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v1_lcm_available_online_updates_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.v1_lcm_available_online_updates_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def v1_lcm_available_online_updates_get_with_http_info(self, **kwargs):  # noqa: E501
+        """Get available online updates  # noqa: E501
+
+        Retrieve a list of available online updates for VxRail system lifecycle management.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_available_online_updates_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str type: Bundle type filter (FULL_BUNDLE or ADC_SINGLE_PATCH)
+        :return: list[LcmAvailableOnlineUpdateResponse]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['type']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v1_lcm_available_online_updates_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in params:
+            query_params.append(('type', params['type']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v1/lcm/available-online-updates', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[LcmAvailableOnlineUpdateResponse]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v1_lcm_download_progress_get(self, request_id, **kwargs):  # noqa: E501
+        """Get download progress status  # noqa: E501
+
+        Retrieve the current progress status of a download request by its request ID.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_download_progress_get(request_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str request_id: Unique identifier of the download request (required)
+        :return: DownloadProgress
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v1_lcm_download_progress_get_with_http_info(request_id, **kwargs)  # noqa: E501
+        else:
+            (data) = self.v1_lcm_download_progress_get_with_http_info(request_id, **kwargs)  # noqa: E501
+            return data
+
+    def v1_lcm_download_progress_get_with_http_info(self, request_id, **kwargs):  # noqa: E501
+        """Get download progress status  # noqa: E501
+
+        Retrieve the current progress status of a download request by its request ID.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_download_progress_get_with_http_info(request_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str request_id: Unique identifier of the download request (required)
+        :return: DownloadProgress
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['request_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v1_lcm_download_progress_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'request_id' is set
+        if ('request_id' not in params or
+                params['request_id'] is None):
+            raise ValueError("Missing the required parameter `request_id` when calling `v1_lcm_download_progress_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'request_id' in params:
+            path_params['request_id'] = params['request_id']  # noqa: E501
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v1/lcm/download-progress/{request_id}', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='DownloadProgress',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v1_lcm_patch_cancel_post(self, **kwargs):  # noqa: E501
+        """Cancel ESXi 0-Day patch  # noqa: E501
+
+        Cancel ESXi 0-Day patch.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_patch_cancel_post(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v1_lcm_patch_cancel_post_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.v1_lcm_patch_cancel_post_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def v1_lcm_patch_cancel_post_with_http_info(self, **kwargs):  # noqa: E501
+        """Cancel ESXi 0-Day patch  # noqa: E501
+
+        Cancel ESXi 0-Day patch.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_patch_cancel_post_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v1_lcm_patch_cancel_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v1/lcm/patch/cancel', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v1_lcm_patch_precheck_post(self, **kwargs):  # noqa: E501
+        """Precheck ESXi 0-Day patch  # noqa: E501
+
+        Precheck ESXi 0-Day patch.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_patch_precheck_post(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param PatchPrecheckBody body: Parameters for the ESXi 0-Day patch precheck.
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v1_lcm_patch_precheck_post_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.v1_lcm_patch_precheck_post_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def v1_lcm_patch_precheck_post_with_http_info(self, **kwargs):  # noqa: E501
+        """Precheck ESXi 0-Day patch  # noqa: E501
+
+        Precheck ESXi 0-Day patch.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_patch_precheck_post_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param PatchPrecheckBody body: Parameters for the ESXi 0-Day patch precheck.
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['body']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v1_lcm_patch_precheck_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'body' in params:
+            body_params = params['body']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v1/lcm/patch/precheck', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v1_lcm_patch_status_get(self, **kwargs):  # noqa: E501
+        """Get the status of VMware ESXi 0-Day patch.  # noqa: E501
+
+        Returns the status detail of VMware ESXi 0-Day patch  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_patch_status_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: ZeroDayPatchStatus
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v1_lcm_patch_status_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.v1_lcm_patch_status_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def v1_lcm_patch_status_get_with_http_info(self, **kwargs):  # noqa: E501
+        """Get the status of VMware ESXi 0-Day patch.  # noqa: E501
+
+        Returns the status detail of VMware ESXi 0-Day patch  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_patch_status_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: ZeroDayPatchStatus
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v1_lcm_patch_status_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v1/lcm/patch/status', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='ZeroDayPatchStatus',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v1_lcm_patch_upgrade_post(self, body, **kwargs):  # noqa: E501
+        """Upgrade VMware ESXi 0-Day patch (v1).  # noqa: E501
+
+        Upgrade VMware ESXi 0-Day patch. Supported in VxRail 8.0.360 and later versions.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_patch_upgrade_post(body, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param ZeroDayPatchUpgradeSpec body: Parameters to perform host folder LCM. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v1_lcm_patch_upgrade_post_with_http_info(body, **kwargs)  # noqa: E501
+        else:
+            (data) = self.v1_lcm_patch_upgrade_post_with_http_info(body, **kwargs)  # noqa: E501
+            return data
+
+    def v1_lcm_patch_upgrade_post_with_http_info(self, body, **kwargs):  # noqa: E501
+        """Upgrade VMware ESXi 0-Day patch (v1).  # noqa: E501
+
+        Upgrade VMware ESXi 0-Day patch. Supported in VxRail 8.0.360 and later versions.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_patch_upgrade_post_with_http_info(body, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param ZeroDayPatchUpgradeSpec body: Parameters to perform host folder LCM. (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['body']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v1_lcm_patch_upgrade_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'body' is set
+        if ('body' not in params or
+                params['body'] is None):
+            raise ValueError("Missing the required parameter `body` when calling `v1_lcm_patch_upgrade_post`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'body' in params:
+            body_params = params['body']
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v1/lcm/patch/upgrade', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def v1_lcm_patch_upload_post(self, **kwargs):  # noqa: E501
+        """Upload the VMware ESXi bundle (v1).  # noqa: E501
+
+        Upload the ESXi bundle for VMware ESXi 0-Day patch. Supported in VxRail 8.0.360 and later versions.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_patch_upload_post(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str component_bundle:
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.v1_lcm_patch_upload_post_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.v1_lcm_patch_upload_post_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def v1_lcm_patch_upload_post_with_http_info(self, **kwargs):  # noqa: E501
+        """Upload the VMware ESXi bundle (v1).  # noqa: E501
+
+        Upload the ESXi bundle for VMware ESXi 0-Day patch. Supported in VxRail 8.0.360 and later versions.  # noqa: E501
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.v1_lcm_patch_upload_post_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str component_bundle:
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['component_bundle']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method v1_lcm_patch_upload_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+        if 'component_bundle' in params:
+            local_var_files['component_bundle'] = params['component_bundle']  # noqa: E501
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['application/json'])  # noqa: E501
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['multipart/form-data'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['basicAuth']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/v1/lcm/patch/upload', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def v1_lcm_upgrade_radar_post(self, **kwargs):  # noqa: E501
         """Perform a full upgrade of the Radar Package (v1)  # noqa: E501
 

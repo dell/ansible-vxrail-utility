@@ -132,16 +132,16 @@ class LCMPreCheckApi(object):
             collection_formats=collection_formats)
 
     def precheck_v2(self, body, **kwargs):  # noqa: E501
-        """Perform a health precheck.  # noqa: E501
+        """Perform a health pre-check.  # noqa: E501
 
-        Perform a separate health precheck for the VxRail system. The new precheck API is the same as the V1, but added HealthPrecheckSpecv2, which is different from v1 in that it includes the vlcm policy part. And it can check vlcm policy.  # noqa: E501
+        Perform a separate health pre-check for the VxRail system. The new precheck API is the same as the V1, but added HealthPrecheckSpecv2, which is different from v1 in that it includes the vlcm policy part. And it can check vlcm policy.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.precheck_v2(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param HealthPrecheckSpecV2 body: Input parameters required for health precheck. The HealthPrecheckSpecv2 differs from v1. The HealthPrecheckSpec v2 includes the vlcm policy and can also check the vlcm policy. (required)
+        :param HealthPrecheckSpecV2 body: Input parameters required for health pre-check. The HealthPrecheckSpecv2 differs from v1. The HealthPrecheckSpec v2 includes the vlcm policy and can also check the vlcm policy. (required)
         :return: AsyncLcmRequestSuccessResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -154,16 +154,16 @@ class LCMPreCheckApi(object):
             return data
 
     def precheck_v2_with_http_info(self, body, **kwargs):  # noqa: E501
-        """Perform a health precheck.  # noqa: E501
+        """Perform a health pre-check.  # noqa: E501
 
-        Perform a separate health precheck for the VxRail system. The new precheck API is the same as the V1, but added HealthPrecheckSpecv2, which is different from v1 in that it includes the vlcm policy part. And it can check vlcm policy.  # noqa: E501
+        Perform a separate health pre-check for the VxRail system. The new precheck API is the same as the V1, but added HealthPrecheckSpecv2, which is different from v1 in that it includes the vlcm policy part. And it can check vlcm policy.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.precheck_v2_with_http_info(body, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
-        :param HealthPrecheckSpecV2 body: Input parameters required for health precheck. The HealthPrecheckSpecv2 differs from v1. The HealthPrecheckSpec v2 includes the vlcm policy and can also check the vlcm policy. (required)
+        :param HealthPrecheckSpecV2 body: Input parameters required for health pre-check. The HealthPrecheckSpecv2 differs from v1. The HealthPrecheckSpec v2 includes the vlcm policy and can also check the vlcm policy. (required)
         :return: AsyncLcmRequestSuccessResponse
                  If the method is called asynchronously,
                  returns the request thread.

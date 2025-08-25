@@ -35,7 +35,7 @@ class SupportAccountApi(object):
     def v1_support_account_delete(self, **kwargs):  # noqa: E501
         """Remove the support account  # noqa: E501
 
-        Remove the support account in VxRail Manager.  # noqa: E501
+        Remove the support account in VxRail Manager. This API is deprecated from VxRail 8.0.330.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_support_account_delete(async_req=True)
@@ -56,7 +56,7 @@ class SupportAccountApi(object):
     def v1_support_account_delete_with_http_info(self, **kwargs):  # noqa: E501
         """Remove the support account  # noqa: E501
 
-        Remove the support account in VxRail Manager.  # noqa: E501
+        Remove the support account in VxRail Manager. This API is deprecated from VxRail 8.0.330.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_support_account_delete_with_http_info(async_req=True)
@@ -122,7 +122,7 @@ class SupportAccountApi(object):
     def v1_support_account_get(self, **kwargs):  # noqa: E501
         """Get the support account  # noqa: E501
 
-        Get the current support account set in VxRail.  # noqa: E501
+        Get the current support account set in VxRail. This API is deprecated from VxRail 8.0.330.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_support_account_get(async_req=True)
@@ -143,7 +143,7 @@ class SupportAccountApi(object):
     def v1_support_account_get_with_http_info(self, **kwargs):  # noqa: E501
         """Get the support account  # noqa: E501
 
-        Get the current support account set in VxRail.  # noqa: E501
+        Get the current support account set in VxRail. This API is deprecated from VxRail 8.0.330.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_support_account_get_with_http_info(async_req=True)
@@ -209,7 +209,7 @@ class SupportAccountApi(object):
     def v1_support_account_post(self, body, **kwargs):  # noqa: E501
         """Add a support account  # noqa: E501
 
-        Add a support account to VxRail Manager.  # noqa: E501
+        Add a support account to VxRail Manager. This API is deprecated from VxRail 8.0.330.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_support_account_post(body, async_req=True)
@@ -231,7 +231,7 @@ class SupportAccountApi(object):
     def v1_support_account_post_with_http_info(self, body, **kwargs):  # noqa: E501
         """Add a support account  # noqa: E501
 
-        Add a support account to VxRail Manager.  # noqa: E501
+        Add a support account to VxRail Manager. This API is deprecated from VxRail 8.0.330.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_support_account_post_with_http_info(body, async_req=True)
@@ -308,7 +308,7 @@ class SupportAccountApi(object):
     def v1_support_account_put(self, body, **kwargs):  # noqa: E501
         """Update the support account  # noqa: E501
 
-        Update the support account in VxRail Manager.  # noqa: E501
+        Update the support account in VxRail Manager. This API is deprecated from VxRail 8.0.330.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_support_account_put(body, async_req=True)
@@ -330,7 +330,7 @@ class SupportAccountApi(object):
     def v1_support_account_put_with_http_info(self, body, **kwargs):  # noqa: E501
         """Update the support account  # noqa: E501
 
-        Update the support account in VxRail Manager.  # noqa: E501
+        Update the support account in VxRail Manager. This API is deprecated from VxRail 8.0.330.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
         >>> thread = api.v1_support_account_put_with_http_info(body, async_req=True)
